@@ -1,0 +1,738 @@
+{
+    "0": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 3.5
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 3.25
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 2.0
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.25
+        }
+    },
+    "1": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.75
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 2.5
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 2.0
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.0
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.0
+        }
+    },
+    "2": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 3.25
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 2.75
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.0
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.0
+        }
+    },
+    "3": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.75
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 2.5
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.0
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.0
+        }
+    },
+    "4": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.5
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.25
+        }
+    },
+    "5": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 3.0
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 2.5
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.0
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.0
+        }
+    },
+    "6": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.75
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 2.5
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.25
+        }
+    },
+    "7": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.75
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 2.5
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.0
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.0
+        }
+    },
+    "8": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.75
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.25
+        }
+    },
+    "9": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.5
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.25
+        }
+    },
+    "10": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.75
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 2.5
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.0
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.0
+        }
+    },
+    "11": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.75
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.0
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.0
+        }
+    },
+    "12": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.5
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.0
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.0
+        }
+    },
+    "13": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.5
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.0
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.0
+        }
+    },
+    "14": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.75
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.0
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.0
+        }
+    },
+    "15": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.5
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.25
+        }
+    },
+    "16": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.5
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.25
+        }
+    },
+    "17": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.5
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.25
+        }
+    },
+    "18": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.5
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.25
+        }
+    },
+    "19": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.5
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.25
+        }
+    },
+    "20": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.5
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.25
+        }
+    },
+    "21": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.25
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.25
+        }
+    },
+    "22": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.25
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.25
+        }
+    },
+    "23": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.25
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.25
+        }
+    },
+    "24": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.0
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.25
+        }
+    },
+    "25": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.75
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.0
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.25
+        }
+    },
+    "26": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.75
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.0
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.25
+        }
+    },
+    "27": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.75
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.0
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 2.0
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.25
+        }
+    },
+    "28": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.75
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 1.75
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 2.0
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.25
+        }
+    },
+    "29": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.75
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 1.75
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 2.0
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.25
+        }
+    },
+    "30": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.75
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 1.75
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 2.0
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.up_proj": {
+            "osr_proj": 2.25
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.25
+        }
+    },
+    "31": {
+        "self_attn.q_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 1.75
+        },
+        "self_attn.o_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.gate_proj": {
+            "osr_proj": 1.5
+        },
+        "mlp.up_proj": {
+            "osr_proj": 1.75
+        },
+        "mlp.down_proj": {
+            "osr_proj": 2.0
+        }
+    }
+}

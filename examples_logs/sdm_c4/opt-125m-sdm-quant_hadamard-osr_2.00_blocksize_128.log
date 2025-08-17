@@ -1,0 +1,236 @@
+/home/xjh/research/AI_xjh_research/llm_quant_factory/fakequant/datautils.py:148: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  return torch.load(cache_file)
+/home/xjh/miniconda3/envs/demo2/lib/python3.12/site-packages/datasets/table.py:1421: FutureWarning: promote has been superseded by promote_options='default'.
+  table = cls._concat_blocks(blocks, axis=0)
+Loading model from /data/xjh/model_weight/opt/opt-125m
+Detected model type: opt
+Processing fc2 layer: model.decoder.layers.1.fc2
+Weight shape: torch.Size([128, 2048])
+Running scale search for fc2 with OSR=2.0, first2=False
+search scale_config time: 60.50901961326599 s  scale_config: {'fc2': {'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}}
+Loading model ...
+/data/xjh/model_weight/opt/opt-125m
+xjh_edit,load from local file:/data/xjh/dataset/c4_part,get c4
+Starting ...
+Ready.
+ layer 0 self_attn.k_proj osr=1.25
+ layer 0 self_attn.k_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 0 self_attn.v_proj osr=3.0
+ layer 0 self_attn.v_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 0 self_attn.q_proj osr=1.25
+ layer 0 self_attn.q_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 0 self_attn.out_proj osr=3.0
+ layer 0 self_attn.out_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 0 fc1 osr=1.5
+ layer 0 fc1 scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 0 fc2 osr=1.75
+ layer 0 fc2 scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 0 quantization done.
+ layer 0 block_mean_osr=1.7916666666666665
+ layer 1 self_attn.k_proj osr=1.25
+ layer 1 self_attn.k_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 1 self_attn.v_proj osr=3.25
+ layer 1 self_attn.v_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 1 self_attn.q_proj osr=1.25
+ layer 1 self_attn.q_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 1 self_attn.out_proj osr=3.5
+ layer 1 self_attn.out_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 1 fc1 osr=1.75
+ layer 1 fc1 scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 1 fc2 osr=1.75
+ layer 1 fc2 scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 1 quantization done.
+ layer 1 block_mean_osr=1.9374999999999998
+ layer 2 self_attn.k_proj osr=1.25
+ layer 2 self_attn.k_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 2 self_attn.v_proj osr=3.0
+ layer 2 self_attn.v_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 2 self_attn.q_proj osr=1.25
+ layer 2 self_attn.q_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 2 self_attn.out_proj osr=3.5
+ layer 2 self_attn.out_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 2 fc1 osr=1.75
+ layer 2 fc1 scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 2 fc2 osr=2.0
+ layer 2 fc2 scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 2 quantization done.
+ layer 2 block_mean_osr=1.9999999999999996
+ layer 3 self_attn.k_proj osr=1.25
+ layer 3 self_attn.k_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 3 self_attn.v_proj osr=2.75
+ layer 3 self_attn.v_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 3 self_attn.q_proj osr=1.25
+ layer 3 self_attn.q_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 3 self_attn.out_proj osr=3.25
+ layer 3 self_attn.out_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 3 fc1 osr=2.25
+ layer 3 fc1 scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 3 fc2 osr=2.25
+ layer 3 fc2 scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 3 quantization done.
+ layer 3 block_mean_osr=2.208333333333333
+ layer 4 self_attn.k_proj osr=1.25
+ layer 4 self_attn.k_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 4 self_attn.v_proj osr=2.75
+ layer 4 self_attn.v_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 4 self_attn.q_proj osr=1.25
+ layer 4 self_attn.q_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 4 self_attn.out_proj osr=3.5
+ layer 4 self_attn.out_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 4 fc1 osr=2.0
+ layer 4 fc1 scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 4 fc2 osr=1.75
+ layer 4 fc2 scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 4 quantization done.
+ layer 4 block_mean_osr=1.9791666666666665
+ layer 5 self_attn.k_proj osr=1.25
+ layer 5 self_attn.k_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 5 self_attn.v_proj osr=2.75
+ layer 5 self_attn.v_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 5 self_attn.q_proj osr=1.25
+ layer 5 self_attn.q_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 5 self_attn.out_proj osr=3.25
+ layer 5 self_attn.out_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 5 fc1 osr=2.0
+ layer 5 fc1 scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 5 fc2 osr=1.75
+ layer 5 fc2 scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 5 quantization done.
+ layer 5 block_mean_osr=1.9583333333333333
+ layer 6 self_attn.k_proj osr=1.25
+ layer 6 self_attn.k_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 6 self_attn.v_proj osr=2.5
+ layer 6 self_attn.v_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 6 self_attn.q_proj osr=1.25
+ layer 6 self_attn.q_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 6 self_attn.out_proj osr=3.0
+ layer 6 self_attn.out_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 6 fc1 osr=2.0
+ layer 6 fc1 scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 6 fc2 osr=2.0
+ layer 6 fc2 scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 6 quantization done.
+ layer 6 block_mean_osr=2.0
+ layer 7 self_attn.k_proj osr=1.25
+ layer 7 self_attn.k_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 7 self_attn.v_proj osr=2.75
+ layer 7 self_attn.v_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 7 self_attn.q_proj osr=1.25
+ layer 7 self_attn.q_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 7 self_attn.out_proj osr=3.0
+ layer 7 self_attn.out_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 7 fc1 osr=2.0
+ layer 7 fc1 scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 7 fc2 osr=2.0
+ layer 7 fc2 scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 7 quantization done.
+ layer 7 block_mean_osr=2.020833333333333
+ layer 8 self_attn.k_proj osr=1.25
+ layer 8 self_attn.k_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 8 self_attn.v_proj osr=2.5
+ layer 8 self_attn.v_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 8 self_attn.q_proj osr=1.25
+ layer 8 self_attn.q_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 8 self_attn.out_proj osr=2.75
+ layer 8 self_attn.out_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 8 fc1 osr=2.0
+ layer 8 fc1 scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 8 fc2 osr=2.0
+ layer 8 fc2 scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 8 quantization done.
+ layer 8 block_mean_osr=1.9791666666666665
+ layer 9 self_attn.k_proj osr=1.25
+ layer 9 self_attn.k_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 9 self_attn.v_proj osr=2.5
+ layer 9 self_attn.v_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 9 self_attn.q_proj osr=1.25
+ layer 9 self_attn.q_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 9 self_attn.out_proj osr=2.5
+ layer 9 self_attn.out_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 9 fc1 osr=2.25
+ layer 9 fc1 scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 9 fc2 osr=2.0
+ layer 9 fc2 scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 9 quantization done.
+ layer 9 block_mean_osr=2.0416666666666665
+ layer 10 self_attn.k_proj osr=1.5
+ layer 10 self_attn.k_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 10 self_attn.v_proj osr=2.25
+ layer 10 self_attn.v_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 10 self_attn.q_proj osr=1.5
+ layer 10 self_attn.q_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 10 self_attn.out_proj osr=2.25
+ layer 10 self_attn.out_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 10 fc1 osr=2.25
+ layer 10 fc1 scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 10 fc2 osr=2.0
+ layer 10 fc2 scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 10 quantization done.
+ layer 10 block_mean_osr=2.0416666666666665
+ layer 11 self_attn.k_proj osr=1.5
+ layer 11 self_attn.k_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 11 self_attn.v_proj osr=2.25
+ layer 11 self_attn.v_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 11 self_attn.q_proj osr=1.5
+ layer 11 self_attn.q_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 11 self_attn.out_proj osr=2.0
+ layer 11 self_attn.out_proj scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 11 fc1 osr=2.25
+ layer 11 fc1 scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 11 fc2 osr=2.0
+ layer 11 fc2 scale_config_value={'scale': 0.95, 'percentile_scale': 0.93, 'percentile_cut': 0.55}
+ layer 11 quantization done.
+ layer 11 block_mean_osr=2.020833333333333
+Quantization done.
+Mean OSR: 1.9982638888888886
+quantization time: 22.77489399909973 s
+xjh_edit,load from local file:/data/xjh/dataset/wikitext-2-raw-v1,get wikitext2
+wikitext2
+Evaluating ...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+Perplexity: 206.379211
+{'wikitext2/perplexity': 206.37921142578125}
+xjh_edit,load from local file:/data/xjh/dataset/ptb_text_only,get ptb
+ptb
+Evaluating ...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+Perplexity: 242.505280
+{'ptb/perplexity': 242.50527954101562}
+c4
+Evaluating ...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+Perplexity: 158.231064
+{'c4/perplexity': 158.23106384277344}

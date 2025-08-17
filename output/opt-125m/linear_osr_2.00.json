@@ -1,0 +1,242 @@
+{
+    "0": {
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 3.0
+        },
+        "self_attn.q_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.out_proj": {
+            "osr_proj": 3.0
+        },
+        "fc1": {
+            "osr_proj": 1.5
+        },
+        "fc2": {
+            "osr_proj": 1.75
+        }
+    },
+    "1": {
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 3.25
+        },
+        "self_attn.q_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.out_proj": {
+            "osr_proj": 3.5
+        },
+        "fc1": {
+            "osr_proj": 1.75
+        },
+        "fc2": {
+            "osr_proj": 1.75
+        }
+    },
+    "2": {
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 3.0
+        },
+        "self_attn.q_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.out_proj": {
+            "osr_proj": 3.5
+        },
+        "fc1": {
+            "osr_proj": 1.75
+        },
+        "fc2": {
+            "osr_proj": 2.0
+        }
+    },
+    "3": {
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.75
+        },
+        "self_attn.q_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.out_proj": {
+            "osr_proj": 3.25
+        },
+        "fc1": {
+            "osr_proj": 2.25
+        },
+        "fc2": {
+            "osr_proj": 2.25
+        }
+    },
+    "4": {
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.75
+        },
+        "self_attn.q_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.out_proj": {
+            "osr_proj": 3.5
+        },
+        "fc1": {
+            "osr_proj": 2.0
+        },
+        "fc2": {
+            "osr_proj": 1.75
+        }
+    },
+    "5": {
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.75
+        },
+        "self_attn.q_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.out_proj": {
+            "osr_proj": 3.25
+        },
+        "fc1": {
+            "osr_proj": 2.0
+        },
+        "fc2": {
+            "osr_proj": 1.75
+        }
+    },
+    "6": {
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.5
+        },
+        "self_attn.q_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.out_proj": {
+            "osr_proj": 3.0
+        },
+        "fc1": {
+            "osr_proj": 2.0
+        },
+        "fc2": {
+            "osr_proj": 2.0
+        }
+    },
+    "7": {
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.75
+        },
+        "self_attn.q_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.out_proj": {
+            "osr_proj": 3.0
+        },
+        "fc1": {
+            "osr_proj": 2.0
+        },
+        "fc2": {
+            "osr_proj": 2.0
+        }
+    },
+    "8": {
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.5
+        },
+        "self_attn.q_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.out_proj": {
+            "osr_proj": 2.75
+        },
+        "fc1": {
+            "osr_proj": 2.0
+        },
+        "fc2": {
+            "osr_proj": 2.0
+        }
+    },
+    "9": {
+        "self_attn.k_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.5
+        },
+        "self_attn.q_proj": {
+            "osr_proj": 1.25
+        },
+        "self_attn.out_proj": {
+            "osr_proj": 2.5
+        },
+        "fc1": {
+            "osr_proj": 2.25
+        },
+        "fc2": {
+            "osr_proj": 2.0
+        }
+    },
+    "10": {
+        "self_attn.k_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.25
+        },
+        "self_attn.q_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.out_proj": {
+            "osr_proj": 2.25
+        },
+        "fc1": {
+            "osr_proj": 2.25
+        },
+        "fc2": {
+            "osr_proj": 2.0
+        }
+    },
+    "11": {
+        "self_attn.k_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.v_proj": {
+            "osr_proj": 2.25
+        },
+        "self_attn.q_proj": {
+            "osr_proj": 1.5
+        },
+        "self_attn.out_proj": {
+            "osr_proj": 2.0
+        },
+        "fc1": {
+            "osr_proj": 2.25
+        },
+        "fc2": {
+            "osr_proj": 2.0
+        }
+    }
+}
