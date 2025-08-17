@@ -6,13 +6,6 @@ from methods.sdm_utils.sdmgptq import sdmgptq_quant
 from methods.sdm_utils.scale_search import analyze_model_params
 from modelutils import find_layers
 import json
-
-#multiosr test
-# config_path = "/home/xjh/research/AI_xjh_research/model_fakequant_eval/result.json"
-# with open(config_path, 'r') as f:
-#     config = json.load(f)
-
-#orginal multi osr
 DEBUG=False
 MULTIOSR=False
 #config=None

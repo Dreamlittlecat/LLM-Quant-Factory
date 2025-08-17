@@ -1,18 +1,5 @@
 models=(
-    # "/data/xjh/model_weight/llama/llama3.2-1b"
-    # "/data/xjh/model_weight/llama/llama3.2-3b"
-    # "/data/xjh/model_weight/llama/llama3-8b"
-    #  "/data/xjh/model_weight/llama/llama2-7b"
-    # "/data/xjh/model_weight/llama/llama2-13b"
-    # "/data/xjh/model_weight/llama/llama-7b"
-    # "/data/xjh/model_weight/llama/llama-13b"
-    #"/data/xjh/model_weight/llama/vicuna-7b-1.1"
      "/data/xjh/model_weight/opt/opt-125m"
-    # "/data/xjh/model_weight/opt/opt-350m"
-    # "/data/xjh/model_weight/opt/opt-1.3b"
-    # "/data/xjh/model_weight/opt/opt-2.7b"
-    #  "/data/xjh/model_weight/opt/opt-6.7b"
-    #  "/data/xjh/model_weight/opt/opt-13b"
 )
 
 BLOCKSIZES=(128)
@@ -94,7 +81,7 @@ for model in "${models[@]}"; do
             fi
 
 
-
+            #Multi OSR
             python  analysis/generate_config.py --file_path "$linear_info" --output_dir "$output_dir" --target_osr "$OSR" --alpha $alpha  --base_osr $base_osr 
         # osr_config=/home/xjh/research/AI_xjh_research/model_fakequant_eval/output/opt-125m/linear_osr_2.0.json
             echo "$osr_config"

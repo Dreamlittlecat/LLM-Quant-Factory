@@ -14,7 +14,17 @@
 确保你已经安装了 Python 3.x。
 
 ```bash
-git clone https://github.com/username/repo.git
-cd repo
+git clone https://github.com/Dreamlittlecat/LLM-Quant-Factory.git
+cd LLM-Quant-Factory
 pip install -r requirements.txt
+```
+示例用法：
 
+```bash
+
+cd LLM-Quant-Factory
+#模型量化
+bash run_example.sh
+#模型zero_shot评测
+bash run_zeroshot.sh
+```

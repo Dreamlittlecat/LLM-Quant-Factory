@@ -30,13 +30,15 @@ def get_tokenizer(model):
     return tokenizer
 
 def get_wikitext2(nsamples, seed, seqlen, model, tokenizer):
-    print("xjh_edit,load from local file:/data/xjh/dataset/wikitext-2-raw-v1,get wikitext2")
-    from datasets import load_from_disk
-    data=load_from_disk('/data/xjh/dataset/wikitext-2-raw-v1')
-    traindata = data['train']
-    testdata = data['test']
-    # traindata = load_dataset('wikitext', 'wikitext-2-raw-v1', split='train')
-    # testdata = load_dataset('wikitext', 'wikitext-2-raw-v1', split='test')
+    if not os.path.exists('/data/xjh/dataset/wikitext-2-raw-v1'):
+        print("xjh_edit,load from local file:/data/xjh/dataset/wikitext-2-raw-v1,get wikitext2")
+        from datasets import load_from_disk
+        data=load_from_disk('/data/xjh/dataset/wikitext-2-raw-v1')
+        traindata = data['train']
+        testdata = data['test']
+    else:
+        traindata = load_dataset('wikitext', 'wikitext-2-raw-v1', split='train')
+        testdata = load_dataset('wikitext', 'wikitext-2-raw-v1', split='test')
 
     trainenc = tokenizer(" ".join(traindata['text']), return_tensors='pt')
     testenc = tokenizer("\n\n".join(testdata['text']), return_tensors='pt')
@@ -54,10 +56,15 @@ def get_wikitext2(nsamples, seed, seqlen, model, tokenizer):
 
 #only for calib dataset
 def get_pileval(nsamples, seed, seqlen, model, tokenizer):
-    print("xjh_edit,load from local file:/data/xjh/dataset/pile_val_backup,get pileval")
-    from datasets import load_from_disk
-    data=load_from_disk("/data/xjh/dataset/pile_val_backup")
-    data=data.shuffle(seed=seed)[:1000]
+    if not os.path.exists('/data/xjh/dataset/pile_val_backup'):
+        print("xjh_edit,load from local file:/data/xjh/dataset/pile_val_backup,get pileval")
+        from datasets import load_from_disk
+        data=load_from_disk('/data/xjh/dataset/pile_val_backup')
+        data=data.shuffle(seed=seed)[:1000]
+    else:
+        data = load_dataset('pile', 'pile_val', split='train')
+        data = data.shuffle(seed=seed)[:1000]
+
     calibenc = tokenizer(" ".join(data['text']), return_tensors='pt')
     random.seed(seed)
     trainloader = []
@@ -71,14 +78,17 @@ def get_pileval(nsamples, seed, seqlen, model, tokenizer):
     return trainloader, None
     
 
-def get_ptb(nsamples, seed, seqlen, model, tokenizer):\
-
-    # traindata = load_dataset('ptb_text_only', 'penn_treebank', split='train')
-    # testdata = load_dataset('ptb_text_only', 'penn_treebank', split='test')
-    print("xjh_edit,load from local file:/data/xjh/dataset/ptb_text_only,get ptb")
-    from datasets import load_from_disk
-    traindata = load_from_disk('/data/xjh/dataset/ptb_text_only')['train']
-    testdata = load_from_disk('/data/xjh/dataset/ptb_text_only')['test']
+def get_ptb(nsamples, seed, seqlen, model, tokenizer):
+    if not os.path.exists('/data/xjh/dataset/ptb_text_only'):
+        print("xjh_edit,load from local file:/data/xjh/dataset/ptb_text_only,get ptb")
+        from datasets import load_from_disk
+        data=load_from_disk('/data/xjh/dataset/ptb_text_only')
+        traindata = data['train']
+        testdata = data['test']
+    else:
+        traindata = load_dataset('ptb_text_only', 'penn_treebank', split='train')
+        testdata = load_dataset('ptb_text_only', 'penn_treebank', split='test')
+   
     
     trainenc = tokenizer(" ".join(traindata['sentence']), return_tensors='pt')
     testenc = tokenizer(" ".join(testdata['sentence']), return_tensors='pt')
@@ -99,26 +109,28 @@ class TokenizerWrapper:
         self.input_ids = input_ids
 
 def get_c4(nsamples, seed, seqlen, model, tokenizer):
-    # traindata = load_dataset(
-    #     'allenai/c4', 'allenai--c4', data_files={'train': 'en/c4-train.00000-of-01024.json.gz'}, split='train'
-    # )
-    # valdata = load_dataset(
-    #     'allenai/c4', 'allenai--c4', data_files={'validation': 'en/c4-validation.00000-of-00008.json.gz'}, split='validation'
-    # )
+    if not os.path.exists('/data/xjh/dataset/c4_part'):
+        print("xjh_edit,load from local file:/data/xjh/dataset/c4_part,get c4")
+        traindata = load_dataset(
+            "json",  # 指定数据格式为 JSON
+            data_files={"train": "/data/xjh/dataset/c4_part/c4-train.00000-of-01024.json.gz"},  # 替换为你的本地路径
+            split="train"
+        )
 
-    print("xjh_edit,load from local file:/data/xjh/dataset/c4_part,get c4")
-    traindata = load_dataset(
+        valdata = load_dataset(
         "json",  # 指定数据格式为 JSON
-        data_files={"train": "/data/xjh/dataset/c4_part/c4-train.00000-of-01024.json.gz"},  # 替换为你的本地路径
-        split="train"
-    )
+        data_files={"validation": "/data/xjh/dataset/c4_part/c4-validation.00000-of-00008.json.gz"},  # 替换为你的本地路径
+        split="validation"
+        )
+    else:
+        traindata = load_dataset(
+            'allenai/c4', 'allenai--c4', data_files={'train': 'en/c4-train.00000-of-01024.json.gz'}, split='train'
+        )
+        valdata = load_dataset(
+            'allenai/c4', 'allenai--c4', data_files={'validation': 'en/c4-validation.00000-of-00008.json.gz'}, split='validation'
+        )
 
-    valdata = load_dataset(
-    "json",  # 指定数据格式为 JSON
-    data_files={"validation": "/data/xjh/dataset/c4_part/c4-validation.00000-of-00008.json.gz"},  # 替换为你的本地路径
-    split="validation"
-    )
-    
+
     random.seed(seed)
     trainloader = []
     for _ in range(nsamples):
