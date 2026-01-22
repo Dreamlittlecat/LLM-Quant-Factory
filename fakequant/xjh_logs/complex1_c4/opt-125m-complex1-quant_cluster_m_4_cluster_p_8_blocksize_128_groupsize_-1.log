@@ -1,0 +1,544 @@
+/home/xjh/research/AI_xjh_research/llm_quant_factory/fakequant/datautils.py:160: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  return torch.load(cache_file)
+modname,:methods.complex_utils.complex_v1
+Loading model ...
+/data/xjh/model_weight/opt/opt-125m
+Starting ...
+Ready.
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.6588541666666665,group_size:3072,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+0 self_attn.k_proj
+Quantizing ...
+0 self_attn.v_proj
+Quantizing ...
+0 self_attn.q_proj
+Quantizing ...
+0 self_attn.out_proj
+Quantizing ...
+0 fc1
+Quantizing ...
+0 fc2
+Quantizing ...
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.6588541666666665,group_size:3072,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+1 self_attn.k_proj
+Quantizing ...
+1 self_attn.v_proj
+Quantizing ...
+1 self_attn.q_proj
+Quantizing ...
+1 self_attn.out_proj
+Quantizing ...
+1 fc1
+Quantizing ...
+1 fc2
+Quantizing ...
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.6588541666666665,group_size:3072,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+2 self_attn.k_proj
+Quantizing ...
+2 self_attn.v_proj
+Quantizing ...
+2 self_attn.q_proj
+Quantizing ...
+2 self_attn.out_proj
+Quantizing ...
+2 fc1
+Quantizing ...
+2 fc2
+Quantizing ...
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.6588541666666665,group_size:3072,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+3 self_attn.k_proj
+Quantizing ...
+3 self_attn.v_proj
+Quantizing ...
+3 self_attn.q_proj
+Quantizing ...
+3 self_attn.out_proj
+Quantizing ...
+3 fc1
+Quantizing ...
+3 fc2
+Quantizing ...
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.6588541666666665,group_size:3072,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+4 self_attn.k_proj
+Quantizing ...
+4 self_attn.v_proj
+Quantizing ...
+4 self_attn.q_proj
+Quantizing ...
+4 self_attn.out_proj
+Quantizing ...
+4 fc1
+Quantizing ...
+4 fc2
+Quantizing ...
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.6588541666666665,group_size:3072,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+5 self_attn.k_proj
+Quantizing ...
+5 self_attn.v_proj
+Quantizing ...
+5 self_attn.q_proj
+Quantizing ...
+5 self_attn.out_proj
+Quantizing ...
+5 fc1
+Quantizing ...
+5 fc2
+Quantizing ...
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.6588541666666665,group_size:3072,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+6 self_attn.k_proj
+Quantizing ...
+6 self_attn.v_proj
+Quantizing ...
+6 self_attn.q_proj
+Quantizing ...
+6 self_attn.out_proj
+Quantizing ...
+6 fc1
+Quantizing ...
+6 fc2
+Quantizing ...
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.6588541666666665,group_size:3072,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+7 self_attn.k_proj
+Quantizing ...
+7 self_attn.v_proj
+Quantizing ...
+7 self_attn.q_proj
+Quantizing ...
+7 self_attn.out_proj
+Quantizing ...
+7 fc1
+Quantizing ...
+7 fc2
+Quantizing ...
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.6588541666666665,group_size:3072,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+8 self_attn.k_proj
+Quantizing ...
+8 self_attn.v_proj
+Quantizing ...
+8 self_attn.q_proj
+Quantizing ...
+8 self_attn.out_proj
+Quantizing ...
+8 fc1
+Quantizing ...
+8 fc2
+Quantizing ...
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.6588541666666665,group_size:3072,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+9 self_attn.k_proj
+Quantizing ...
+9 self_attn.v_proj
+Quantizing ...
+9 self_attn.q_proj
+Quantizing ...
+9 self_attn.out_proj
+Quantizing ...
+9 fc1
+Quantizing ...
+9 fc2
+Quantizing ...
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.6588541666666665,group_size:3072,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+10 self_attn.k_proj
+Quantizing ...
+10 self_attn.v_proj
+Quantizing ...
+10 self_attn.q_proj
+Quantizing ...
+10 self_attn.out_proj
+Quantizing ...
+10 fc1
+Quantizing ...
+10 fc2
+Quantizing ...
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.6588541666666665,group_size:3072,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+11 self_attn.k_proj
+Quantizing ...
+11 self_attn.v_proj
+Quantizing ...
+11 self_attn.q_proj
+Quantizing ...
+11 self_attn.out_proj
+Quantizing ...
+11 fc1
+Quantizing ...
+11 fc2
+Quantizing ...
+quantization time: 1645.9678659439087 s
+wikitext2
+Evaluating ...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+Perplexity: 71.489105
+{'wikitext2/perplexity': 71.48910522460938}
+ptb
+Evaluating ...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+Perplexity: 94.384163
+{'ptb/perplexity': 94.38416290283203}
+c4
+Evaluating ...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+Perplexity: 56.354492
+{'c4/perplexity': 56.3544921875}
+/home/xjh/research/AI_xjh_research/llm_quant_factory/fakequant/datautils.py:160: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  return torch.load(cache_file)
+modname,:methods.complex_utils.complex_v1
+Loading model ...
+/data/xjh/model_weight/opt/opt-125m
+Starting ...
+Ready.
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.6588541666666665,group_size:3072,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+0 self_attn.k_proj
+Quantizing ...
+0 self_attn.v_proj
+Quantizing ...
+0 self_attn.q_proj
+Quantizing ...
+0 self_attn.out_proj
+Quantizing ...
+0 fc1
+Quantizing ...
+0 fc2
+Quantizing ...
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.6588541666666665,group_size:3072,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+1 self_attn.k_proj
+Quantizing ...
+1 self_attn.v_proj
+Quantizing ...
+1 self_attn.q_proj
+Quantizing ...
+1 self_attn.out_proj
+Quantizing ...
+1 fc1
+Quantizing ...
+1 fc2
+Quantizing ...
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.6588541666666665,group_size:3072,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+2 self_attn.k_proj
+Quantizing ...
+2 self_attn.v_proj
+Quantizing ...
+2 self_attn.q_proj
+Quantizing ...
+2 self_attn.out_proj
+Quantizing ...
+2 fc1
+Quantizing ...
+2 fc2
+Quantizing ...
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.6588541666666665,group_size:3072,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+3 self_attn.k_proj
+Quantizing ...
+3 self_attn.v_proj
+Quantizing ...
+3 self_attn.q_proj
+Quantizing ...
+3 self_attn.out_proj
+Quantizing ...
+3 fc1
+Quantizing ...
+3 fc2
+Quantizing ...
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.6588541666666665,group_size:3072,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+4 self_attn.k_proj
+Quantizing ...
+4 self_attn.v_proj
+Quantizing ...
+4 self_attn.q_proj
+Quantizing ...
+4 self_attn.out_proj
+Quantizing ...
+4 fc1
+Quantizing ...
+4 fc2
+Quantizing ...
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.6588541666666665,group_size:3072,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+5 self_attn.k_proj
+Quantizing ...
+5 self_attn.v_proj
+Quantizing ...
+5 self_attn.q_proj
+Quantizing ...
+5 self_attn.out_proj
+Quantizing ...
+5 fc1
+Quantizing ...
+5 fc2
+Quantizing ...
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.6588541666666665,group_size:3072,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+6 self_attn.k_proj
+Quantizing ...
+6 self_attn.v_proj
+Quantizing ...
+6 self_attn.q_proj
+Quantizing ...
+6 self_attn.out_proj
+Quantizing ...
+6 fc1
+Quantizing ...
+6 fc2
+Quantizing ...
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.6588541666666665,group_size:3072,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+7 self_attn.k_proj
+Quantizing ...
+7 self_attn.v_proj
+Quantizing ...
+7 self_attn.q_proj
+Quantizing ...
+7 self_attn.out_proj
+Quantizing ...
+7 fc1
+Quantizing ...
+7 fc2
+Quantizing ...
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.6588541666666665,group_size:3072,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+8 self_attn.k_proj
+Quantizing ...
+8 self_attn.v_proj
+Quantizing ...
+8 self_attn.q_proj
+Quantizing ...
+8 self_attn.out_proj
+Quantizing ...
+8 fc1
+Quantizing ...
+8 fc2
+Quantizing ...
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.6588541666666665,group_size:3072,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+9 self_attn.k_proj
+Quantizing ...
+9 self_attn.v_proj
+Quantizing ...
+9 self_attn.q_proj
+Quantizing ...
+9 self_attn.out_proj
+Quantizing ...
+9 fc1
+Quantizing ...
+9 fc2
+Quantizing ...
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.6588541666666665,group_size:3072,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+10 self_attn.k_proj
+Quantizing ...
+10 self_attn.v_proj
+Quantizing ...
+10 self_attn.q_proj
+Quantizing ...
+10 self_attn.out_proj
+Quantizing ...
+10 fc1
+Quantizing ...
+10 fc2
+Quantizing ...
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.6588541666666665,group_size:3072,cluster_1:4,cluster_2:8
+blocksize:128,per weight bits:2.7604166666666665,group_size:768,cluster_1:4,cluster_2:8
+11 self_attn.k_proj
+Quantizing ...
+11 self_attn.v_proj
+Quantizing ...
+11 self_attn.q_proj
+Quantizing ...
+11 self_attn.out_proj
+Quantizing ...
+11 fc1
+Quantizing ...
+11 fc2
+Quantizing ...
+quantization time: 162.83751940727234 s
+wikitext2
+Evaluating ...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+Perplexity: 71.489105
+{'wikitext2/perplexity': 71.48910522460938}
+ptb
+Evaluating ...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+Perplexity: 94.384163
+{'ptb/perplexity': 94.38416290283203}
+c4
+Evaluating ...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+Perplexity: 56.354492
+{'c4/perplexity': 56.3544921875}

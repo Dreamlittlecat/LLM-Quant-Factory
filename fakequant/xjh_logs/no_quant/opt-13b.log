@@ -1,0 +1,290 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading model ...
+/data/xjh/model_weight/opt//opt-13b
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/xjh/research/AI_xjh_research/llm_quant_factory/fakequant/eval_test.py", line 67, in <module>
+    model = get_model(args.model)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xjh/research/AI_xjh_research/llm_quant_factory/fakequant/eval_test.py", line 28, in get_model
+    model = OPTForCausalLM.from_pretrained(model, torch_dtype="auto")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xjh/miniconda3/envs/demo2/lib/python3.12/site-packages/transformers/modeling_utils.py", line 277, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xjh/miniconda3/envs/demo2/lib/python3.12/site-packages/transformers/modeling_utils.py", line 5048, in from_pretrained
+    ) = cls._load_pretrained_model(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xjh/miniconda3/envs/demo2/lib/python3.12/site-packages/transformers/modeling_utils.py", line 5468, in _load_pretrained_model
+    _error_msgs, disk_offload_index = load_shard_file(args)
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xjh/miniconda3/envs/demo2/lib/python3.12/site-packages/transformers/modeling_utils.py", line 831, in load_shard_file
+    state_dict = load_state_dict(
+                 ^^^^^^^^^^^^^^^^
+  File "/home/xjh/miniconda3/envs/demo2/lib/python3.12/site-packages/transformers/modeling_utils.py", line 508, in load_state_dict
+    check_torch_load_is_safe()
+  File "/home/xjh/miniconda3/envs/demo2/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 1647, in check_torch_load_is_safe
+    raise ValueError(
+ValueError: Due to a serious vulnerability issue in `torch.load`, even with `weights_only=True`, we now require users to upgrade torch to at least v2.6 in order to use the function. This version restriction does not apply when loading files with safetensors.
+See the vulnerability report here https://nvd.nist.gov/vuln/detail/CVE-2025-32434
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading model ...
+/data/xjh/model_weight/opt/opt-13b
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/xjh/research/AI_xjh_research/llm_quant_factory/fakequant/eval_test.py", line 70, in <module>
+    model = get_model(args.model)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xjh/research/AI_xjh_research/llm_quant_factory/fakequant/eval_test.py", line 31, in get_model
+    model=AutoModelForCausalLM.from_pretrained(model, torch_dtype="auto")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xjh/miniconda3/envs/demo2/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xjh/miniconda3/envs/demo2/lib/python3.12/site-packages/transformers/modeling_utils.py", line 277, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xjh/miniconda3/envs/demo2/lib/python3.12/site-packages/transformers/modeling_utils.py", line 5048, in from_pretrained
+    ) = cls._load_pretrained_model(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xjh/miniconda3/envs/demo2/lib/python3.12/site-packages/transformers/modeling_utils.py", line 5468, in _load_pretrained_model
+    _error_msgs, disk_offload_index = load_shard_file(args)
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xjh/miniconda3/envs/demo2/lib/python3.12/site-packages/transformers/modeling_utils.py", line 831, in load_shard_file
+    state_dict = load_state_dict(
+                 ^^^^^^^^^^^^^^^^
+  File "/home/xjh/miniconda3/envs/demo2/lib/python3.12/site-packages/transformers/modeling_utils.py", line 508, in load_state_dict
+    check_torch_load_is_safe()
+  File "/home/xjh/miniconda3/envs/demo2/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 1647, in check_torch_load_is_safe
+    raise ValueError(
+ValueError: Due to a serious vulnerability issue in `torch.load`, even with `weights_only=True`, we now require users to upgrade torch to at least v2.6 in order to use the function. This version restriction does not apply when loading files with safetensors.
+See the vulnerability report here https://nvd.nist.gov/vuln/detail/CVE-2025-32434
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading model ...
+/data/xjh/model_weight/opt/opt-13b
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/xjh/research/AI_xjh_research/llm_quant_factory/fakequant/eval_test.py", line 70, in <module>
+    model = get_model(args.model)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xjh/research/AI_xjh_research/llm_quant_factory/fakequant/eval_test.py", line 31, in get_model
+    model=AutoModelForCausalLM.from_pretrained(model, torch_dtype="auto")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xjh/miniconda3/envs/demo2/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xjh/miniconda3/envs/demo2/lib/python3.12/site-packages/transformers/modeling_utils.py", line 277, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xjh/miniconda3/envs/demo2/lib/python3.12/site-packages/transformers/modeling_utils.py", line 5048, in from_pretrained
+    ) = cls._load_pretrained_model(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xjh/miniconda3/envs/demo2/lib/python3.12/site-packages/transformers/modeling_utils.py", line 5468, in _load_pretrained_model
+    _error_msgs, disk_offload_index = load_shard_file(args)
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xjh/miniconda3/envs/demo2/lib/python3.12/site-packages/transformers/modeling_utils.py", line 831, in load_shard_file
+    state_dict = load_state_dict(
+                 ^^^^^^^^^^^^^^^^
+  File "/home/xjh/miniconda3/envs/demo2/lib/python3.12/site-packages/transformers/modeling_utils.py", line 508, in load_state_dict
+    check_torch_load_is_safe()
+  File "/home/xjh/miniconda3/envs/demo2/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 1647, in check_torch_load_is_safe
+    raise ValueError(
+ValueError: Due to a serious vulnerability issue in `torch.load`, even with `weights_only=True`, we now require users to upgrade torch to at least v2.6 in order to use the function. This version restriction does not apply when loading files with safetensors.
+See the vulnerability report here https://nvd.nist.gov/vuln/detail/CVE-2025-32434
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading model ...
+/data/xjh/model_weight/opt/opt-13b
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/xjh/research/AI_xjh_research/llm_quant_factory/fakequant/eval_test.py", line 70, in <module>
+    model = get_model(args.model)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xjh/research/AI_xjh_research/llm_quant_factory/fakequant/eval_test.py", line 31, in get_model
+    model=AutoModelForCausalLM.from_pretrained(model, torch_dtype="auto")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xjh/miniconda3/envs/demo2/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xjh/miniconda3/envs/demo2/lib/python3.12/site-packages/transformers/modeling_utils.py", line 277, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xjh/miniconda3/envs/demo2/lib/python3.12/site-packages/transformers/modeling_utils.py", line 5048, in from_pretrained
+    ) = cls._load_pretrained_model(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xjh/miniconda3/envs/demo2/lib/python3.12/site-packages/transformers/modeling_utils.py", line 5468, in _load_pretrained_model
+    _error_msgs, disk_offload_index = load_shard_file(args)
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xjh/miniconda3/envs/demo2/lib/python3.12/site-packages/transformers/modeling_utils.py", line 831, in load_shard_file
+    state_dict = load_state_dict(
+                 ^^^^^^^^^^^^^^^^
+  File "/home/xjh/miniconda3/envs/demo2/lib/python3.12/site-packages/transformers/modeling_utils.py", line 508, in load_state_dict
+    check_torch_load_is_safe()
+  File "/home/xjh/miniconda3/envs/demo2/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 1647, in check_torch_load_is_safe
+    raise ValueError(
+ValueError: Due to a serious vulnerability issue in `torch.load`, even with `weights_only=True`, we now require users to upgrade torch to at least v2.6 in order to use the function. This version restriction does not apply when loading files with safetensors.
+See the vulnerability report here https://nvd.nist.gov/vuln/detail/CVE-2025-32434
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading model ...
+/data/xjh/model_weight/opt/opt-13b
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 25.60it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 25.57it/s]
+Model loaded.
+model OPTForCausalLM(
+  (model): OPTModel(
+    (decoder): OPTDecoder(
+      (embed_tokens): Embedding(50272, 5120, padding_idx=1)
+      (embed_positions): OPTLearnedPositionalEmbedding(2050, 5120)
+      (final_layer_norm): LayerNorm((5120,), eps=1e-05, elementwise_affine=True)
+      (layers): ModuleList(
+        (0-39): 40 x OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): Linear(in_features=5120, out_features=5120, bias=True)
+            (v_proj): Linear(in_features=5120, out_features=5120, bias=True)
+            (q_proj): Linear(in_features=5120, out_features=5120, bias=True)
+            (out_proj): Linear(in_features=5120, out_features=5120, bias=True)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((5120,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=5120, out_features=20480, bias=True)
+          (fc2): Linear(in_features=20480, out_features=5120, bias=True)
+          (final_layer_norm): LayerNorm((5120,), eps=1e-05, elementwise_affine=True)
+        )
+      )
+    )
+  )
+  (lm_head): Linear(in_features=5120, out_features=50272, bias=False)
+)
+xjh_edit,load from local file:/data/xjh/dataset/wikitext-2-raw-v1,get wikitext2
+wikitext2
+Evaluating ...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+Perplexity: 10.127862
+{'wikitext2/perplexity': 10.127861976623535}
+xjh_edit,load from local file:/data/xjh/dataset/ptb_text_only,get ptb
+ptb
+Evaluating ...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+Perplexity: 14.521276
+{'ptb/perplexity': 14.521275520324707}
+xjh_edit,load from local file:/data/xjh/dataset/c4_part,get c4
+c4
+Evaluating ...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+Perplexity: 12.058789
+{'c4/perplexity': 12.058789253234863}

@@ -1,7 +1,8 @@
 import math
 import time
 import sys
-sys.path.append("./gptq_utils")
+#sys.path.append("./gptq_utils")
+sys.path.append("/home/xjh/research/AI_xjh_research/llm_quant_factory/fakequant/methods/gptq_utils")
 import torch
 import torch.nn as nn
 import transformers

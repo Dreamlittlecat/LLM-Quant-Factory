@@ -1,0 +1,931 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading model ...
+/data/xjh/model_weight/opt/opt-6.7b
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 23.62it/s]
+Model loaded.
+model OPTForCausalLM(
+  (model): OPTModel(
+    (decoder): OPTDecoder(
+      (embed_tokens): Embedding(50272, 4096, padding_idx=1)
+      (embed_positions): OPTLearnedPositionalEmbedding(2050, 4096)
+      (final_layer_norm): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+      (layers): ModuleList(
+        (0-31): 32 x OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): Linear(in_features=4096, out_features=4096, bias=True)
+            (v_proj): Linear(in_features=4096, out_features=4096, bias=True)
+            (q_proj): Linear(in_features=4096, out_features=4096, bias=True)
+            (out_proj): Linear(in_features=4096, out_features=4096, bias=True)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=4096, out_features=16384, bias=True)
+          (fc2): Linear(in_features=16384, out_features=4096, bias=True)
+          (final_layer_norm): LayerNorm((4096,), eps=1e-05, elementwise_affine=True)
+        )
+      )
+    )
+  )
+  (lm_head): Linear(in_features=4096, out_features=50272, bias=False)
+)
+xjh_edit,load from local file:/data/xjh/dataset/c4_part,get c4
+Starting ...
+OPT model detected.
+Ready.
+0 self_attn.k_proj
+Quantizing ...
+time 0.72
+error 241106.75
+0 self_attn.v_proj
+Quantizing ...
+time 0.64
+error 97229.9765625
+0 self_attn.q_proj
+Quantizing ...
+time 0.63
+error 249413.6875
+0 self_attn.out_proj
+Quantizing ...
+time 0.64
+error 344.2335205078125
+0 fc1
+Quantizing ...
+time 0.67
+error 155462.78125
+0 fc2
+Quantizing ...
+time 2.89
+error 1036.9798583984375
+1 self_attn.k_proj
+Quantizing ...
+time 0.63
+error 22088.18359375
+1 self_attn.v_proj
+Quantizing ...
+time 0.65
+error 63890.5859375
+1 self_attn.q_proj
+Quantizing ...
+time 0.63
+error 22378.689453125
+1 self_attn.out_proj
+Quantizing ...
+time 0.65
+error 7.844606399536133
+1 fc1
+Quantizing ...
+time 0.71
+error 124126.3984375
+1 fc2
+Quantizing ...
+time 3.12
+error 957.9964599609375
+2 self_attn.k_proj
+Quantizing ...
+time 0.68
+error 20782.27734375
+2 self_attn.v_proj
+Quantizing ...
+time 0.69
+error 48149.6328125
+2 self_attn.q_proj
+Quantizing ...
+time 0.97
+error 18909.0546875
+2 self_attn.out_proj
+Quantizing ...
+time 0.68
+error 12.557449340820312
+2 fc1
+Quantizing ...
+time 0.70
+error 122597.203125
+2 fc2
+Quantizing ...
+time 2.97
+error 819.5155639648438
+3 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 30477.2109375
+3 self_attn.v_proj
+Quantizing ...
+time 0.63
+error 57227.734375
+3 self_attn.q_proj
+Quantizing ...
+time 0.64
+error 26368.73828125
+3 self_attn.out_proj
+Quantizing ...
+time 0.64
+error 36.528587341308594
+3 fc1
+Quantizing ...
+time 0.68
+error 127894.5
+3 fc2
+Quantizing ...
+time 2.89
+error 903.1663818359375
+4 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 24465.228515625
+4 self_attn.v_proj
+Quantizing ...
+time 0.64
+error 43117.0234375
+4 self_attn.q_proj
+Quantizing ...
+time 0.63
+error 21102.1796875
+4 self_attn.out_proj
+Quantizing ...
+time 0.64
+error 76.40156555175781
+4 fc1
+Quantizing ...
+time 0.67
+error 142385.25
+4 fc2
+Quantizing ...
+time 2.89
+error 1340.22119140625
+5 self_attn.k_proj
+Quantizing ...
+time 0.68
+error 35031.2109375
+5 self_attn.v_proj
+Quantizing ...
+time 0.82
+error 42392.96484375
+5 self_attn.q_proj
+Quantizing ...
+time 0.63
+error 41427.5234375
+5 self_attn.out_proj
+Quantizing ...
+time 0.63
+error 183.04025268554688
+5 fc1
+Quantizing ...
+time 0.68
+error 184440.625
+5 fc2
+Quantizing ...
+time 2.89
+error 1916.3466796875
+6 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 46779.56640625
+6 self_attn.v_proj
+Quantizing ...
+time 0.64
+error 47866.546875
+6 self_attn.q_proj
+Quantizing ...
+time 0.64
+error 87058.09375
+6 self_attn.out_proj
+Quantizing ...
+time 0.63
+error 521.2705078125
+6 fc1
+Quantizing ...
+time 0.68
+error 277155.375
+6 fc2
+Quantizing ...
+time 2.89
+error 1649.757568359375
+7 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 58456.83203125
+7 self_attn.v_proj
+Quantizing ...
+time 0.66
+error 52843.6953125
+7 self_attn.q_proj
+Quantizing ...
+time 0.68
+error 92021.8984375
+7 self_attn.out_proj
+Quantizing ...
+time 0.70
+error 500.7047424316406
+7 fc1
+Quantizing ...
+time 0.71
+error 316081.03125
+7 fc2
+Quantizing ...
+time 3.08
+error 2134.60693359375
+8 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 91261.8125
+8 self_attn.v_proj
+Quantizing ...
+time 0.64
+error 64562.15625
+8 self_attn.q_proj
+Quantizing ...
+time 0.64
+error 136074.4375
+8 self_attn.out_proj
+Quantizing ...
+time 0.64
+error 863.7236328125
+8 fc1
+Quantizing ...
+time 0.68
+error 425616.8125
+8 fc2
+Quantizing ...
+time 2.90
+error 2802.21728515625
+9 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 131993.90625
+9 self_attn.v_proj
+Quantizing ...
+time 0.63
+error 68611.109375
+9 self_attn.q_proj
+Quantizing ...
+time 0.64
+error 168712.109375
+9 self_attn.out_proj
+Quantizing ...
+time 0.64
+error 1296.302734375
+9 fc1
+Quantizing ...
+time 0.68
+error 513084.5
+9 fc2
+Quantizing ...
+time 2.90
+error 4351.24072265625
+10 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 181316.4375
+10 self_attn.v_proj
+Quantizing ...
+time 0.64
+error 78395.3046875
+10 self_attn.q_proj
+Quantizing ...
+time 0.65
+error 222612.734375
+10 self_attn.out_proj
+Quantizing ...
+time 0.63
+error 1977.91455078125
+10 fc1
+Quantizing ...
+time 0.67
+error 641031.875
+10 fc2
+Quantizing ...
+time 2.90
+error 5261.9794921875
+11 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 212462.234375
+11 self_attn.v_proj
+Quantizing ...
+time 0.64
+error 94304.703125
+11 self_attn.q_proj
+Quantizing ...
+time 0.63
+error 249021.125
+11 self_attn.out_proj
+Quantizing ...
+time 0.64
+error 2357.48046875
+11 fc1
+Quantizing ...
+time 0.68
+error 756021.0625
+11 fc2
+Quantizing ...
+time 2.89
+error 7618.71142578125
+12 self_attn.k_proj
+Quantizing ...
+time 0.63
+error 281414.75
+12 self_attn.v_proj
+Quantizing ...
+time 0.65
+error 117408.5390625
+12 self_attn.q_proj
+Quantizing ...
+time 0.63
+error 310850.25
+12 self_attn.out_proj
+Quantizing ...
+time 0.64
+error 5216.1767578125
+12 fc1
+Quantizing ...
+time 0.68
+error 874388.0
+12 fc2
+Quantizing ...
+time 2.89
+error 8475.9306640625
+13 self_attn.k_proj
+Quantizing ...
+time 0.65
+error 310879.53125
+13 self_attn.v_proj
+Quantizing ...
+time 0.69
+error 127046.65625
+13 self_attn.q_proj
+Quantizing ...
+time 0.68
+error 345380.25
+13 self_attn.out_proj
+Quantizing ...
+time 0.72
+error 6577.6337890625
+13 fc1
+Quantizing ...
+time 0.74
+error 984999.75
+13 fc2
+Quantizing ...
+time 3.19
+error 13866.91015625
+14 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 331404.625
+14 self_attn.v_proj
+Quantizing ...
+time 0.65
+error 148777.4375
+14 self_attn.q_proj
+Quantizing ...
+time 0.66
+error 375901.78125
+14 self_attn.out_proj
+Quantizing ...
+time 0.63
+error 7565.5517578125
+14 fc1
+Quantizing ...
+time 0.68
+error 1092293.0
+14 fc2
+Quantizing ...
+time 2.88
+error 15655.5166015625
+15 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 378649.5625
+15 self_attn.v_proj
+Quantizing ...
+time 0.65
+error 173682.796875
+15 self_attn.q_proj
+Quantizing ...
+time 0.64
+error 421975.1875
+15 self_attn.out_proj
+Quantizing ...
+time 0.64
+error 11962.568359375
+15 fc1
+Quantizing ...
+time 0.68
+error 1306053.0
+15 fc2
+Quantizing ...
+time 2.89
+error 18668.2734375
+16 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 425666.5625
+16 self_attn.v_proj
+Quantizing ...
+time 0.64
+error 212088.703125
+16 self_attn.q_proj
+Quantizing ...
+time 0.64
+error 495134.28125
+16 self_attn.out_proj
+Quantizing ...
+time 0.64
+error 14301.6455078125
+16 fc1
+Quantizing ...
+time 0.67
+error 1371895.5
+16 fc2
+Quantizing ...
+time 2.90
+error 25753.29296875
+17 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 417954.25
+17 self_attn.v_proj
+Quantizing ...
+time 0.65
+error 237755.34375
+17 self_attn.q_proj
+Quantizing ...
+time 0.63
+error 488688.65625
+17 self_attn.out_proj
+Quantizing ...
+time 0.64
+error 15638.2021484375
+17 fc1
+Quantizing ...
+time 0.68
+error 1443124.875
+17 fc2
+Quantizing ...
+time 2.90
+error 27173.662109375
+18 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 363329.6875
+18 self_attn.v_proj
+Quantizing ...
+time 0.65
+error 267029.5625
+18 self_attn.q_proj
+Quantizing ...
+time 0.64
+error 432745.5625
+18 self_attn.out_proj
+Quantizing ...
+time 0.64
+error 11049.6279296875
+18 fc1
+Quantizing ...
+time 0.68
+error 1582858.0
+18 fc2
+Quantizing ...
+time 2.90
+error 31244.083984375
+19 self_attn.k_proj
+Quantizing ...
+time 0.70
+error 424885.78125
+19 self_attn.v_proj
+Quantizing ...
+time 0.70
+error 297486.09375
+19 self_attn.q_proj
+Quantizing ...
+time 0.68
+error 481052.21875
+19 self_attn.out_proj
+Quantizing ...
+time 0.68
+error 26586.375
+19 fc1
+Quantizing ...
+time 0.72
+error 1764824.5
+19 fc2
+Quantizing ...
+time 3.06
+error 40491.84375
+20 self_attn.k_proj
+Quantizing ...
+time 0.65
+error 454502.8125
+20 self_attn.v_proj
+Quantizing ...
+time 0.64
+error 382674.9375
+20 self_attn.q_proj
+Quantizing ...
+time 0.64
+error 498637.25
+20 self_attn.out_proj
+Quantizing ...
+time 0.64
+error 43891.73828125
+20 fc1
+Quantizing ...
+time 0.69
+error 1982850.875
+20 fc2
+Quantizing ...
+time 2.91
+error 48388.06640625
+21 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 453969.625
+21 self_attn.v_proj
+Quantizing ...
+time 0.65
+error 415411.40625
+21 self_attn.q_proj
+Quantizing ...
+time 0.64
+error 502634.46875
+21 self_attn.out_proj
+Quantizing ...
+time 0.64
+error 34992.15625
+21 fc1
+Quantizing ...
+time 0.68
+error 2169132.25
+21 fc2
+Quantizing ...
+time 2.91
+error 57123.3984375
+22 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 439480.0625
+22 self_attn.v_proj
+Quantizing ...
+time 0.64
+error 433090.1875
+22 self_attn.q_proj
+Quantizing ...
+time 0.63
+error 484794.0
+22 self_attn.out_proj
+Quantizing ...
+time 0.64
+error 41786.09765625
+22 fc1
+Quantizing ...
+time 0.68
+error 2313616.75
+22 fc2
+Quantizing ...
+time 2.90
+error 67058.5078125
+23 self_attn.k_proj
+Quantizing ...
+time 0.65
+error 433858.0
+23 self_attn.v_proj
+Quantizing ...
+time 0.67
+error 456419.4375
+23 self_attn.q_proj
+Quantizing ...
+time 0.64
+error 463293.0625
+23 self_attn.out_proj
+Quantizing ...
+time 0.64
+error 61313.9921875
+23 fc1
+Quantizing ...
+time 0.68
+error 2490029.75
+23 fc2
+Quantizing ...
+time 2.91
+error 63755.765625
+24 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 420671.5
+24 self_attn.v_proj
+Quantizing ...
+time 0.64
+error 526532.875
+24 self_attn.q_proj
+Quantizing ...
+time 0.64
+error 457407.21875
+24 self_attn.out_proj
+Quantizing ...
+time 0.63
+error 106288.671875
+24 fc1
+Quantizing ...
+time 0.67
+error 2744141.0
+24 fc2
+Quantizing ...
+time 2.90
+error 66012.109375
+25 self_attn.k_proj
+Quantizing ...
+time 0.68
+error 425422.8125
+25 self_attn.v_proj
+Quantizing ...
+time 0.72
+error 597889.375
+25 self_attn.q_proj
+Quantizing ...
+time 0.71
+error 465245.875
+25 self_attn.out_proj
+Quantizing ...
+time 0.73
+error 126087.90625
+25 fc1
+Quantizing ...
+time 0.70
+error 2784158.0
+25 fc2
+Quantizing ...
+time 3.05
+error 61466.9453125
+26 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 404095.5
+26 self_attn.v_proj
+Quantizing ...
+time 0.64
+error 609452.1875
+26 self_attn.q_proj
+Quantizing ...
+time 0.65
+error 431370.84375
+26 self_attn.out_proj
+Quantizing ...
+time 0.65
+error 109600.5390625
+26 fc1
+Quantizing ...
+time 0.68
+error 2771490.0
+26 fc2
+Quantizing ...
+time 2.90
+error 83736.96875
+27 self_attn.k_proj
+Quantizing ...
+time 0.65
+error 417194.4375
+27 self_attn.v_proj
+Quantizing ...
+time 0.65
+error 615684.625
+27 self_attn.q_proj
+Quantizing ...
+time 0.64
+error 461200.5
+27 self_attn.out_proj
+Quantizing ...
+time 0.64
+error 125790.7578125
+27 fc1
+Quantizing ...
+time 0.67
+error 2714348.5
+27 fc2
+Quantizing ...
+time 2.92
+error 92320.8203125
+28 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 436222.375
+28 self_attn.v_proj
+Quantizing ...
+time 0.65
+error 662164.125
+28 self_attn.q_proj
+Quantizing ...
+time 0.63
+error 490857.4375
+28 self_attn.out_proj
+Quantizing ...
+time 0.64
+error 158351.640625
+28 fc1
+Quantizing ...
+time 0.68
+error 2569463.5
+28 fc2
+Quantizing ...
+time 2.89
+error 95277.046875
+29 self_attn.k_proj
+Quantizing ...
+time 0.63
+error 470006.6875
+29 self_attn.v_proj
+Quantizing ...
+time 0.64
+error 638955.8125
+29 self_attn.q_proj
+Quantizing ...
+time 0.64
+error 549703.375
+29 self_attn.out_proj
+Quantizing ...
+time 0.63
+error 118937.9921875
+29 fc1
+Quantizing ...
+time 0.67
+error 2293429.0
+29 fc2
+Quantizing ...
+time 2.90
+error 100309.734375
+30 self_attn.k_proj
+Quantizing ...
+time 0.65
+error 455711.25
+30 self_attn.v_proj
+Quantizing ...
+time 0.65
+error 607250.625
+30 self_attn.q_proj
+Quantizing ...
+time 0.64
+error 537081.875
+30 self_attn.out_proj
+Quantizing ...
+time 0.63
+error 121497.0
+30 fc1
+Quantizing ...
+time 0.68
+error 2210850.25
+30 fc2
+Quantizing ...
+time 2.89
+error 104737.53125
+31 self_attn.k_proj
+Quantizing ...
+time 0.68
+error 475837.75
+31 self_attn.v_proj
+Quantizing ...
+time 0.69
+error 580970.875
+31 self_attn.q_proj
+Quantizing ...
+time 0.68
+error 613521.8125
+31 self_attn.out_proj
+Quantizing ...
+time 0.67
+error 128670.4375
+31 fc1
+Quantizing ...
+time 0.71
+error 2264047.5
+31 fc2
+Quantizing ...
+time 2.99
+error 88662.859375
+model.decoder.embed_tokens.weight tensor(9.2271e-07)
+model.decoder.embed_positions.weight tensor(0.0005)
+model.decoder.final_layer_norm.weight tensor(0.)
+model.decoder.final_layer_norm.bias tensor(0.)
+model.decoder.layers.0.self_attn.k_proj.weight tensor(8.9407e-07)
+model.decoder.layers.0.self_attn.k_proj.bias tensor(0.0002)
+model.decoder.layers.0.self_attn.v_proj.weight tensor(7.7486e-07)
+model.decoder.layers.0.self_attn.v_proj.bias tensor(0.)
+model.decoder.layers.0.self_attn.q_proj.weight tensor(1.1921e-06)
+model.decoder.layers.0.self_attn.q_proj.bias tensor(0.)
+model.decoder.layers.0.self_attn.out_proj.weight tensor(4.9710e-05)
+model.decoder.layers.0.self_attn.out_proj.bias tensor(0.)
+model.decoder.layers.0.self_attn_layer_norm.weight tensor(0.)
+model.decoder.layers.0.self_attn_layer_norm.bias tensor(0.)
+model.decoder.layers.0.fc1.weight tensor(7.2867e-06)
+model.decoder.layers.0.fc1.bias tensor(0.)
+model.decoder.layers.0.fc2.weight tensor(1.6168e-05)
+388.87363386154175
+xjh_edit,load from local file:/data/xjh/dataset/wikitext-2-raw-v1,get wikitext2
+wikitext2
+Evaluating ...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+Perplexity: 118.170235
+{'wikitext2/perplexity': 118.17023468017578}
+xjh_edit,load from local file:/data/xjh/dataset/ptb_text_only,get ptb
+ptb
+Evaluating ...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+Perplexity: 220.455261
+{'ptb/perplexity': 220.45526123046875}
+xjh_edit,load from local file:/data/xjh/dataset/c4_part,get c4
+c4
+Evaluating ...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+Perplexity: 92.457108
+{'c4/perplexity': 92.45710754394531}

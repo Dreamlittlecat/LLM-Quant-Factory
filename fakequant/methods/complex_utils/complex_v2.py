@@ -1,3 +1,6 @@
+#ps: complex_v2是一种量化细粒度更高的量化方案，是在gptq的基础上进行改进，在gptq的每一列上进行复数量化
+
+
 import transformers
 import torch
 import torch.nn as nn

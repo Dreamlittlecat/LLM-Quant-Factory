@@ -2,36 +2,48 @@ import time
 import torch
 import torch.nn as nn
 import torch.nn as nn
-import sys
-sys.path.append('../methods')
-from methods.complex_utils.complex_v1 import complex_quant
-#from complex_utils.complex_v2 import complex_quant
-from modelutils import find_layers
+# import sys
+
+#from methods.complex_utils.complex_v1 import complex_quant
+#from methods.complex_utils.complex_v2 import complex_quant
+# from methods.complex_utils.complex_v3 import complex_quant
+from modelutils import find_layers,get_model
 DEBUG=False
 
-def get_model(model):
-    import torch
-    print("Loading model ...")
-    print(model)
-    def skip(*args, **kwargs):
-        pass
 
-    torch.nn.init.kaiming_uniform_ = skip
-    torch.nn.init.uniform_ = skip
-    torch.nn.init.normal_ = skip
-    if "opt" in model:
-        from transformers import OPTForCausalLM
+# def get_model(model):
+#     import torch
+#     print("Loading model ...")
+#     print(model)
+#     def skip(*args, **kwargs):
+#         pass
 
-        model = OPTForCausalLM.from_pretrained(model, torch_dtype="auto")
-        model.seqlen = model.config.max_position_embeddings
-    elif "llama" or "Llama" in model:
+#     torch.nn.init.kaiming_uniform_ = skip
+#     torch.nn.init.uniform_ = skip
+#     torch.nn.init.normal_ = skip
+ 
+#     if "opt" in model:
+#         from transformers import OPTForCausalLM
 
-        from transformers import LlamaForCausalLM
-        from transformers import AutoModelForCausalLM
-        #model = LlamaForCausalLM.from_pretrained(model, torch_dtype="auto")
-        model=AutoModelForCausalLM.from_pretrained(model, torch_dtype="auto")
-        model.seqlen = 2048
-    return model
+#         model = OPTForCausalLM.from_pretrained(model, torch_dtype="auto")
+#         model.seqlen = model.config.max_position_embeddings
+#     elif "llama" in model.lower():
+
+#         #from transformers import LlamaForCausalLM
+#         from transformers import AutoModelForCausalLM
+#         #model = LlamaForCausalLM.from_pretrained(model, torch_dtype="auto")
+#         model=AutoModelForCausalLM.from_pretrained(model, torch_dtype="auto")
+#         model.seqlen = 2048
+    
+#     else:
+#         from transformers import AutoModelForCausalLM
+#         model=AutoModelForCausalLM.from_pretrained(model, torch_dtype="auto")
+#         #print("model max len:",model.config.max_position_embeddings,model.seqlen)
+#         model.seqlen = 2048
+#         #raise ValueError("Model not supported")
+#     print("Model loaded.")
+#     print("model", model)
+#     return model
 
 
 '''
@@ -46,8 +58,11 @@ def quant_sequential(model, dataloader, dev):
 
     use_cache = model.config.use_cache
     model.config.use_cache = False
+    print("model name-----------", args.model)
+
 
     if "opt" in args.model:
+        print("OPT model detected.")
         layers = model.model.decoder.layers
         model.model.decoder.embed_tokens = model.model.decoder.embed_tokens.to(dev)
         model.model.decoder.embed_positions = model.model.decoder.embed_positions.to(
@@ -63,7 +78,15 @@ def quant_sequential(model, dataloader, dev):
             and model.model.decoder.project_in
         ):
             model.model.decoder.project_in = model.model.decoder.project_in.to(dev)
-    elif "llama" or "Llama" in args.model:
+    elif "llama" in args.model.lower():
+    
+        print("Llama model detected.")
+        layers = model.model.layers
+        model.model.embed_tokens = model.model.embed_tokens.to(dev)
+        model.model.norm = model.model.norm.to(dev)
+        model.model.rotary_emb=model.model.rotary_emb.to(dev)
+    elif "qwen" in args.model.lower():
+        print("Qwen model detected.")
         layers = model.model.layers
         model.model.embed_tokens = model.model.embed_tokens.to(dev)
         model.model.norm = model.model.norm.to(dev)
@@ -77,7 +100,7 @@ def quant_sequential(model, dataloader, dev):
         (args.nsamples, model.seqlen, model.config.hidden_size), dtype=dtype, device=dev
     )
     cache = {"i": 0, "attention_mask": None}
-    if "llama" in args.model.lower():
+    if "llama" in args.model.lower() :
         class Catcher(nn.Module):
             def __init__(self, module):
                 super().__init__()
@@ -88,6 +111,19 @@ def quant_sequential(model, dataloader, dev):
                 cache["i"] += 1
                 cache["attention_mask"] = kwargs["attention_mask"]
                 cache["position_embeddings"]=kwargs["position_embeddings"]
+                raise ValueError
+    elif "qwen" in args.model.lower():
+        class Catcher(nn.Module):
+            def __init__(self, module):
+                super().__init__()
+                self.module = module
+                self.attention_type = getattr(module, "attention_type", None)  # 继承原始模块的 attention_type 属性
+
+            def forward(self, inp, **kwargs):
+                inps[cache["i"]] = inp
+                cache["i"] += 1
+                cache["attention_mask"] = kwargs["attention_mask"]
+                cache["position_embeddings"] = kwargs["position_embeddings"]
                 raise ValueError
     else:
         class Catcher(nn.Module):
@@ -123,7 +159,7 @@ def quant_sequential(model, dataloader, dev):
             and model.model.decoder.project_in
         ):
             model.model.decoder.project_in = model.model.decoder.project_in.cpu()
-    elif "llama" or "Llama" in args.model:
+    elif "llama" in args.model.lower() or "qwen" in args.model.lower():
         model.model.embed_tokens = model.model.embed_tokens.cpu()
         model.model.norm = model.model.norm.cpu()
         #model.model.rotary_emb=model.model.rotary_emb.cpu()
@@ -131,7 +167,7 @@ def quant_sequential(model, dataloader, dev):
 
     outs = torch.zeros_like(inps)
     attention_mask = cache["attention_mask"]
-    if "llama" in args.model.lower():
+    if "llama" in args.model.lower() or "qwen" in args.model.lower():
         position_embeddings=cache["position_embeddings"]
     print("Ready.")
     
@@ -175,7 +211,7 @@ def quant_sequential(model, dataloader, dev):
 
         for j in range(args.nsamples):
             #outs[j] = layer(inps[j].unsqueeze(0), attention_mask=attention_mask)[0]
-            if "llama" in args.model.lower():
+            if "llama" in args.model.lower() or "qwen" in args.model.lower():
                 outs[j] = layer(inps[j].unsqueeze(0), attention_mask=attention_mask,position_embeddings=position_embeddings)[0]
             else:
                 outs[j] = layer(inps[j].unsqueeze(0), attention_mask=attention_mask)[0]
@@ -203,7 +239,7 @@ def quant_sequential(model, dataloader, dev):
                 pass
                 #torch.save(gptq[name].layer.weight.data, f"./output/{args.model.split("/")[-1]}_layers_{i}_{name}_quant_weight.pt")
         for j in range(args.nsamples):
-            if "llama" in args.model.lower():
+            if "llama" in args.model.lower() or "qwen" in args.model.lower():
                 outs[j] = layer(inps[j].unsqueeze(0), attention_mask=attention_mask,position_embeddings=position_embeddings)[0]
             else:
                 outs[j] = layer(inps[j].unsqueeze(0), attention_mask=attention_mask)[0]
@@ -320,9 +356,32 @@ if __name__ == "__main__":
     parser.add_argument(
         "--log_wandb", action="store_true", help="Whether to log to wandb."
     )
+    parser.add_argument(
+        "--method",type=str,default=None,help="select complex method e.g. complex1, complex2 or full module path",
+    )
+
 
     args = parser.parse_args()
     groupsize = args.blocksize
+
+
+
+    # --- 动态加载 complex 模块 --- 
+    import importlib, re, os
+    method = getattr(args, "method", None) or os.environ.get("METHOD", "complex3")
+    m = method
+    m_match = re.match(r"^complex(\d+)$", m)
+    if m_match:
+        modname = f"methods.complex_utils.complex_v{m_match.group(1)}"
+        
+    else:
+        # 如果用户传入完整模块路径则直接使用，否则在 methods.complex_utils 下查找
+        modname = m if "." in m else f"methods.complex_utils.{m}"
+    print(f"modname,:{modname}")
+    mod = importlib.import_module(modname)
+    # 绑定到全局名字，quant_sequential 中使用
+    globals()["complex_quant"] = getattr(mod, "complex_quant")
+    # --- 动态加载结束 ---
 
     device = args.device
     save_title = f"{args.model}_{args.dataset}__percdamp{args.percdamp}_blocksize{args.blocksize}"
@@ -350,6 +409,10 @@ if __name__ == "__main__":
             os.makedirs(save_path)
         model.save_pretrained(save_file)
 
+    #test
+    # model = get_model(args.model)
+    # model.eval()
+    #test
     for dataset in ["wikitext2", "ptb", "c4"]:
         dataloader, testloader = get_loaders(
             dataset, seed=args.seed, seqlen=model.seqlen, model=args.model
@@ -359,7 +422,10 @@ if __name__ == "__main__":
             from eval_ppl_utils import opt_eval
 
             opt_eval(model, testloader, device, dataset, args.log_wandb)
-        elif "llama" or "Llama" in args.model:
+        elif "llama" in args.model:
             from eval_ppl_utils import llama_eval
             llama_eval(model, testloader, device, dataset, args.log_wandb)
+        elif "qwen" in args.model:
+            from eval_ppl_utils import qwen_eval
+            qwen_eval(model, testloader, device, dataset, args.log_wandb)
         #break

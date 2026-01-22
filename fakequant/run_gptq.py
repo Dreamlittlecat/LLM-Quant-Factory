@@ -3,31 +3,9 @@ import torch
 import torch.nn as nn
 from methods.gptq_utils.gptq import GPTQ
 from methods.gptq_utils.quant import Quantizer
-from modelutils import find_layers
+from modelutils import find_layers,get_model
 DEBUG=False
 
-def get_model(model):
-    import torch
-    print("Loading model ...")
-    print(model)
-    def skip(*args, **kwargs):
-        pass
-
-    torch.nn.init.kaiming_uniform_ = skip
-    torch.nn.init.uniform_ = skip
-    torch.nn.init.normal_ = skip
-    if "opt" in model:
-        from transformers import OPTForCausalLM
-
-        model = OPTForCausalLM.from_pretrained(model, torch_dtype="auto")
-        model.seqlen = model.config.max_position_embeddings
-    elif "llama" or "Llama" in model:
-        from transformers import LlamaForCausalLM
-        from transformers import AutoModelForCausalLM
-        #model = LlamaForCausalLM.from_pretrained(model, torch_dtype="auto")
-        model=AutoModelForCausalLM.from_pretrained(model, torch_dtype="auto")
-        model.seqlen = 2048
-    return model
 
 
 '''
@@ -44,6 +22,7 @@ def quant_sequential(model, dataloader, dev):
     model.config.use_cache = False
 
     if "opt" in args.model:
+        print("OPT model detected.")
         layers = model.model.decoder.layers
         model.model.decoder.embed_tokens = model.model.decoder.embed_tokens.to(dev)
         model.model.decoder.embed_positions = model.model.decoder.embed_positions.to(
@@ -59,7 +38,15 @@ def quant_sequential(model, dataloader, dev):
             and model.model.decoder.project_in
         ):
             model.model.decoder.project_in = model.model.decoder.project_in.to(dev)
-    elif "llama" or "Llama" in args.model:
+    elif "llama" in args.model.lower():
+    
+        print("Llama model detected.")
+        layers = model.model.layers
+        model.model.embed_tokens = model.model.embed_tokens.to(dev)
+        model.model.norm = model.model.norm.to(dev)
+        model.model.rotary_emb=model.model.rotary_emb.to(dev)
+    elif "qwen" in args.model.lower():
+        print("Qwen model detected.")
         layers = model.model.layers
         model.model.embed_tokens = model.model.embed_tokens.to(dev)
         model.model.norm = model.model.norm.to(dev)
@@ -73,7 +60,7 @@ def quant_sequential(model, dataloader, dev):
         (args.nsamples, model.seqlen, model.config.hidden_size), dtype=dtype, device=dev
     )
     cache = {"i": 0, "attention_mask": None}
-    if "llama" in args.model.lower():
+    if "llama" in args.model.lower() :
         class Catcher(nn.Module):
             def __init__(self, module):
                 super().__init__()
@@ -84,6 +71,19 @@ def quant_sequential(model, dataloader, dev):
                 cache["i"] += 1
                 cache["attention_mask"] = kwargs["attention_mask"]
                 cache["position_embeddings"]=kwargs["position_embeddings"]
+                raise ValueError
+    elif "qwen" in args.model.lower():
+        class Catcher(nn.Module):
+            def __init__(self, module):
+                super().__init__()
+                self.module = module
+                self.attention_type = getattr(module, "attention_type", None)  # 继承原始模块的 attention_type 属性
+
+            def forward(self, inp, **kwargs):
+                inps[cache["i"]] = inp
+                cache["i"] += 1
+                cache["attention_mask"] = kwargs["attention_mask"]
+                cache["position_embeddings"] = kwargs["position_embeddings"]
                 raise ValueError
     else:
         class Catcher(nn.Module):
@@ -119,14 +119,14 @@ def quant_sequential(model, dataloader, dev):
             and model.model.decoder.project_in
         ):
             model.model.decoder.project_in = model.model.decoder.project_in.cpu()
-    elif "llama" or "Llama" in args.model:
+    elif "llama" in args.model.lower() or "qwen" in args.model.lower():
         model.model.embed_tokens = model.model.embed_tokens.cpu()
         model.model.norm = model.model.norm.cpu()
     torch.cuda.empty_cache()
 
     outs = torch.zeros_like(inps)
     attention_mask = cache["attention_mask"]
-    if "llama" in args.model.lower():
+    if "llama" in args.model.lower() or "qwen" in args.model.lower():
         position_embeddings=cache["position_embeddings"]
 
     print("Ready.")
@@ -171,7 +171,7 @@ def quant_sequential(model, dataloader, dev):
             handles.append(subset[name].register_forward_hook(add_batch(name,inps_dict[name])))
 
         for j in range(args.nsamples):
-            if "llama" in args.model.lower():
+            if "llama" in args.model.lower() or "qwen" in args.model.lower():
                 outs[j] = layer(inps[j].unsqueeze(0), attention_mask=attention_mask,position_embeddings=position_embeddings)[0]
             else:
                 outs[j] = layer(inps[j].unsqueeze(0), attention_mask=attention_mask)[0]
@@ -202,7 +202,7 @@ def quant_sequential(model, dataloader, dev):
                 pass
                 #torch.save(gptq[name].layer.weight.data, f"./output/{args.model.split("/")[-1]}_layers_{i}_{name}_quant_weight.pt")
         for j in range(args.nsamples):
-            if "llama" in args.model.lower():
+            if "llama" in args.model.lower() or "qwen" in args.model.lower():
                 outs[j] = layer(inps[j].unsqueeze(0), attention_mask=attention_mask,position_embeddings=position_embeddings)[0]
             else:
                 outs[j] = layer(inps[j].unsqueeze(0), attention_mask=attention_mask)[0]
@@ -335,9 +335,13 @@ if __name__ == "__main__":
             from eval_ppl_utils import opt_eval
 
             opt_eval(model, testloader, device, dataset, args.log_wandb)
-        elif "llama" or "Llama" in args.model:
+        elif "llama" in args.model:
             from eval_ppl_utils import llama_eval
             llama_eval(model, testloader, device, dataset, args.log_wandb)
+        elif "qwen" in args.model:
+            from eval_ppl_utils import qwen_eval
+            qwen_eval(model, testloader, device, dataset, args.log_wandb)
+        
         del dataloader, testloader
         torch.cuda.empty_cache()
         #break

@@ -1,0 +1,343 @@
+/home/xjh/research/AI_xjh_research/llm_quant_factory/fakequant/datautils.py:160: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  return torch.load(cache_file)
+Loading model ...
+/data/xjh/model_weight/opt/opt-125m
+Starting ...
+Ready.
+0 self_attn.k_proj
+Quantizing ...
+time 0.29
+error 26718.966796875
+0 self_attn.v_proj
+Quantizing ...
+time 0.10
+error 539.7279052734375
+0 self_attn.q_proj
+Quantizing ...
+time 0.09
+error 23129.7421875
+0 self_attn.out_proj
+Quantizing ...
+time 0.09
+error 9.723673820495605
+0 fc1
+Quantizing ...
+time 0.09
+error 1917.9539794921875
+0 fc2
+Quantizing ...
+time 0.38
+error 59.33104705810547
+1 self_attn.k_proj
+Quantizing ...
+time 0.13
+error 16447.986328125
+1 self_attn.v_proj
+Quantizing ...
+time 0.09
+error 620.643310546875
+1 self_attn.q_proj
+Quantizing ...
+time 0.09
+error 12254.1484375
+1 self_attn.out_proj
+Quantizing ...
+time 0.09
+error 8.664871215820312
+1 fc1
+Quantizing ...
+time 0.09
+error 7041.5283203125
+1 fc2
+Quantizing ...
+time 0.37
+error 50.48902130126953
+2 self_attn.k_proj
+Quantizing ...
+time 0.13
+error 34908.02734375
+2 self_attn.v_proj
+Quantizing ...
+time 0.09
+error 1712.913818359375
+2 self_attn.q_proj
+Quantizing ...
+time 0.09
+error 30388.595703125
+2 self_attn.out_proj
+Quantizing ...
+time 0.09
+error 10.931171417236328
+2 fc1
+Quantizing ...
+time 0.09
+error 7537.20703125
+2 fc2
+Quantizing ...
+time 0.37
+error 49.836524963378906
+3 self_attn.k_proj
+Quantizing ...
+time 0.13
+error 29246.609375
+3 self_attn.v_proj
+Quantizing ...
+time 0.09
+error 2307.58154296875
+3 self_attn.q_proj
+Quantizing ...
+time 0.09
+error 28529.91796875
+3 self_attn.out_proj
+Quantizing ...
+time 0.09
+error 13.4088716506958
+3 fc1
+Quantizing ...
+time 0.09
+error 4871.173828125
+3 fc2
+Quantizing ...
+time 0.38
+error 36.75261306762695
+4 self_attn.k_proj
+Quantizing ...
+time 0.13
+error 35058.7109375
+4 self_attn.v_proj
+Quantizing ...
+time 0.09
+error 2885.92822265625
+4 self_attn.q_proj
+Quantizing ...
+time 0.09
+error 35949.81640625
+4 self_attn.out_proj
+Quantizing ...
+time 0.09
+error 18.005220413208008
+4 fc1
+Quantizing ...
+time 0.09
+error 7674.4638671875
+4 fc2
+Quantizing ...
+time 0.39
+error 102.63545227050781
+5 self_attn.k_proj
+Quantizing ...
+time 0.13
+error 39069.51953125
+5 self_attn.v_proj
+Quantizing ...
+time 0.09
+error 2592.652099609375
+5 self_attn.q_proj
+Quantizing ...
+time 0.09
+error 40738.6953125
+5 self_attn.out_proj
+Quantizing ...
+time 0.09
+error 32.40650939941406
+5 fc1
+Quantizing ...
+time 0.10
+error 6878.0986328125
+5 fc2
+Quantizing ...
+time 0.38
+error 175.8172149658203
+6 self_attn.k_proj
+Quantizing ...
+time 0.13
+error 39500.4140625
+6 self_attn.v_proj
+Quantizing ...
+time 0.10
+error 3505.013671875
+6 self_attn.q_proj
+Quantizing ...
+time 0.10
+error 38449.3828125
+6 self_attn.out_proj
+Quantizing ...
+time 0.10
+error 50.268272399902344
+6 fc1
+Quantizing ...
+time 0.09
+error 6759.001953125
+6 fc2
+Quantizing ...
+time 0.38
+error 228.03131103515625
+7 self_attn.k_proj
+Quantizing ...
+time 0.13
+error 43873.29296875
+7 self_attn.v_proj
+Quantizing ...
+time 0.09
+error 3954.3037109375
+7 self_attn.q_proj
+Quantizing ...
+time 0.09
+error 42820.79296875
+7 self_attn.out_proj
+Quantizing ...
+time 0.10
+error 62.80379104614258
+7 fc1
+Quantizing ...
+time 0.09
+error 8457.9091796875
+7 fc2
+Quantizing ...
+time 0.38
+error 278.68487548828125
+8 self_attn.k_proj
+Quantizing ...
+time 0.13
+error 42790.390625
+8 self_attn.v_proj
+Quantizing ...
+time 0.09
+error 5647.04541015625
+8 self_attn.q_proj
+Quantizing ...
+time 0.09
+error 45260.6484375
+8 self_attn.out_proj
+Quantizing ...
+time 0.09
+error 95.50215148925781
+8 fc1
+Quantizing ...
+time 0.09
+error 11223.6767578125
+8 fc2
+Quantizing ...
+time 0.37
+error 402.7862548828125
+9 self_attn.k_proj
+Quantizing ...
+time 0.13
+error 46977.578125
+9 self_attn.v_proj
+Quantizing ...
+time 0.09
+error 6541.27587890625
+9 self_attn.q_proj
+Quantizing ...
+time 0.09
+error 47592.609375
+9 self_attn.out_proj
+Quantizing ...
+time 0.09
+error 165.62937927246094
+9 fc1
+Quantizing ...
+time 0.09
+error 14870.134765625
+9 fc2
+Quantizing ...
+time 0.38
+error 569.102783203125
+10 self_attn.k_proj
+Quantizing ...
+time 0.13
+error 47175.00390625
+10 self_attn.v_proj
+Quantizing ...
+time 0.09
+error 7972.32958984375
+10 self_attn.q_proj
+Quantizing ...
+time 0.09
+error 41696.28125
+10 self_attn.out_proj
+Quantizing ...
+time 0.09
+error 186.0495147705078
+10 fc1
+Quantizing ...
+time 0.09
+error 18285.66015625
+10 fc2
+Quantizing ...
+time 0.36
+error 905.7444458007812
+11 self_attn.k_proj
+Quantizing ...
+time 0.13
+error 43793.21484375
+11 self_attn.v_proj
+Quantizing ...
+time 0.09
+error 10531.443359375
+11 self_attn.q_proj
+Quantizing ...
+time 0.09
+error 41366.4765625
+11 self_attn.out_proj
+Quantizing ...
+time 0.09
+error 387.3418884277344
+11 fc1
+Quantizing ...
+time 0.09
+error 24276.08984375
+11 fc2
+Quantizing ...
+time 0.36
+error 985.6350708007812
+quantization time: 14.196961402893066 s
+wikitext2
+Evaluating ...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+Perplexity: 37.556667
+{'wikitext2/perplexity': 37.55666732788086}
+ptb
+Evaluating ...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+Perplexity: 53.816490
+{'ptb/perplexity': 53.816490173339844}
+c4
+Evaluating ...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+Perplexity: 32.261700
+{'c4/perplexity': 32.26169967651367}

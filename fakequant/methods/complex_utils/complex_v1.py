@@ -6,12 +6,12 @@ from sklearn.decomposition import NMF
 import numpy as np
 import sys
 import math
-sys.path.append("./complex_utils")
-from arb_utils import high_order_residual_alternating_order2_rc_nomean,high_order_residual_alternating_order1_rc_nomean
+sys.path.append("./methods/complex_utils")
+# from arb_utils import high_order_residual_alternating_order2_rc_nomean,high_order_residual_alternating_order1_rc_nomean
 from rtn_utils import pseudo_quantize_tensor
 from kmeans_utils import RowWiseKMeansQuantizerTorch,KMeansQuantizerTorch
-from bi_utils import bi_mask_quant,high_order_residual
-from hadamard import random_hadamard_matrix
+# from bi_utils import bi_mask_quant,high_order_residual
+# from hadamard import random_hadamard_matrix
 
 Flag_block_transform=False#调试用
 
@@ -127,11 +127,13 @@ class complex_quant:
         self.H = torch.zeros((self.columns, self.columns), device=self.dev)
         self.nsamples = 0
 
-        #group_size= 128*4
+    
+        #对复数权重的角度和幅值分别量化
         #group_size=-1
         self.quantizer_m = RowWiseKMeansQuantizerTorch(n_clusters=cluster_m, group_size=group_size,max_iter=3)
         #group_size=128,针对—2-4
         self.quantizer_p = RowWiseKMeansQuantizerTorch(n_clusters=cluster_p, group_size=group_size,max_iter=5)
+        #对照组，直接对权重矩阵量化
         self.quantizer = RowWiseKMeansQuantizerTorch(n_clusters=4, group_size=group_size,max_iter=5)#调试用
 
         if group_size == -1:
@@ -143,6 +145,7 @@ class complex_quant:
         else:
             group_size = group_size
         
+        #取blocksize=128时的每权重量化位数
         per_bits= (math.log2(cluster_m)+math.log2(cluster_p))/2+(cluster_m+cluster_p)*16/2/group_size+(64+self.rows)*16/(64*self.rows*2)
         print(f"blocksize:128,per weight bits:{per_bits},group_size:{group_size},cluster_1:{cluster_m},cluster_2:{cluster_p}")
         
@@ -210,7 +213,7 @@ class complex_quant:
                     M1, P1 = split_even_odd_columns_torch(W1.T)
                 else:
                     M1, P1 = split_even_odd_columns_torch(W1)
-                        
+
         #幅值量化
             #svd残差聚类量化幅值矩阵,nmf效果略好于svd
                 M_Q1=svd(M1,n=1)

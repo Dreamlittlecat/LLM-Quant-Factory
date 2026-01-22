@@ -5,7 +5,7 @@ import torch
 import torch.nn as nn
 import transformers
 import sys
-sys.path.append("./billm_utils")
+sys.path.append("/home/xjh/research/AI_xjh_research/llm_quant_factory/fakequant/methods/billm_utils")
 from utils.structure import structural_guassian_distribution
 
 DEBUG =False

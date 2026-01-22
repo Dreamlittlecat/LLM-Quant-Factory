@@ -1,4 +1,6 @@
 import os
+import sys
+sys.path.append("/home/xjh/research/AI_xjh_research/llm_quant_factory/fakequant/methods/arb_utils/utils")
 #os.environ["HF_ENDPOINT"] = "https://hf-mirror.com"
 import time
 import torch
@@ -6,7 +8,7 @@ import torch.nn as nn
 
 from methods.arb_utils.bigptq_arb import BRAGPTQ
 from methods.arb_utils.binary_arb import Binarization
-from modelutils import find_layers
+from modelutils import find_layers, get_model
 from datautils import get_tokenizer
 
 import logging
@@ -31,26 +33,6 @@ def setup_logger(log_file):
     return logger
 
 
-def get_model(model):
-    import torch
-
-    def skip(*args, **kwargs):
-        pass
-
-    torch.nn.init.kaiming_uniform_ = skip
-    torch.nn.init.uniform_ = skip
-    torch.nn.init.normal_ = skip
-    if "opt" in model:
-        from transformers import OPTForCausalLM
-
-        model = OPTForCausalLM.from_pretrained(model, torch_dtype="auto")
-        model.seqlen = model.config.max_position_embeddings
-    elif "llama" in model:
-        from transformers import LlamaForCausalLM
-
-        model = LlamaForCausalLM.from_pretrained(model, torch_dtype="auto")
-        model.seqlen = 2048
-    return model
 
 
 '''
@@ -82,11 +64,21 @@ def quant_sequential(model, dataloader, dev):
             and model.model.decoder.project_in
         ):
             model.model.decoder.project_in = model.model.decoder.project_in.to(dev)
-    elif "llama" in args.model:
+    elif "llama" in args.model.lower():
+    
+        print("Llama model detected.")
         layers = model.model.layers
         model.model.embed_tokens = model.model.embed_tokens.to(dev)
         model.model.norm = model.model.norm.to(dev)
         model.model.rotary_emb=model.model.rotary_emb.to(dev)
+    elif "qwen" in args.model.lower():
+        print("Qwen model detected.")
+        layers = model.model.layers
+        model.model.embed_tokens = model.model.embed_tokens.to(dev)
+        model.model.norm = model.model.norm.to(dev)
+        model.model.rotary_emb=model.model.rotary_emb.to(dev)
+    else :
+        raise ValueError("Model not supported")
     layers[0] = layers[0].to(dev)
 
     dtype = next(iter(model.parameters())).dtype
@@ -94,7 +86,7 @@ def quant_sequential(model, dataloader, dev):
         (args.nsamples, model.seqlen, model.config.hidden_size), dtype=dtype, device=dev
     )
     cache = {"i": 0, "attention_mask": None}
-    if "llama" in args.model.lower():
+    if "llama" in args.model.lower() :
         class Catcher(nn.Module):
             def __init__(self, module):
                 super().__init__()
@@ -105,6 +97,19 @@ def quant_sequential(model, dataloader, dev):
                 cache["i"] += 1
                 cache["attention_mask"] = kwargs["attention_mask"]
                 cache["position_embeddings"]=kwargs["position_embeddings"]
+                raise ValueError
+    elif "qwen" in args.model.lower():
+        class Catcher(nn.Module):
+            def __init__(self, module):
+                super().__init__()
+                self.module = module
+                self.attention_type = getattr(module, "attention_type", None)  # 继承原始模块的 attention_type 属性
+
+            def forward(self, inp, **kwargs):
+                inps[cache["i"]] = inp
+                cache["i"] += 1
+                cache["attention_mask"] = kwargs["attention_mask"]
+                cache["position_embeddings"] = kwargs["position_embeddings"]
                 raise ValueError
     else:
         class Catcher(nn.Module):
@@ -118,6 +123,7 @@ def quant_sequential(model, dataloader, dev):
                 cache["attention_mask"] = kwargs["attention_mask"]
                 #cache["position_embeddings"]=kwargs["position_embeddings"]
                 raise ValueError
+
 
     layers[0] = Catcher(layers[0])
     for batch in dataloader:
@@ -141,14 +147,14 @@ def quant_sequential(model, dataloader, dev):
             and model.model.decoder.project_in
         ):
             model.model.decoder.project_in = model.model.decoder.project_in.cpu()
-    elif "llama" in args.model:
+    elif "llama" in args.model.lower() or "qwen" in args.model.lower():
         model.model.embed_tokens = model.model.embed_tokens.cpu()
         model.model.norm = model.model.norm.cpu()
     torch.cuda.empty_cache()
 
     outs = torch.zeros_like(inps)
     attention_mask = cache["attention_mask"]
-    if "llama" in args.model.lower():
+    if "llama" in args.model.lower() or "qwen" in args.model.lower():
         position_embeddings=cache["position_embeddings"]
     print("Ready.")
     
@@ -187,7 +193,7 @@ def quant_sequential(model, dataloader, dev):
         for name in gptq:
             handles.append(subset[name].register_forward_hook(add_batch(name)))
         for j in range(args.nsamples):
-            if "llama" in args.model.lower():
+            if "llama" in args.model.lower() or "qwen" in args.model.lower():
                 outs[j] = layer(inps[j].unsqueeze(0), attention_mask=attention_mask,position_embeddings=position_embeddings)[0]
             else:
                 outs[j] = layer(inps[j].unsqueeze(0), attention_mask=attention_mask)[0]
@@ -207,7 +213,7 @@ def quant_sequential(model, dataloader, dev):
             gptq[name].free()
 
         for j in range(args.nsamples):
-            if "llama" in args.model.lower():
+            if "llama" in args.model.lower() or "qwen" in args.model.lower():
                 outs[j] = layer(inps[j].unsqueeze(0), attention_mask=attention_mask,position_embeddings=position_embeddings)[0]
             else:
                 outs[j] = layer(inps[j].unsqueeze(0), attention_mask=attention_mask)[0]
@@ -384,7 +390,6 @@ if __name__ == "__main__":
         model.save_pretrained(save_file)
 
     for dataset in ["wikitext2", "ptb", "c4"]:
-   # for dataset in ["wikitext2"]:
         dataloader, testloader = get_loaders(
             dataset, seed=args.seed, seqlen=model.seqlen, model=args.model
         )
@@ -395,6 +400,8 @@ if __name__ == "__main__":
             opt_eval(model, testloader, device, dataset, args.log_wandb)
         elif "llama" in args.model:
             from eval_ppl_utils import llama_eval
-
             llama_eval(model, testloader, device, dataset, args.log_wandb)
+        elif "qwen" in args.model:
+            from eval_ppl_utils import qwen_eval
+            qwen_eval(model, testloader, device, dataset, args.log_wandb)
 

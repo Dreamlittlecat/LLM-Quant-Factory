@@ -1,0 +1,2426 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading model ...
+/data/xjh/model_weight/opt/opt-350m
+Model loaded.
+model OPTForCausalLM(
+  (model): OPTModel(
+    (decoder): OPTDecoder(
+      (embed_tokens): Embedding(50272, 512, padding_idx=1)
+      (embed_positions): OPTLearnedPositionalEmbedding(2050, 1024)
+      (project_out): Linear(in_features=1024, out_features=512, bias=False)
+      (project_in): Linear(in_features=512, out_features=1024, bias=False)
+      (layers): ModuleList(
+        (0-23): 24 x OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+            (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+            (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+            (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+          (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+          (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        )
+      )
+    )
+  )
+  (lm_head): Linear(in_features=512, out_features=50272, bias=False)
+)
+xjh_edit,load from local file:/data/xjh/dataset/c4_part,get c4
+Starting ...
+OPT model detected.
+Ready.
+0 self_attn.k_proj
+Quantizing ...
+tensor(0.6931, device='cuda:0') tensor(0.2600, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.7387, device='cuda:0') tensor(0.2300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7666, device='cuda:0') tensor(0.2100, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.6325, device='cuda:0') tensor(0.1800, device='cuda:0') tensor(0.1875, device='cuda:0')
+tensor(0.7709, device='cuda:0') tensor(0.1900, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.7675, device='cuda:0') tensor(0.1700, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.7228, device='cuda:0') tensor(0.1600, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.8409, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0391, device='cuda:0')
+time 0.84
+error 733.922607421875
+0 self_attn.v_proj
+Quantizing ...
+tensor(0.5562, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3438, device='cuda:0')
+tensor(0.7125, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1875, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7281, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1719, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5250, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3750, device='cuda:0')
+tensor(0.7906, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+time 0.63
+error 69.55732727050781
+0 self_attn.q_proj
+Quantizing ...
+tensor(0.6994, device='cuda:0') tensor(0.1600, device='cuda:0') tensor(0.1406, device='cuda:0')
+tensor(0.7531, device='cuda:0') tensor(0.2000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.7866, device='cuda:0') tensor(0.1900, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.7441, device='cuda:0') tensor(0.1700, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.7875, device='cuda:0') tensor(0.1500, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.7741, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.7953, device='cuda:0') tensor(0.1500, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8431, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0469, device='cuda:0')
+time 0.61
+error 742.6854248046875
+0 self_attn.out_proj
+Quantizing ...
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+time 0.61
+error 0.1695602536201477
+0 fc1
+Quantizing ...
+tensor(0.7897, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8209, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8466, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.5641, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3359, device='cuda:0')
+tensor(0.6969, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2031, device='cuda:0')
+tensor(0.5953, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3047, device='cuda:0')
+tensor(0.7728, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.8431, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0469, device='cuda:0')
+time 0.73
+error 458985.125
+0 fc2
+Quantizing ...
+tensor(0.6578, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2422, device='cuda:0')
+tensor(0.5562, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3438, device='cuda:0')
+tensor(0.8566, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8331, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.7628, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.7572, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1328, device='cuda:0')
+tensor(0.7103, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1797, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8666, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8041, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.8566, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.7941, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.8353, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8119, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8509, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8566, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.7862, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.7906, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.8175, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8587, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.6969, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2031, device='cuda:0')
+tensor(0.8566, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8487, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8566, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.6812, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2188, device='cuda:0')
+tensor(0.8275, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.7594, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1406, device='cuda:0')
+tensor(0.5797, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3203, device='cuda:0')
+tensor(0.8666, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.7750, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1250, device='cuda:0')
+time 2.47
+error 5046.859375
+1 self_attn.k_proj
+Quantizing ...
+tensor(0.8131, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8231, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8153, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8253, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8509, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8587, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7962, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+time 0.68
+error 118750.8984375
+1 self_attn.v_proj
+Quantizing ...
+tensor(0.5250, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3750, device='cuda:0')
+tensor(0.5562, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3438, device='cuda:0')
+tensor(0.8509, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.6969, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2031, device='cuda:0')
+tensor(0.6891, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2109, device='cuda:0')
+tensor(0.7516, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1484, device='cuda:0')
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.8275, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0625, device='cuda:0')
+time 0.66
+error 53791.81640625
+1 self_attn.q_proj
+Quantizing ...
+tensor(0.7606, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.7506, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.8209, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8019, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8487, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8431, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.7203, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1797, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+time 0.68
+error 117377.265625
+1 self_attn.out_proj
+Quantizing ...
+tensor(0.6891, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2109, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.8062, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.71
+error 1553.7421875
+1 fc1
+Quantizing ...
+tensor(0.5484, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3516, device='cuda:0')
+tensor(0.7975, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8309, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.6031, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2969, device='cuda:0')
+tensor(0.7628, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.7125, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1875, device='cuda:0')
+tensor(0.8019, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8431, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0469, device='cuda:0')
+time 0.79
+error 485737.6875
+1 fc2
+Quantizing ...
+tensor(0.6812, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2188, device='cuda:0')
+tensor(0.8666, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.6500, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2500, device='cuda:0')
+tensor(0.7828, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8509, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.6734, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2266, device='cuda:0')
+tensor(0.8744, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0156, device='cuda:0')
+tensor(0.7416, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1484, device='cuda:0')
+tensor(0.8587, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8587, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8666, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.7672, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1328, device='cuda:0')
+tensor(0.5562, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3438, device='cuda:0')
+tensor(0.7728, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.8844, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0156, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8744, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0156, device='cuda:0')
+tensor(0.8666, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.6969, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2031, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.7750, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1250, device='cuda:0')
+tensor(0.8844, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0156, device='cuda:0')
+tensor(0.6266, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2734, device='cuda:0')
+tensor(0.8844, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0156, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.6969, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2031, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+time 2.76
+error 5267.3193359375
+2 self_attn.k_proj
+Quantizing ...
+tensor(0.7953, device='cuda:0') tensor(0.1500, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.7484, device='cuda:0') tensor(0.1500, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.8053, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8153, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8409, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8309, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.7416, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1484, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+time 0.74
+error 151518.25
+2 self_attn.v_proj
+Quantizing ...
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5641, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3359, device='cuda:0')
+tensor(0.6812, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2188, device='cuda:0')
+tensor(0.6187, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2812, device='cuda:0')
+tensor(0.5953, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3047, device='cuda:0')
+tensor(0.8431, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0469, device='cuda:0')
+time 0.72
+error 68458.3828125
+2 self_attn.q_proj
+Quantizing ...
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.8031, device='cuda:0') tensor(0.1500, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8209, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.7003, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.1797, device='cuda:0')
+tensor(0.8231, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8309, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.7628, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.8175, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0625, device='cuda:0')
+time 0.64
+error 147052.546875
+2 self_attn.out_proj
+Quantizing ...
+tensor(0.5719, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3281, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.7984, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.7750, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1250, device='cuda:0')
+tensor(0.7437, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1562, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+time 0.60
+error 1172.988525390625
+2 fc1
+Quantizing ...
+tensor(0.5719, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3281, device='cuda:0')
+tensor(0.5562, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3438, device='cuda:0')
+tensor(0.8231, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.6266, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2734, device='cuda:0')
+tensor(0.7784, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.7259, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1641, device='cuda:0')
+tensor(0.7728, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.8353, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0547, device='cuda:0')
+time 0.71
+error 479862.21875
+2 fc2
+Quantizing ...
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7047, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1953, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.7594, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1406, device='cuda:0')
+tensor(0.6422, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2578, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8062, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.7281, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1719, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.7828, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.7437, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1562, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7750, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1250, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.6422, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2578, device='cuda:0')
+tensor(0.6578, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2422, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.7437, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1562, device='cuda:0')
+tensor(0.7437, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1562, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.6344, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2656, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 2.48
+error 5888.009765625
+3 self_attn.k_proj
+Quantizing ...
+tensor(0.7853, device='cuda:0') tensor(0.1600, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.7931, device='cuda:0') tensor(0.1600, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8053, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8053, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8487, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7806, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+time 0.66
+error 164215.34375
+3 self_attn.v_proj
+Quantizing ...
+tensor(0.5250, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3750, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5484, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3516, device='cuda:0')
+tensor(0.5562, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3438, device='cuda:0')
+tensor(0.6656, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2344, device='cuda:0')
+tensor(0.7472, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.1328, device='cuda:0')
+tensor(0.8097, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0703, device='cuda:0')
+time 0.62
+error 79029.0625
+3 self_attn.q_proj
+Quantizing ...
+tensor(0.5406, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3594, device='cuda:0')
+tensor(0.7953, device='cuda:0') tensor(0.1500, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8288, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.6109, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2891, device='cuda:0')
+tensor(0.8309, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8153, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.7181, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1719, device='cuda:0')
+tensor(0.8587, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0312, device='cuda:0')
+time 0.62
+error 163220.40625
+3 self_attn.out_proj
+Quantizing ...
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5328, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3672, device='cuda:0')
+tensor(0.7437, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1562, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+time 0.62
+error 1266.925537109375
+3 fc1
+Quantizing ...
+tensor(0.6634, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.2266, device='cuda:0')
+tensor(0.5875, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3125, device='cuda:0')
+tensor(0.8287, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.6422, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2578, device='cuda:0')
+tensor(0.8231, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.7337, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1562, device='cuda:0')
+tensor(0.7941, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.8431, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0469, device='cuda:0')
+time 0.72
+error 488074.84375
+3 fc2
+Quantizing ...
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.6812, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2188, device='cuda:0')
+tensor(0.7359, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1641, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.6812, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2188, device='cuda:0')
+tensor(0.6812, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2188, device='cuda:0')
+tensor(0.7906, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.6422, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2578, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8844, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0156, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8844, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0156, device='cuda:0')
+tensor(0.6031, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2969, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.7828, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.7906, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.7984, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1016, device='cuda:0')
+time 2.49
+error 7006.18359375
+4 self_attn.k_proj
+Quantizing ...
+tensor(0.7931, device='cuda:0') tensor(0.1600, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.7953, device='cuda:0') tensor(0.1500, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.7953, device='cuda:0') tensor(0.1500, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8131, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8466, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.7784, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+time 0.66
+error 172650.34375
+4 self_attn.v_proj
+Quantizing ...
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.7494, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1406, device='cuda:0')
+tensor(0.5562, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3438, device='cuda:0')
+tensor(0.6500, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2500, device='cuda:0')
+tensor(0.7416, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1484, device='cuda:0')
+tensor(0.6734, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2266, device='cuda:0')
+tensor(0.8331, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0469, device='cuda:0')
+time 0.62
+error 80008.421875
+4 self_attn.q_proj
+Quantizing ...
+tensor(0.8031, device='cuda:0') tensor(0.1500, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.5406, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3594, device='cuda:0')
+tensor(0.8187, device='cuda:0') tensor(0.1500, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7237, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.1562, device='cuda:0')
+tensor(0.8131, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.7919, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.6187, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2812, device='cuda:0')
+tensor(0.8587, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0312, device='cuda:0')
+time 0.64
+error 171183.03125
+4 self_attn.out_proj
+Quantizing ...
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.7672, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1328, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+time 0.60
+error 1915.42041015625
+4 fc1
+Quantizing ...
+tensor(0.6109, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2891, device='cuda:0')
+tensor(0.6031, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2969, device='cuda:0')
+tensor(0.8309, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.6947, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1953, device='cuda:0')
+tensor(0.8153, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.7784, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.7862, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.8431, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0469, device='cuda:0')
+time 0.72
+error 501262.40625
+4 fc2
+Quantizing ...
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.7516, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1484, device='cuda:0')
+tensor(0.7906, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.7047, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1953, device='cuda:0')
+tensor(0.6500, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2500, device='cuda:0')
+tensor(0.6344, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2656, device='cuda:0')
+tensor(0.7594, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1406, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.7437, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1562, device='cuda:0')
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.6500, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2500, device='cuda:0')
+tensor(0.6969, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2031, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8844, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0156, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.6891, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2109, device='cuda:0')
+tensor(0.7359, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1641, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+time 2.45
+error 7510.513671875
+5 self_attn.k_proj
+Quantizing ...
+tensor(0.8131, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8309, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8153, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8253, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8487, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8487, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8253, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.65
+error 135467.875
+5 self_attn.v_proj
+Quantizing ...
+tensor(0.5484, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3516, device='cuda:0')
+tensor(0.6266, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2734, device='cuda:0')
+tensor(0.8309, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5250, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3750, device='cuda:0')
+tensor(0.7259, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1641, device='cuda:0')
+tensor(0.6891, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2109, device='cuda:0')
+tensor(0.8509, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0391, device='cuda:0')
+time 0.63
+error 77299.234375
+5 self_attn.q_proj
+Quantizing ...
+tensor(0.8231, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8309, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8231, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8253, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8487, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7884, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.61
+error 143273.34375
+5 self_attn.out_proj
+Quantizing ...
+tensor(0.5250, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3750, device='cuda:0')
+tensor(0.8431, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.5328, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3672, device='cuda:0')
+tensor(0.5797, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3203, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.7828, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1172, device='cuda:0')
+time 0.60
+error 1888.6767578125
+5 fc1
+Quantizing ...
+tensor(0.6266, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2734, device='cuda:0')
+tensor(0.7606, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.8309, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.7103, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1797, device='cuda:0')
+tensor(0.7941, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.8097, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.7416, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1484, device='cuda:0')
+tensor(0.8487, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0312, device='cuda:0')
+time 0.72
+error 509772.34375
+5 fc2
+Quantizing ...
+tensor(0.7750, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1250, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.7984, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.6656, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2344, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7750, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1250, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.6734, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2266, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.7125, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1875, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.7984, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+time 2.47
+error 7805.0146484375
+6 self_attn.k_proj
+Quantizing ...
+tensor(0.8231, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8409, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8253, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8431, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8509, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8666, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.7672, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1328, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.66
+error 143281.0
+6 self_attn.v_proj
+Quantizing ...
+tensor(0.5562, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3438, device='cuda:0')
+tensor(0.6656, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2344, device='cuda:0')
+tensor(0.8353, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.7884, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.6344, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2656, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.6969, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2031, device='cuda:0')
+tensor(0.8509, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0391, device='cuda:0')
+time 0.61
+error 69337.46875
+6 self_attn.q_proj
+Quantizing ...
+tensor(0.8231, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8253, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8409, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8431, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8509, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8587, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.6891, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2109, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.62
+error 160776.046875
+6 self_attn.out_proj
+Quantizing ...
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.7359, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1641, device='cuda:0')
+tensor(0.6734, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2266, device='cuda:0')
+tensor(0.5719, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3281, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.8062, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.6578, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2422, device='cuda:0')
+time 0.61
+error 4173.83984375
+6 fc1
+Quantizing ...
+tensor(0.5641, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3359, device='cuda:0')
+tensor(0.6712, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.2188, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7628, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.7997, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8175, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.7047, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1953, device='cuda:0')
+tensor(0.8509, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0391, device='cuda:0')
+time 0.74
+error 550788.625
+6 fc2
+Quantizing ...
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7750, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1250, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8062, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.7437, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1562, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8062, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.7750, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1250, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+time 2.46
+error 9305.572265625
+7 self_attn.k_proj
+Quantizing ...
+tensor(0.8231, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8309, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8331, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8487, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8566, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.7728, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.66
+error 162942.859375
+7 self_attn.v_proj
+Quantizing ...
+tensor(0.5250, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3750, device='cuda:0')
+tensor(0.6266, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2734, device='cuda:0')
+tensor(0.8409, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.6266, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2734, device='cuda:0')
+tensor(0.5875, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3125, device='cuda:0')
+tensor(0.5641, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3359, device='cuda:0')
+tensor(0.6656, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2344, device='cuda:0')
+tensor(0.8509, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0391, device='cuda:0')
+time 0.60
+error 76244.25
+7 self_attn.q_proj
+Quantizing ...
+tensor(0.8309, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.7550, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.1250, device='cuda:0')
+tensor(0.8309, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8175, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8431, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8487, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.6500, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2500, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.61
+error 183056.6875
+7 self_attn.out_proj
+Quantizing ...
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.7281, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1719, device='cuda:0')
+tensor(0.6422, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2578, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+time 0.62
+error 7291.96484375
+7 fc1
+Quantizing ...
+tensor(0.5953, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3047, device='cuda:0')
+tensor(0.7181, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1719, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.5797, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3203, device='cuda:0')
+tensor(0.7784, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.5875, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3125, device='cuda:0')
+tensor(0.6109, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2891, device='cuda:0')
+tensor(0.8509, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0391, device='cuda:0')
+time 0.71
+error 581464.75
+7 fc2
+Quantizing ...
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.6656, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2344, device='cuda:0')
+tensor(0.7750, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1250, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7594, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1406, device='cuda:0')
+tensor(0.7437, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1562, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8062, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.7281, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1719, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.6812, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2188, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.7437, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1562, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+time 2.44
+error 12362.697265625
+8 self_attn.k_proj
+Quantizing ...
+tensor(0.8131, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8231, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8331, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8487, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8566, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.7203, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1797, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.66
+error 202802.1875
+8 self_attn.v_proj
+Quantizing ...
+tensor(0.5250, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3750, device='cuda:0')
+tensor(0.6578, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2422, device='cuda:0')
+tensor(0.8331, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.7203, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1797, device='cuda:0')
+tensor(0.6891, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2109, device='cuda:0')
+tensor(0.6812, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2188, device='cuda:0')
+tensor(0.6812, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2188, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+time 0.63
+error 85384.59375
+8 self_attn.q_proj
+Quantizing ...
+tensor(0.7528, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.6634, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.2266, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8175, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8175, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8487, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.6031, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2969, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.60
+error 220298.359375
+8 self_attn.out_proj
+Quantizing ...
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.6578, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2422, device='cuda:0')
+tensor(0.6578, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2422, device='cuda:0')
+tensor(0.7594, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1406, device='cuda:0')
+tensor(0.7125, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1875, device='cuda:0')
+tensor(0.5719, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3281, device='cuda:0')
+time 0.63
+error 9783.71484375
+8 fc1
+Quantizing ...
+tensor(0.5562, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3438, device='cuda:0')
+tensor(0.6969, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2031, device='cuda:0')
+tensor(0.8487, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.6891, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2109, device='cuda:0')
+tensor(0.7572, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1328, device='cuda:0')
+tensor(0.7337, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1562, device='cuda:0')
+tensor(0.6344, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2656, device='cuda:0')
+tensor(0.8587, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0312, device='cuda:0')
+time 0.71
+error 599108.9375
+8 fc2
+Quantizing ...
+tensor(0.7125, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1875, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8062, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.7984, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7203, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1797, device='cuda:0')
+tensor(0.7672, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1328, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7047, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1953, device='cuda:0')
+tensor(0.7516, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1484, device='cuda:0')
+tensor(0.7828, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7984, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7984, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1016, device='cuda:0')
+time 2.45
+error 16203.82421875
+9 self_attn.k_proj
+Quantizing ...
+tensor(0.8309, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8153, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8566, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8097, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8587, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8566, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.7437, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1562, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.67
+error 238432.15625
+9 self_attn.v_proj
+Quantizing ...
+tensor(0.5484, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3516, device='cuda:0')
+tensor(0.7281, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1719, device='cuda:0')
+tensor(0.8509, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.5641, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3359, device='cuda:0')
+tensor(0.5328, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3672, device='cuda:0')
+tensor(0.5484, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3516, device='cuda:0')
+tensor(0.5719, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3281, device='cuda:0')
+tensor(0.8509, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0391, device='cuda:0')
+time 0.60
+error 88730.6796875
+9 self_attn.q_proj
+Quantizing ...
+tensor(0.8187, device='cuda:0') tensor(0.1500, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.5719, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3281, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7494, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1406, device='cuda:0')
+tensor(0.5797, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3203, device='cuda:0')
+tensor(0.8487, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.6109, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2891, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.60
+error 253759.953125
+9 self_attn.out_proj
+Quantizing ...
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+time 0.60
+error 8467.1064453125
+9 fc1
+Quantizing ...
+tensor(0.6656, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2344, device='cuda:0')
+tensor(0.6734, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2266, device='cuda:0')
+tensor(0.8487, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.6734, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2266, device='cuda:0')
+tensor(0.7125, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1875, device='cuda:0')
+tensor(0.6891, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2109, device='cuda:0')
+tensor(0.7650, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1250, device='cuda:0')
+tensor(0.8587, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0312, device='cuda:0')
+time 0.72
+error 590457.5
+9 fc2
+Quantizing ...
+tensor(0.6734, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2266, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7906, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.8062, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.8062, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.7750, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1250, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7516, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1484, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.6969, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2031, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.7984, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.7516, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1484, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.7437, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1562, device='cuda:0')
+time 2.46
+error 15654.2265625
+10 self_attn.k_proj
+Quantizing ...
+tensor(0.8309, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.7706, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.8466, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8175, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8253, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8487, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.6734, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2266, device='cuda:0')
+tensor(0.8666, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.69
+error 221756.453125
+10 self_attn.v_proj
+Quantizing ...
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5719, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3281, device='cuda:0')
+tensor(0.8331, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.6187, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2812, device='cuda:0')
+tensor(0.8097, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.6734, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2266, device='cuda:0')
+tensor(0.7337, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1562, device='cuda:0')
+tensor(0.8587, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0312, device='cuda:0')
+time 0.60
+error 110020.9375
+10 self_attn.q_proj
+Quantizing ...
+tensor(0.5328, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3672, device='cuda:0')
+tensor(0.7237, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.1562, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7316, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.1484, device='cuda:0')
+tensor(0.6869, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.2031, device='cuda:0')
+tensor(0.8487, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.6500, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2500, device='cuda:0')
+tensor(0.8666, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.60
+error 223929.9375
+10 self_attn.out_proj
+Quantizing ...
+tensor(0.5406, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3594, device='cuda:0')
+tensor(0.5953, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3047, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5719, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3281, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5719, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3281, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.59
+error 14101.474609375
+10 fc1
+Quantizing ...
+tensor(0.7806, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.7806, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.8409, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.6031, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2969, device='cuda:0')
+tensor(0.6578, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2422, device='cuda:0')
+tensor(0.6187, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2812, device='cuda:0')
+tensor(0.7047, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1953, device='cuda:0')
+tensor(0.8587, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0312, device='cuda:0')
+time 0.72
+error 605461.5
+10 fc2
+Quantizing ...
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.6969, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2031, device='cuda:0')
+tensor(0.7984, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8062, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.7984, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.7516, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1484, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7281, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1719, device='cuda:0')
+tensor(0.6578, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2422, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.7672, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1328, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 2.42
+error 15055.9716796875
+11 self_attn.k_proj
+Quantizing ...
+tensor(0.8131, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8053, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8288, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8309, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8209, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7103, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1797, device='cuda:0')
+tensor(0.8666, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.69
+error 187683.71875
+11 self_attn.v_proj
+Quantizing ...
+tensor(0.5328, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3672, device='cuda:0')
+tensor(0.6266, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2734, device='cuda:0')
+tensor(0.5328, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3672, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.6187, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2812, device='cuda:0')
+tensor(0.6422, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2578, device='cuda:0')
+tensor(0.8487, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0312, device='cuda:0')
+time 0.72
+error 112325.765625
+11 self_attn.q_proj
+Quantizing ...
+tensor(0.8309, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8209, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8288, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7528, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.8075, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8309, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.7706, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.8466, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.69
+error 197306.0
+11 self_attn.out_proj
+Quantizing ...
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5875, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3125, device='cuda:0')
+tensor(0.8353, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+time 0.74
+error 10028.802734375
+11 fc1
+Quantizing ...
+tensor(0.6578, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2422, device='cuda:0')
+tensor(0.8487, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8409, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.6187, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2812, device='cuda:0')
+tensor(0.7650, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1250, device='cuda:0')
+tensor(0.7359, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1641, device='cuda:0')
+tensor(0.7516, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1484, device='cuda:0')
+tensor(0.8587, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0312, device='cuda:0')
+time 0.83
+error 623430.25
+11 fc2
+Quantizing ...
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7437, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1562, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.7828, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.8062, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.7125, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1875, device='cuda:0')
+tensor(0.8062, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.7672, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1328, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7906, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+time 2.79
+error 18073.556640625
+12 self_attn.k_proj
+Quantizing ...
+tensor(0.8231, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.7550, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.1250, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8075, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8231, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8487, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.5875, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3125, device='cuda:0')
+tensor(0.8566, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.74
+error 199112.8125
+12 self_attn.v_proj
+Quantizing ...
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.7294, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.1406, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.6266, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2734, device='cuda:0')
+tensor(0.7862, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.6031, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2969, device='cuda:0')
+tensor(0.5562, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3438, device='cuda:0')
+tensor(0.8409, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0391, device='cuda:0')
+time 0.68
+error 137167.625
+12 self_attn.q_proj
+Quantizing ...
+tensor(0.8309, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8231, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8288, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.6578, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2422, device='cuda:0')
+tensor(0.7919, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8309, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.7337, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1562, device='cuda:0')
+tensor(0.8666, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.60
+error 214101.3125
+12 self_attn.out_proj
+Quantizing ...
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5797, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3203, device='cuda:0')
+tensor(0.7003, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.1797, device='cuda:0')
+tensor(0.6812, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2188, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.60
+error 22758.123046875
+12 fc1
+Quantizing ...
+tensor(0.6500, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2500, device='cuda:0')
+tensor(0.8409, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8253, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.7516, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1484, device='cuda:0')
+tensor(0.6969, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2031, device='cuda:0')
+tensor(0.7572, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1328, device='cuda:0')
+tensor(0.7047, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1953, device='cuda:0')
+tensor(0.8587, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0312, device='cuda:0')
+time 0.72
+error 616636.375
+12 fc2
+Quantizing ...
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8844, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0156, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8062, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.8062, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.7906, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.7828, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1172, device='cuda:0')
+time 2.48
+error 11803.17578125
+13 self_attn.k_proj
+Quantizing ...
+tensor(0.8153, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8019, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8075, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8309, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7103, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1797, device='cuda:0')
+tensor(0.8566, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.66
+error 187960.453125
+13 self_attn.v_proj
+Quantizing ...
+tensor(0.5328, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3672, device='cuda:0')
+tensor(0.6634, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.2266, device='cuda:0')
+tensor(0.5641, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3359, device='cuda:0')
+tensor(0.5250, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3750, device='cuda:0')
+tensor(0.5641, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3359, device='cuda:0')
+tensor(0.6422, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2578, device='cuda:0')
+tensor(0.5641, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3359, device='cuda:0')
+tensor(0.8487, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0312, device='cuda:0')
+time 0.60
+error 124285.3125
+13 self_attn.q_proj
+Quantizing ...
+tensor(0.7919, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8288, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8231, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.7841, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.6578, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2422, device='cuda:0')
+tensor(0.8309, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.7941, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.8644, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0156, device='cuda:0')
+time 0.62
+error 198026.75
+13 self_attn.out_proj
+Quantizing ...
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5328, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3672, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+time 0.60
+error 16322.525390625
+13 fc1
+Quantizing ...
+tensor(0.5250, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3750, device='cuda:0')
+tensor(0.8409, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8097, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.6891, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2109, device='cuda:0')
+tensor(0.7416, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1484, device='cuda:0')
+tensor(0.7941, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.6578, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2422, device='cuda:0')
+tensor(0.8587, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0312, device='cuda:0')
+time 0.72
+error 569207.375
+13 fc2
+Quantizing ...
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8062, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.7906, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.7828, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.7672, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1328, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.7984, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.7437, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1562, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.7750, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1250, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+time 2.42
+error 11109.14453125
+14 self_attn.k_proj
+Quantizing ...
+tensor(0.7975, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.6009, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.2891, device='cuda:0')
+tensor(0.8187, device='cuda:0') tensor(0.1500, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7997, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8053, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8288, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7997, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8544, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0156, device='cuda:0')
+time 0.69
+error 183799.125
+14 self_attn.v_proj
+Quantizing ...
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5250, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3750, device='cuda:0')
+tensor(0.5484, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3516, device='cuda:0')
+tensor(0.5719, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3281, device='cuda:0')
+tensor(0.7003, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.1797, device='cuda:0')
+tensor(0.5953, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3047, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+time 0.60
+error 126723.171875
+14 self_attn.q_proj
+Quantizing ...
+tensor(0.7762, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.8187, device='cuda:0') tensor(0.1500, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8053, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.6400, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.2500, device='cuda:0')
+tensor(0.7975, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8131, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.7316, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.1484, device='cuda:0')
+tensor(0.8466, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.63
+error 194325.4375
+14 self_attn.out_proj
+Quantizing ...
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.7337, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1562, device='cuda:0')
+tensor(0.7862, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.7159, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.1641, device='cuda:0')
+tensor(0.7672, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1328, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+time 0.63
+error 11338.6923828125
+14 fc1
+Quantizing ...
+tensor(0.5641, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3359, device='cuda:0')
+tensor(0.8409, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.7862, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.6187, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2812, device='cuda:0')
+tensor(0.8041, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.5953, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3047, device='cuda:0')
+tensor(0.6422, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2578, device='cuda:0')
+tensor(0.8666, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.71
+error 507572.875
+14 fc2
+Quantizing ...
+tensor(0.7984, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.8062, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.7672, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1328, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7750, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1250, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.7672, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1328, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.7750, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1250, device='cuda:0')
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.7672, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1328, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.7984, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7750, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1250, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.7594, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1406, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+time 2.44
+error 8214.6015625
+15 self_attn.k_proj
+Quantizing ...
+tensor(0.8309, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.7819, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8187, device='cuda:0') tensor(0.1500, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7684, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.8131, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8209, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8075, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8544, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0156, device='cuda:0')
+time 0.68
+error 170799.96875
+15 self_attn.v_proj
+Quantizing ...
+tensor(0.5328, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3672, device='cuda:0')
+tensor(0.7450, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.1250, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.6422, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2578, device='cuda:0')
+tensor(0.5328, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3672, device='cuda:0')
+tensor(0.8466, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.63
+error 109719.3984375
+15 self_attn.q_proj
+Quantizing ...
+tensor(0.7606, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.8187, device='cuda:0') tensor(0.1500, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7819, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.8131, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.7919, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8075, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8544, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0156, device='cuda:0')
+time 0.64
+error 178411.078125
+15 self_attn.out_proj
+Quantizing ...
+tensor(0.5250, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3750, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.8175, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.8041, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.5250, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3750, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+time 0.61
+error 9445.9736328125
+15 fc1
+Quantizing ...
+tensor(0.6500, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2500, device='cuda:0')
+tensor(0.8331, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.7203, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1797, device='cuda:0')
+tensor(0.5875, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3125, device='cuda:0')
+tensor(0.7047, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1953, device='cuda:0')
+tensor(0.7806, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.6969, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2031, device='cuda:0')
+tensor(0.8666, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.72
+error 506330.1875
+15 fc2
+Quantizing ...
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.7906, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.7984, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.7594, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1406, device='cuda:0')
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.6891, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2109, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.7750, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1250, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.7594, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1406, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.7828, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.7594, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1406, device='cuda:0')
+tensor(0.7906, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8062, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7906, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1094, device='cuda:0')
+time 2.49
+error 6950.04443359375
+16 self_attn.k_proj
+Quantizing ...
+tensor(0.8109, device='cuda:0') tensor(0.1500, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.7663, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.8187, device='cuda:0') tensor(0.1500, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8209, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8288, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8053, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8075, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8466, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.66
+error 172019.5625
+16 self_attn.v_proj
+Quantizing ...
+tensor(0.5931, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.2969, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5250, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3750, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5641, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3359, device='cuda:0')
+tensor(0.6187, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2812, device='cuda:0')
+tensor(0.6031, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2969, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+time 0.60
+error 119778.359375
+16 self_attn.q_proj
+Quantizing ...
+tensor(0.7216, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.1484, device='cuda:0')
+tensor(0.8109, device='cuda:0') tensor(0.1500, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.5875, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3125, device='cuda:0')
+tensor(0.7372, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.1328, device='cuda:0')
+tensor(0.7528, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.6244, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.2656, device='cuda:0')
+tensor(0.8131, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8644, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0156, device='cuda:0')
+time 0.61
+error 178562.828125
+16 self_attn.out_proj
+Quantizing ...
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.7806, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5797, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3203, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.61
+error 11676.095703125
+16 fc1
+Quantizing ...
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.8331, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.6969, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2031, device='cuda:0')
+tensor(0.5719, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3281, device='cuda:0')
+tensor(0.7047, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1953, device='cuda:0')
+tensor(0.7806, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.7359, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1641, device='cuda:0')
+tensor(0.8587, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0312, device='cuda:0')
+time 0.74
+error 453666.75
+16 fc2
+Quantizing ...
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.7672, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1328, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8844, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0156, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8844, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0156, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7984, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+time 2.45
+error 6414.42236328125
+17 self_attn.k_proj
+Quantizing ...
+tensor(0.8131, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8109, device='cuda:0') tensor(0.1500, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8187, device='cuda:0') tensor(0.1500, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8209, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8288, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7997, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8288, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8666, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.67
+error 153978.0
+17 self_attn.v_proj
+Quantizing ...
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5328, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3672, device='cuda:0')
+tensor(0.5484, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3516, device='cuda:0')
+tensor(0.5406, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3594, device='cuda:0')
+tensor(0.6925, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.1875, device='cuda:0')
+tensor(0.5797, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3203, device='cuda:0')
+tensor(0.8566, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.60
+error 106051.984375
+17 self_attn.q_proj
+Quantizing ...
+tensor(0.5719, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3281, device='cuda:0')
+tensor(0.8209, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.5641, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3359, device='cuda:0')
+tensor(0.8131, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.7372, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.1328, device='cuda:0')
+tensor(0.7975, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.7628, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.8466, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.60
+error 157038.75
+17 self_attn.out_proj
+Quantizing ...
+tensor(0.5484, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3516, device='cuda:0')
+tensor(0.8275, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.7337, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1562, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.6031, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2969, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.60
+error 8962.45703125
+17 fc1
+Quantizing ...
+tensor(0.5250, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3750, device='cuda:0')
+tensor(0.8253, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.7125, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1875, device='cuda:0')
+tensor(0.7806, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.7359, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1641, device='cuda:0')
+tensor(0.7728, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.5719, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3281, device='cuda:0')
+tensor(0.8666, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.71
+error 397686.6875
+17 fc2
+Quantizing ...
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8062, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.7984, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.7984, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8062, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.7906, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8844, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0156, device='cuda:0')
+tensor(0.8844, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0156, device='cuda:0')
+time 2.45
+error 5508.5
+18 self_attn.k_proj
+Quantizing ...
+tensor(0.8209, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8109, device='cuda:0') tensor(0.1500, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8131, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8288, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8288, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8209, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8566, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.66
+error 135857.390625
+18 self_attn.v_proj
+Quantizing ...
+tensor(0.5697, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.3203, device='cuda:0')
+tensor(0.5250, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3750, device='cuda:0')
+tensor(0.5250, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3750, device='cuda:0')
+tensor(0.5641, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3359, device='cuda:0')
+tensor(0.5875, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3125, device='cuda:0')
+tensor(0.5406, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3594, device='cuda:0')
+tensor(0.7003, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.1797, device='cuda:0')
+tensor(0.8366, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.60
+error 95634.328125
+18 self_attn.q_proj
+Quantizing ...
+tensor(0.6166, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.2734, device='cuda:0')
+tensor(0.8187, device='cuda:0') tensor(0.1500, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7606, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.8209, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8231, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.7472, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.1328, device='cuda:0')
+tensor(0.8231, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8566, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.62
+error 145859.265625
+18 self_attn.out_proj
+Quantizing ...
+tensor(0.7862, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.8197, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5406, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3594, device='cuda:0')
+tensor(0.5406, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3594, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+time 0.64
+error 8394.833984375
+18 fc1
+Quantizing ...
+tensor(0.5406, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3594, device='cuda:0')
+tensor(0.8331, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.7281, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1719, device='cuda:0')
+tensor(0.6500, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2500, device='cuda:0')
+tensor(0.7437, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1562, device='cuda:0')
+tensor(0.7728, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.7672, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1328, device='cuda:0')
+tensor(0.8666, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.72
+error 364903.78125
+18 fc2
+Quantizing ...
+tensor(0.7906, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.7828, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.7828, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.7906, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.7984, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7984, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7672, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1328, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.6891, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2109, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+time 2.42
+error 7162.078125
+19 self_attn.k_proj
+Quantizing ...
+tensor(0.8187, device='cuda:0') tensor(0.1500, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8287, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8053, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8288, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8288, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8466, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8566, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.65
+error 135248.921875
+19 self_attn.v_proj
+Quantizing ...
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.6344, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2656, device='cuda:0')
+tensor(0.5250, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3750, device='cuda:0')
+tensor(0.5797, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3203, device='cuda:0')
+tensor(0.5562, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3438, device='cuda:0')
+tensor(0.5328, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3672, device='cuda:0')
+tensor(0.5953, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3047, device='cuda:0')
+tensor(0.8487, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0312, device='cuda:0')
+time 0.61
+error 80299.828125
+19 self_attn.q_proj
+Quantizing ...
+tensor(0.8187, device='cuda:0') tensor(0.1500, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8288, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.5406, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3594, device='cuda:0')
+tensor(0.8053, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8288, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8466, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8566, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.61
+error 144862.65625
+19 self_attn.out_proj
+Quantizing ...
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.7359, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1641, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.6578, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2422, device='cuda:0')
+tensor(0.5484, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3516, device='cuda:0')
+tensor(0.6891, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2109, device='cuda:0')
+tensor(0.7672, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1328, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+time 0.60
+error 8676.232421875
+19 fc1
+Quantizing ...
+tensor(0.6344, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2656, device='cuda:0')
+tensor(0.8197, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.7650, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1250, device='cuda:0')
+tensor(0.7516, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1484, device='cuda:0')
+tensor(0.7516, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1484, device='cuda:0')
+tensor(0.7047, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1953, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+time 0.72
+error 338567.75
+19 fc2
+Quantizing ...
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7516, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1484, device='cuda:0')
+tensor(0.7750, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1250, device='cuda:0')
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.7672, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1328, device='cuda:0')
+tensor(0.7594, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1406, device='cuda:0')
+tensor(0.8062, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.7906, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.8062, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.7828, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.7906, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+time 2.43
+error 7193.68115234375
+20 self_attn.k_proj
+Quantizing ...
+tensor(0.8566, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8566, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8487, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8566, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.67
+error 115695.640625
+20 self_attn.v_proj
+Quantizing ...
+tensor(0.5953, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3047, device='cuda:0')
+tensor(0.6500, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2500, device='cuda:0')
+tensor(0.5641, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3359, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5484, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3516, device='cuda:0')
+tensor(0.6656, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2344, device='cuda:0')
+tensor(0.6891, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2109, device='cuda:0')
+tensor(0.8331, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0469, device='cuda:0')
+time 0.61
+error 72843.3828125
+20 self_attn.q_proj
+Quantizing ...
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7259, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1641, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8487, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8409, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8566, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8666, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.61
+error 138792.234375
+20 self_attn.out_proj
+Quantizing ...
+tensor(0.8119, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.8275, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.7281, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1719, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.8275, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8062, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.8666, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.61
+error 8653.3828125
+20 fc1
+Quantizing ...
+tensor(0.5719, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3281, device='cuda:0')
+tensor(0.8041, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.8041, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.8431, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8197, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.6109, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2891, device='cuda:0')
+tensor(0.8119, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8666, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.72
+error 318330.25
+20 fc2
+Quantizing ...
+tensor(0.7906, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.7984, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8062, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.7984, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.7281, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1719, device='cuda:0')
+tensor(0.7906, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.7984, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.7047, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1953, device='cuda:0')
+tensor(0.7984, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.7359, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1641, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.7828, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.7437, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1562, device='cuda:0')
+tensor(0.7906, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.7672, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1328, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+time 2.46
+error 7298.94921875
+21 self_attn.k_proj
+Quantizing ...
+tensor(0.8465, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8309, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8544, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0156, device='cuda:0')
+tensor(0.8487, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8566, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8744, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0156, device='cuda:0')
+time 0.66
+error 105782.421875
+21 self_attn.v_proj
+Quantizing ...
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.6422, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2578, device='cuda:0')
+tensor(0.7125, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1875, device='cuda:0')
+tensor(0.5641, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3359, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5719, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3281, device='cuda:0')
+tensor(0.7259, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1641, device='cuda:0')
+tensor(0.8509, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0391, device='cuda:0')
+time 0.59
+error 68653.0703125
+21 self_attn.q_proj
+Quantizing ...
+tensor(0.8288, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.6812, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2188, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8487, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8409, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8566, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8666, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.63
+error 140451.625
+21 self_attn.out_proj
+Quantizing ...
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.8331, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+time 0.60
+error 7006.81103515625
+21 fc1
+Quantizing ...
+tensor(0.7984, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.5875, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3125, device='cuda:0')
+tensor(0.7594, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1406, device='cuda:0')
+tensor(0.8353, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.6812, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2188, device='cuda:0')
+tensor(0.5484, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3516, device='cuda:0')
+tensor(0.7203, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1797, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+time 0.70
+error 290171.4375
+21 fc2
+Quantizing ...
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.8062, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7594, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1406, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.7828, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.7594, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1406, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.7672, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1328, device='cuda:0')
+tensor(0.7828, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.7906, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.8219, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.7750, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1250, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.7672, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1328, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 2.43
+error 10226.693359375
+22 self_attn.k_proj
+Quantizing ...
+tensor(0.8566, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8566, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8409, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8644, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0156, device='cuda:0')
+tensor(0.8487, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8566, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.68
+error 107365.28125
+22 self_attn.v_proj
+Quantizing ...
+tensor(0.8019, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0781, device='cuda:0')
+tensor(0.5484, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3516, device='cuda:0')
+tensor(0.5406, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3594, device='cuda:0')
+tensor(0.6891, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2109, device='cuda:0')
+tensor(0.6109, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2891, device='cuda:0')
+tensor(0.5875, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3125, device='cuda:0')
+tensor(0.8041, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.8431, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0469, device='cuda:0')
+time 0.60
+error 67857.9375
+22 self_attn.q_proj
+Quantizing ...
+tensor(0.7272, device='cuda:0') tensor(0.1400, device='cuda:0') tensor(0.1328, device='cuda:0')
+tensor(0.6847, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.1953, device='cuda:0')
+tensor(0.6266, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2734, device='cuda:0')
+tensor(0.8153, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8309, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.7941, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.8466, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8566, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0234, device='cuda:0')
+time 0.60
+error 161272.59375
+22 self_attn.out_proj
+Quantizing ...
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5250, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3750, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5484, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3516, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+time 0.61
+error 6038.6474609375
+22 fc1
+Quantizing ...
+tensor(0.7359, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1641, device='cuda:0')
+tensor(0.6578, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2422, device='cuda:0')
+tensor(0.6344, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2656, device='cuda:0')
+tensor(0.6031, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2969, device='cuda:0')
+tensor(0.5406, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3594, device='cuda:0')
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.7516, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1484, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+time 0.75
+error 250632.78125
+22 fc2
+Quantizing ...
+tensor(0.8062, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.7359, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1641, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.7828, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8062, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.7437, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1562, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8062, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.7750, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1250, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.7984, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1016, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8375, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8062, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+time 2.76
+error 10501.046875
+23 self_attn.k_proj
+Quantizing ...
+tensor(0.8487, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8487, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8175, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8387, device='cuda:0') tensor(0.1300, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8566, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8175, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.8566, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.8587, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0312, device='cuda:0')
+time 0.73
+error 102976.9921875
+23 self_attn.v_proj
+Quantizing ...
+tensor(0.6344, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2656, device='cuda:0')
+tensor(0.6712, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.2188, device='cuda:0')
+tensor(0.7025, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1875, device='cuda:0')
+tensor(0.6734, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2266, device='cuda:0')
+tensor(0.6031, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2969, device='cuda:0')
+tensor(0.5641, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3359, device='cuda:0')
+tensor(0.6734, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2266, device='cuda:0')
+tensor(0.8197, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0703, device='cuda:0')
+time 0.66
+error 82389.734375
+23 self_attn.q_proj
+Quantizing ...
+tensor(0.7550, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.1250, device='cuda:0')
+tensor(0.7103, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.1797, device='cuda:0')
+tensor(0.6869, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.2031, device='cuda:0')
+tensor(0.6344, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2656, device='cuda:0')
+tensor(0.5953, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3047, device='cuda:0')
+tensor(0.7125, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1875, device='cuda:0')
+tensor(0.8487, device='cuda:0') tensor(0.1200, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8197, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0703, device='cuda:0')
+time 0.67
+error 116082.75
+23 self_attn.out_proj
+Quantizing ...
+tensor(0.8275, device='cuda:0') tensor(0.1100, device='cuda:0') tensor(0.0625, device='cuda:0')
+tensor(0.5250, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3750, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.6656, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.2344, device='cuda:0')
+tensor(0.5172, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3828, device='cuda:0')
+tensor(0.5250, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3750, device='cuda:0')
+tensor(0.5250, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.3750, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+time 0.68
+error 7450.111328125
+23 fc1
+Quantizing ...
+tensor(0.7750, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1250, device='cuda:0')
+tensor(0.7437, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1562, device='cuda:0')
+tensor(0.7437, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1562, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.7281, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1719, device='cuda:0')
+tensor(0.7828, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.7594, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1406, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+time 0.77
+error 227323.25
+23 fc2
+Quantizing ...
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8844, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0156, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.7750, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1250, device='cuda:0')
+tensor(0.8453, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0547, device='cuda:0')
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.7828, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1172, device='cuda:0')
+tensor(0.8844, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0156, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.7906, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1094, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+tensor(0.8531, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0469, device='cuda:0')
+tensor(0.8844, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0156, device='cuda:0')
+tensor(0.8844, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0156, device='cuda:0')
+tensor(0.7750, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1250, device='cuda:0')
+tensor(0.8141, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0859, device='cuda:0')
+tensor(0.7750, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1250, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8844, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0156, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8687, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0312, device='cuda:0')
+tensor(0.8062, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.8844, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0156, device='cuda:0')
+tensor(0.7750, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1250, device='cuda:0')
+tensor(0.8062, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0938, device='cuda:0')
+tensor(0.8766, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0234, device='cuda:0')
+tensor(0.7281, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.1719, device='cuda:0')
+tensor(0.8297, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0703, device='cuda:0')
+tensor(0.8609, device='cuda:0') tensor(0.1000, device='cuda:0') tensor(0.0391, device='cuda:0')
+time 2.53
+error 10237.529296875
+quantization time: 159.2173936367035 s
+xjh_edit,load from local file:/data/xjh/dataset/wikitext-2-raw-v1,get wikitext2
+wikitext2
+Evaluating ...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+Perplexity: 2601.126465
+{'wikitext2/perplexity': 2601.12646484375}
+xjh_edit,load from local file:/data/xjh/dataset/ptb_text_only,get ptb
+ptb
+Evaluating ...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+Perplexity: 2565.691162
+{'ptb/perplexity': 2565.691162109375}
+xjh_edit,load from local file:/data/xjh/dataset/c4_part,get c4
+c4
+Evaluating ...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+Perplexity: 808.878052
+{'c4/perplexity': 808.8780517578125}

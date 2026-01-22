@@ -30,7 +30,7 @@ def get_tokenizer(model):
     return tokenizer
 
 def get_wikitext2(nsamples, seed, seqlen, model, tokenizer):
-    if not os.path.exists('/data/xjh/dataset/wikitext-2-raw-v1'):
+    if  os.path.exists('/data/xjh/dataset/wikitext-2-raw-v1'):
         print("xjh_edit,load from local file:/data/xjh/dataset/wikitext-2-raw-v1,get wikitext2")
         from datasets import load_from_disk
         data=load_from_disk('/data/xjh/dataset/wikitext-2-raw-v1')
@@ -56,7 +56,7 @@ def get_wikitext2(nsamples, seed, seqlen, model, tokenizer):
 
 #only for calib dataset
 def get_pileval(nsamples, seed, seqlen, model, tokenizer):
-    if not os.path.exists('/data/xjh/dataset/pile_val_backup'):
+    if  os.path.exists('/data/xjh/dataset/pile_val_backup'):
         print("xjh_edit,load from local file:/data/xjh/dataset/pile_val_backup,get pileval")
         from datasets import load_from_disk
         data=load_from_disk('/data/xjh/dataset/pile_val_backup')
@@ -79,7 +79,7 @@ def get_pileval(nsamples, seed, seqlen, model, tokenizer):
     
 
 def get_ptb(nsamples, seed, seqlen, model, tokenizer):
-    if not os.path.exists('/data/xjh/dataset/ptb_text_only'):
+    if  os.path.exists('/data/xjh/dataset/ptb_text_only'):
         print("xjh_edit,load from local file:/data/xjh/dataset/ptb_text_only,get ptb")
         from datasets import load_from_disk
         data=load_from_disk('/data/xjh/dataset/ptb_text_only')
@@ -109,7 +109,7 @@ class TokenizerWrapper:
         self.input_ids = input_ids
 
 def get_c4(nsamples, seed, seqlen, model, tokenizer):
-    if not os.path.exists('/data/xjh/dataset/c4_part'):
+    if  os.path.exists('/data/xjh/dataset/c4_part'):
         print("xjh_edit,load from local file:/data/xjh/dataset/c4_part,get c4")
         traindata = load_dataset(
             "json",  # 指定数据格式为 JSON

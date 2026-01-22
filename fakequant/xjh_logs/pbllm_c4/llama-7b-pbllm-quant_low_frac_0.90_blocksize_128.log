@@ -1,0 +1,1333 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+The following generation flags are not valid and may be ignored: ['pad_token_id']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Loading model ...
+/data/xjh/model_weight/llama/llama-7b
+Loading checkpoint shards:   0%|          | 0/33 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 33/33 [00:00<00:00, 1173.61it/s]
+You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565 - if you loaded a llama tokenizer from a GGUF file you can ignore this message
+Model loaded.
+model LlamaForCausalLM(
+  (model): LlamaModel(
+    (embed_tokens): Embedding(32000, 4096, padding_idx=31999)
+    (layers): ModuleList(
+      (0-31): 32 x LlamaDecoderLayer(
+        (self_attn): LlamaAttention(
+          (q_proj): Linear(in_features=4096, out_features=4096, bias=False)
+          (k_proj): Linear(in_features=4096, out_features=4096, bias=False)
+          (v_proj): Linear(in_features=4096, out_features=4096, bias=False)
+          (o_proj): Linear(in_features=4096, out_features=4096, bias=False)
+        )
+        (mlp): LlamaMLP(
+          (gate_proj): Linear(in_features=4096, out_features=11008, bias=False)
+          (up_proj): Linear(in_features=4096, out_features=11008, bias=False)
+          (down_proj): Linear(in_features=11008, out_features=4096, bias=False)
+          (act_fn): SiLUActivation()
+        )
+        (input_layernorm): LlamaRMSNorm((4096,), eps=1e-06)
+        (post_attention_layernorm): LlamaRMSNorm((4096,), eps=1e-06)
+      )
+    )
+    (norm): LlamaRMSNorm((4096,), eps=1e-06)
+    (rotary_emb): LlamaRotaryEmbedding()
+  )
+  (lm_head): Linear(in_features=4096, out_features=32000, bias=False)
+)
+xjh_edit,load from local file:/data/xjh/dataset/c4_part,get c4
+Starting ...
+Llama model detected.
+Ready.
+0 self_attn.q_proj
+Quantizing ...
+time 0.69
+error 2977.156982421875
+0 self_attn.k_proj
+Quantizing ...
+time 0.65
+error 3864.48095703125
+0 self_attn.v_proj
+Quantizing ...
+time 0.64
+error 788.3003540039062
+0 self_attn.o_proj
+Quantizing ...
+time 0.64
+error 32.12791061401367
+0 mlp.gate_proj
+Quantizing ...
+time 0.69
+error 7106.90380859375
+0 mlp.up_proj
+Quantizing ...
+time 0.68
+error 6488.529296875
+0 mlp.down_proj
+Quantizing ...
+time 1.92
+error 185.39443969726562
+1 self_attn.q_proj
+Quantizing ...
+time 0.64
+error 21417.4765625
+1 self_attn.k_proj
+Quantizing ...
+time 0.65
+error 25240.22265625
+1 self_attn.v_proj
+Quantizing ...
+time 0.65
+error 5563.1494140625
+1 self_attn.o_proj
+Quantizing ...
+time 0.64
+error 206.0621337890625
+1 mlp.gate_proj
+Quantizing ...
+time 0.66
+error 27737.697265625
+1 mlp.up_proj
+Quantizing ...
+time 0.66
+error 24628.4921875
+1 mlp.down_proj
+Quantizing ...
+time 1.84
+error 818.471923828125
+2 self_attn.q_proj
+Quantizing ...
+time 0.64
+error 45031.6015625
+2 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 46651.4453125
+2 self_attn.v_proj
+Quantizing ...
+time 0.64
+error 7841.974609375
+2 self_attn.o_proj
+Quantizing ...
+time 0.65
+error 479.60931396484375
+2 mlp.gate_proj
+Quantizing ...
+time 0.65
+error 48268.953125
+2 mlp.up_proj
+Quantizing ...
+time 0.66
+error 37681.1171875
+2 mlp.down_proj
+Quantizing ...
+time 1.84
+error 57706.71875
+3 self_attn.q_proj
+Quantizing ...
+time 0.70
+error 79670.5
+3 self_attn.k_proj
+Quantizing ...
+time 0.68
+error 85783.34375
+3 self_attn.v_proj
+Quantizing ...
+time 0.69
+error 23791.046875
+3 self_attn.o_proj
+Quantizing ...
+time 0.68
+error 206.63327026367188
+3 mlp.gate_proj
+Quantizing ...
+time 0.71
+error 61453.1328125
+3 mlp.up_proj
+Quantizing ...
+time 0.71
+error 50860.1875
+3 mlp.down_proj
+Quantizing ...
+time 1.90
+error 1729.1683349609375
+4 self_attn.q_proj
+Quantizing ...
+time 0.64
+error 116071.265625
+4 self_attn.k_proj
+Quantizing ...
+time 0.65
+error 118483.4453125
+4 self_attn.v_proj
+Quantizing ...
+time 0.64
+error 33442.6953125
+4 self_attn.o_proj
+Quantizing ...
+time 0.64
+error 550.8140869140625
+4 mlp.gate_proj
+Quantizing ...
+time 0.66
+error 82470.625
+4 mlp.up_proj
+Quantizing ...
+time 0.66
+error 67622.484375
+4 mlp.down_proj
+Quantizing ...
+time 1.84
+error 3010.48779296875
+5 self_attn.q_proj
+Quantizing ...
+time 0.64
+error 156532.421875
+5 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 157858.65625
+5 self_attn.v_proj
+Quantizing ...
+time 0.64
+error 52498.72265625
+5 self_attn.o_proj
+Quantizing ...
+time 0.64
+error 686.7562866210938
+5 mlp.gate_proj
+Quantizing ...
+time 0.67
+error 101412.15625
+5 mlp.up_proj
+Quantizing ...
+time 0.66
+error 79337.59375
+5 mlp.down_proj
+Quantizing ...
+time 1.84
+error 4438.5224609375
+6 self_attn.q_proj
+Quantizing ...
+time 0.64
+error 154791.71875
+6 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 162108.9375
+6 self_attn.v_proj
+Quantizing ...
+time 0.65
+error 50108.6171875
+6 self_attn.o_proj
+Quantizing ...
+time 0.64
+error 1150.95263671875
+6 mlp.gate_proj
+Quantizing ...
+time 0.66
+error 95886.75
+6 mlp.up_proj
+Quantizing ...
+time 0.66
+error 78967.3828125
+6 mlp.down_proj
+Quantizing ...
+time 1.83
+error 4749.806640625
+7 self_attn.q_proj
+Quantizing ...
+time 0.63
+error 147130.453125
+7 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 149903.859375
+7 self_attn.v_proj
+Quantizing ...
+time 0.64
+error 52387.7578125
+7 self_attn.o_proj
+Quantizing ...
+time 0.64
+error 3058.285888671875
+7 mlp.gate_proj
+Quantizing ...
+time 0.66
+error 88546.5
+7 mlp.up_proj
+Quantizing ...
+time 0.66
+error 75503.578125
+7 mlp.down_proj
+Quantizing ...
+time 1.84
+error 5409.857421875
+8 self_attn.q_proj
+Quantizing ...
+time 0.64
+error 145937.03125
+8 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 148012.03125
+8 self_attn.v_proj
+Quantizing ...
+time 0.64
+error 54277.640625
+8 self_attn.o_proj
+Quantizing ...
+time 0.64
+error 4468.5244140625
+8 mlp.gate_proj
+Quantizing ...
+time 0.66
+error 80148.8828125
+8 mlp.up_proj
+Quantizing ...
+time 0.66
+error 68913.8125
+8 mlp.down_proj
+Quantizing ...
+time 1.84
+error 5029.7607421875
+9 self_attn.q_proj
+Quantizing ...
+time 0.63
+error 140279.84375
+9 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 143591.765625
+9 self_attn.v_proj
+Quantizing ...
+time 0.64
+error 55764.3359375
+9 self_attn.o_proj
+Quantizing ...
+time 0.64
+error 5686.44140625
+9 mlp.gate_proj
+Quantizing ...
+time 0.67
+error 82602.40625
+9 mlp.up_proj
+Quantizing ...
+time 0.66
+error 74787.1875
+9 mlp.down_proj
+Quantizing ...
+time 1.95
+error 5663.736328125
+10 self_attn.q_proj
+Quantizing ...
+time 0.68
+error 151472.625
+10 self_attn.k_proj
+Quantizing ...
+time 0.65
+error 153944.28125
+10 self_attn.v_proj
+Quantizing ...
+time 0.64
+error 61881.89453125
+10 self_attn.o_proj
+Quantizing ...
+time 0.64
+error 7056.4208984375
+10 mlp.gate_proj
+Quantizing ...
+time 0.68
+error 88145.1484375
+10 mlp.up_proj
+Quantizing ...
+time 0.67
+error 82950.359375
+10 mlp.down_proj
+Quantizing ...
+time 1.85
+error 6830.681640625
+11 self_attn.q_proj
+Quantizing ...
+time 0.64
+error 134021.21875
+11 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 134218.765625
+11 self_attn.v_proj
+Quantizing ...
+time 0.65
+error 56896.0078125
+11 self_attn.o_proj
+Quantizing ...
+time 0.65
+error 7924.005859375
+11 mlp.gate_proj
+Quantizing ...
+time 0.65
+error 95005.984375
+11 mlp.up_proj
+Quantizing ...
+time 0.67
+error 91551.1796875
+11 mlp.down_proj
+Quantizing ...
+time 1.86
+error 9090.6669921875
+12 self_attn.q_proj
+Quantizing ...
+time 0.65
+error 158873.84375
+12 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 162354.125
+12 self_attn.v_proj
+Quantizing ...
+time 0.65
+error 72454.9375
+12 self_attn.o_proj
+Quantizing ...
+time 0.65
+error 9228.4931640625
+12 mlp.gate_proj
+Quantizing ...
+time 0.67
+error 110160.234375
+12 mlp.up_proj
+Quantizing ...
+time 0.66
+error 105725.65625
+12 mlp.down_proj
+Quantizing ...
+time 1.85
+error 11012.98046875
+13 self_attn.q_proj
+Quantizing ...
+time 0.65
+error 167509.25
+13 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 170460.09375
+13 self_attn.v_proj
+Quantizing ...
+time 0.65
+error 87779.765625
+13 self_attn.o_proj
+Quantizing ...
+time 0.65
+error 8477.697265625
+13 mlp.gate_proj
+Quantizing ...
+time 0.65
+error 115344.1640625
+13 mlp.up_proj
+Quantizing ...
+time 0.67
+error 113503.546875
+13 mlp.down_proj
+Quantizing ...
+time 1.86
+error 12460.080078125
+14 self_attn.q_proj
+Quantizing ...
+time 0.65
+error 160625.546875
+14 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 161615.984375
+14 self_attn.v_proj
+Quantizing ...
+time 0.64
+error 85950.546875
+14 self_attn.o_proj
+Quantizing ...
+time 0.65
+error 11161.04296875
+14 mlp.gate_proj
+Quantizing ...
+time 0.66
+error 129925.0625
+14 mlp.up_proj
+Quantizing ...
+time 0.66
+error 129460.2890625
+14 mlp.down_proj
+Quantizing ...
+time 1.87
+error 15191.3818359375
+15 self_attn.q_proj
+Quantizing ...
+time 0.65
+error 169371.390625
+15 self_attn.k_proj
+Quantizing ...
+time 0.65
+error 171346.65625
+15 self_attn.v_proj
+Quantizing ...
+time 0.64
+error 89318.21875
+15 self_attn.o_proj
+Quantizing ...
+time 0.65
+error 15285.7255859375
+15 mlp.gate_proj
+Quantizing ...
+time 0.67
+error 138498.28125
+15 mlp.up_proj
+Quantizing ...
+time 0.66
+error 137810.859375
+15 mlp.down_proj
+Quantizing ...
+time 1.86
+error 17872.3828125
+16 self_attn.q_proj
+Quantizing ...
+time 0.65
+error 156755.6875
+16 self_attn.k_proj
+Quantizing ...
+time 0.68
+error 161366.0
+16 self_attn.v_proj
+Quantizing ...
+time 0.70
+error 90854.6875
+16 self_attn.o_proj
+Quantizing ...
+time 0.73
+error 8490.974609375
+16 mlp.gate_proj
+Quantizing ...
+time 0.74
+error 159341.734375
+16 mlp.up_proj
+Quantizing ...
+time 0.75
+error 154595.71875
+16 mlp.down_proj
+Quantizing ...
+time 2.06
+error 24727.97265625
+17 self_attn.q_proj
+Quantizing ...
+time 0.69
+error 164703.75
+17 self_attn.k_proj
+Quantizing ...
+time 0.68
+error 170681.125
+17 self_attn.v_proj
+Quantizing ...
+time 0.69
+error 107148.609375
+17 self_attn.o_proj
+Quantizing ...
+time 0.69
+error 17543.17578125
+17 mlp.gate_proj
+Quantizing ...
+time 0.69
+error 175845.484375
+17 mlp.up_proj
+Quantizing ...
+time 0.70
+error 170207.53125
+17 mlp.down_proj
+Quantizing ...
+time 1.94
+error 27762.28515625
+18 self_attn.q_proj
+Quantizing ...
+time 0.64
+error 163065.40625
+18 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 164239.0
+18 self_attn.v_proj
+Quantizing ...
+time 0.63
+error 112527.0625
+18 self_attn.o_proj
+Quantizing ...
+time 0.64
+error 30819.587890625
+18 mlp.gate_proj
+Quantizing ...
+time 0.65
+error 195477.296875
+18 mlp.up_proj
+Quantizing ...
+time 0.66
+error 184636.96875
+18 mlp.down_proj
+Quantizing ...
+time 1.85
+error 28766.32421875
+19 self_attn.q_proj
+Quantizing ...
+time 0.65
+error 149731.3125
+19 self_attn.k_proj
+Quantizing ...
+time 0.65
+error 150400.46875
+19 self_attn.v_proj
+Quantizing ...
+time 0.64
+error 113328.234375
+19 self_attn.o_proj
+Quantizing ...
+time 0.64
+error 29348.322265625
+19 mlp.gate_proj
+Quantizing ...
+time 0.66
+error 209819.609375
+19 mlp.up_proj
+Quantizing ...
+time 0.66
+error 194745.03125
+19 mlp.down_proj
+Quantizing ...
+time 1.84
+error 29573.333984375
+20 self_attn.q_proj
+Quantizing ...
+time 0.65
+error 154908.109375
+20 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 156864.65625
+20 self_attn.v_proj
+Quantizing ...
+time 0.64
+error 119109.765625
+20 self_attn.o_proj
+Quantizing ...
+time 0.64
+error 22704.3046875
+20 mlp.gate_proj
+Quantizing ...
+time 0.66
+error 213625.71875
+20 mlp.up_proj
+Quantizing ...
+time 0.67
+error 196208.84375
+20 mlp.down_proj
+Quantizing ...
+time 1.85
+error 29677.78515625
+21 self_attn.q_proj
+Quantizing ...
+time 0.65
+error 145373.125
+21 self_attn.k_proj
+Quantizing ...
+time 0.65
+error 147260.84375
+21 self_attn.v_proj
+Quantizing ...
+time 0.65
+error 126116.390625
+21 self_attn.o_proj
+Quantizing ...
+time 0.65
+error 47347.41796875
+21 mlp.gate_proj
+Quantizing ...
+time 0.66
+error 218510.359375
+21 mlp.up_proj
+Quantizing ...
+time 0.66
+error 197820.84375
+21 mlp.down_proj
+Quantizing ...
+time 1.84
+error 27812.09765625
+22 self_attn.q_proj
+Quantizing ...
+time 0.64
+error 142223.046875
+22 self_attn.k_proj
+Quantizing ...
+time 0.65
+error 143142.46875
+22 self_attn.v_proj
+Quantizing ...
+time 0.63
+error 118210.203125
+22 self_attn.o_proj
+Quantizing ...
+time 0.65
+error 20626.046875
+22 mlp.gate_proj
+Quantizing ...
+time 0.66
+error 211608.84375
+22 mlp.up_proj
+Quantizing ...
+time 0.66
+error 192890.5625
+22 mlp.down_proj
+Quantizing ...
+time 1.85
+error 26651.185546875
+23 self_attn.q_proj
+Quantizing ...
+time 0.69
+error 135064.703125
+23 self_attn.k_proj
+Quantizing ...
+time 0.69
+error 132907.9375
+23 self_attn.v_proj
+Quantizing ...
+time 0.69
+error 130484.59375
+23 self_attn.o_proj
+Quantizing ...
+time 0.68
+error 50405.5390625
+23 mlp.gate_proj
+Quantizing ...
+time 0.70
+error 227013.65625
+23 mlp.up_proj
+Quantizing ...
+time 0.67
+error 205839.75
+23 mlp.down_proj
+Quantizing ...
+time 1.86
+error 29774.6484375
+24 self_attn.q_proj
+Quantizing ...
+time 0.64
+error 136803.03125
+24 self_attn.k_proj
+Quantizing ...
+time 0.66
+error 138348.96875
+24 self_attn.v_proj
+Quantizing ...
+time 0.65
+error 136094.875
+24 self_attn.o_proj
+Quantizing ...
+time 0.64
+error 37978.9921875
+24 mlp.gate_proj
+Quantizing ...
+time 0.68
+error 222734.1875
+24 mlp.up_proj
+Quantizing ...
+time 0.67
+error 204256.9375
+24 mlp.down_proj
+Quantizing ...
+time 1.88
+error 29354.60546875
+25 self_attn.q_proj
+Quantizing ...
+time 0.67
+error 140016.875
+25 self_attn.k_proj
+Quantizing ...
+time 0.66
+error 142967.21875
+25 self_attn.v_proj
+Quantizing ...
+time 0.66
+error 127461.125
+25 self_attn.o_proj
+Quantizing ...
+time 0.66
+error 17320.556640625
+25 mlp.gate_proj
+Quantizing ...
+time 0.68
+error 220706.609375
+25 mlp.up_proj
+Quantizing ...
+time 0.68
+error 203582.78125
+25 mlp.down_proj
+Quantizing ...
+time 1.90
+error 30109.8125
+26 self_attn.q_proj
+Quantizing ...
+time 0.65
+error 140707.328125
+26 self_attn.k_proj
+Quantizing ...
+time 0.65
+error 143893.875
+26 self_attn.v_proj
+Quantizing ...
+time 0.65
+error 140841.53125
+26 self_attn.o_proj
+Quantizing ...
+time 0.65
+error 12656.12890625
+26 mlp.gate_proj
+Quantizing ...
+time 0.66
+error 220966.0625
+26 mlp.up_proj
+Quantizing ...
+time 0.66
+error 207313.078125
+26 mlp.down_proj
+Quantizing ...
+time 1.85
+error 33617.265625
+27 self_attn.q_proj
+Quantizing ...
+time 0.64
+error 133349.21875
+27 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 136179.59375
+27 self_attn.v_proj
+Quantizing ...
+time 0.64
+error 138101.890625
+27 self_attn.o_proj
+Quantizing ...
+time 0.64
+error 10820.490234375
+27 mlp.gate_proj
+Quantizing ...
+time 0.65
+error 219071.6875
+27 mlp.up_proj
+Quantizing ...
+time 0.66
+error 210522.359375
+27 mlp.down_proj
+Quantizing ...
+time 1.85
+error 36624.3359375
+28 self_attn.q_proj
+Quantizing ...
+time 0.64
+error 127461.734375
+28 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 128517.4140625
+28 self_attn.v_proj
+Quantizing ...
+time 0.65
+error 140242.90625
+28 self_attn.o_proj
+Quantizing ...
+time 0.64
+error 41058.40625
+28 mlp.gate_proj
+Quantizing ...
+time 0.66
+error 234328.09375
+28 mlp.up_proj
+Quantizing ...
+time 0.66
+error 232253.34375
+28 mlp.down_proj
+Quantizing ...
+time 1.86
+error 49433.28125
+29 self_attn.q_proj
+Quantizing ...
+time 0.65
+error 126264.890625
+29 self_attn.k_proj
+Quantizing ...
+time 0.64
+error 129982.5
+29 self_attn.v_proj
+Quantizing ...
+time 0.64
+error 146338.921875
+29 self_attn.o_proj
+Quantizing ...
+time 0.64
+error 33507.65625
+29 mlp.gate_proj
+Quantizing ...
+time 0.67
+error 235245.125
+29 mlp.up_proj
+Quantizing ...
+time 0.72
+error 242119.03125
+29 mlp.down_proj
+Quantizing ...
+time 2.04
+error 65448.109375
+30 self_attn.q_proj
+Quantizing ...
+time 0.67
+error 118150.3125
+30 self_attn.k_proj
+Quantizing ...
+time 0.68
+error 121973.4453125
+30 self_attn.v_proj
+Quantizing ...
+time 0.66
+error 131129.140625
+30 self_attn.o_proj
+Quantizing ...
+time 0.65
+error 22936.767578125
+30 mlp.gate_proj
+Quantizing ...
+time 0.67
+error 241735.5625
+30 mlp.up_proj
+Quantizing ...
+time 0.66
+error 247825.328125
+30 mlp.down_proj
+Quantizing ...
+time 1.84
+error 111618.734375
+31 self_attn.q_proj
+Quantizing ...
+time 0.64
+error 91803.6484375
+31 self_attn.k_proj
+Quantizing ...
+time 0.65
+error 103144.375
+31 self_attn.v_proj
+Quantizing ...
+time 0.64
+error 73288.6640625
+31 self_attn.o_proj
+Quantizing ...
+time 0.66
+error 31358.04296875
+31 mlp.gate_proj
+Quantizing ...
+time 0.67
+error 219032.28125
+31 mlp.up_proj
+Quantizing ...
+time 0.66
+error 214125.875
+31 mlp.down_proj
+Quantizing ...
+time 1.85
+error 361906.53125
+model.embed_tokens.weight tensor(1.4267e-06)
+model.layers.0.self_attn.q_proj.weight tensor(8.3447e-06)
+model.layers.0.self_attn.k_proj.weight tensor(1.1384e-05)
+model.layers.0.self_attn.v_proj.weight tensor(3.8385e-05)
+model.layers.0.self_attn.o_proj.weight tensor(0.0002)
+model.layers.0.mlp.gate_proj.weight tensor(5.9217e-06)
+model.layers.0.mlp.up_proj.weight tensor(6.3209e-06)
+model.layers.0.mlp.down_proj.weight tensor(9.3150e-06)
+model.layers.0.input_layernorm.weight tensor(0.)
+model.layers.0.post_attention_layernorm.weight tensor(0.)
+model.layers.1.self_attn.q_proj.weight tensor(6.9737e-06)
+model.layers.1.self_attn.k_proj.weight tensor(6.8545e-06)
+model.layers.1.self_attn.v_proj.weight tensor(1.7762e-05)
+model.layers.1.self_attn.o_proj.weight tensor(0.0001)
+model.layers.1.mlp.gate_proj.weight tensor(2.3287e-06)
+model.layers.1.mlp.up_proj.weight tensor(1.7521e-06)
+model.layers.1.mlp.down_proj.weight tensor(2.8832e-06)
+model.layers.1.input_layernorm.weight tensor(0.)
+model.layers.1.post_attention_layernorm.weight tensor(0.)
+model.layers.2.self_attn.q_proj.weight tensor(6.7949e-06)
+model.layers.2.self_attn.k_proj.weight tensor(6.7353e-06)
+model.layers.2.self_attn.v_proj.weight tensor(1.2875e-05)
+model.layers.2.self_attn.o_proj.weight tensor(1.5616e-05)
+model.layers.2.mlp.gate_proj.weight tensor(1.7077e-06)
+model.layers.2.mlp.up_proj.weight tensor(1.0202e-06)
+model.layers.2.mlp.down_proj.weight tensor(3.3445e-05)
+model.layers.2.input_layernorm.weight tensor(0.)
+model.layers.2.post_attention_layernorm.weight tensor(0.)
+model.layers.3.self_attn.q_proj.weight tensor(7.6294e-06)
+model.layers.3.self_attn.k_proj.weight tensor(5.6624e-06)
+model.layers.3.self_attn.v_proj.weight tensor(8.5831e-06)
+model.layers.3.self_attn.o_proj.weight tensor(1.0848e-05)
+model.layers.3.mlp.gate_proj.weight tensor(1.2198e-06)
+model.layers.3.mlp.up_proj.weight tensor(1.0867e-06)
+model.layers.3.mlp.down_proj.weight tensor(6.6535e-07)
+model.layers.3.input_layernorm.weight tensor(0.)
+model.layers.3.post_attention_layernorm.weight tensor(0.)
+model.layers.4.self_attn.q_proj.weight tensor(8.2850e-06)
+model.layers.4.self_attn.k_proj.weight tensor(4.8280e-06)
+model.layers.4.self_attn.v_proj.weight tensor(7.4506e-06)
+model.layers.4.self_attn.o_proj.weight tensor(9.3579e-06)
+model.layers.4.mlp.gate_proj.weight tensor(1.3751e-06)
+model.layers.4.mlp.up_proj.weight tensor(1.0424e-06)
+model.layers.4.mlp.down_proj.weight tensor(3.9034e-06)
+model.layers.4.input_layernorm.weight tensor(0.)
+model.layers.4.post_attention_layernorm.weight tensor(0.)
+model.layers.5.self_attn.q_proj.weight tensor(5.1260e-06)
+model.layers.5.self_attn.k_proj.weight tensor(4.7684e-06)
+model.layers.5.self_attn.v_proj.weight tensor(5.0664e-06)
+model.layers.5.self_attn.o_proj.weight tensor(1.1206e-05)
+model.layers.5.mlp.gate_proj.weight tensor(1.4860e-06)
+model.layers.5.mlp.up_proj.weight tensor(1.0646e-06)
+model.layers.5.mlp.down_proj.weight tensor(1.2642e-06)
+model.layers.5.input_layernorm.weight tensor(0.)
+model.layers.5.post_attention_layernorm.weight tensor(0.)
+model.layers.6.self_attn.q_proj.weight tensor(5.7220e-06)
+model.layers.6.self_attn.k_proj.weight tensor(3.6359e-06)
+model.layers.6.self_attn.v_proj.weight tensor(3.7551e-06)
+model.layers.6.self_attn.o_proj.weight tensor(1.6689e-05)
+model.layers.6.mlp.gate_proj.weight tensor(1.7965e-06)
+model.layers.6.mlp.up_proj.weight tensor(1.5081e-06)
+model.layers.6.mlp.down_proj.weight tensor(1.9295e-06)
+model.layers.6.input_layernorm.weight tensor(0.)
+model.layers.6.post_attention_layernorm.weight tensor(0.)
+model.layers.7.self_attn.q_proj.weight tensor(5.1856e-06)
+model.layers.7.self_attn.k_proj.weight tensor(4.7684e-06)
+model.layers.7.self_attn.v_proj.weight tensor(5.1260e-06)
+model.layers.7.self_attn.o_proj.weight tensor(1.3769e-05)
+model.layers.7.mlp.gate_proj.weight tensor(2.4175e-06)
+model.layers.7.mlp.up_proj.weight tensor(2.4175e-06)
+model.layers.7.mlp.down_proj.weight tensor(4.3692e-06)
+model.layers.7.input_layernorm.weight tensor(0.)
+model.layers.7.post_attention_layernorm.weight tensor(0.)
+model.layers.8.self_attn.q_proj.weight tensor(5.0664e-06)
+model.layers.8.self_attn.k_proj.weight tensor(5.3644e-06)
+model.layers.8.self_attn.v_proj.weight tensor(4.9472e-06)
+model.layers.8.self_attn.o_proj.weight tensor(1.0312e-05)
+model.layers.8.mlp.gate_proj.weight tensor(2.7280e-06)
+model.layers.8.mlp.up_proj.weight tensor(2.7501e-06)
+model.layers.8.mlp.down_proj.weight tensor(3.6594e-06)
+model.layers.8.input_layernorm.weight tensor(0.)
+model.layers.8.post_attention_layernorm.weight tensor(0.)
+model.layers.9.self_attn.q_proj.weight tensor(5.3048e-06)
+model.layers.9.self_attn.k_proj.weight tensor(5.8413e-06)
+model.layers.9.self_attn.v_proj.weight tensor(4.4703e-06)
+model.layers.9.self_attn.o_proj.weight tensor(1.0014e-05)
+model.layers.9.mlp.gate_proj.weight tensor(3.0828e-06)
+model.layers.9.mlp.up_proj.weight tensor(3.6151e-06)
+model.layers.9.mlp.down_proj.weight tensor(3.2602e-06)
+model.layers.9.input_layernorm.weight tensor(0.)
+model.layers.9.post_attention_layernorm.weight tensor(0.)
+model.layers.10.self_attn.q_proj.weight tensor(5.8413e-06)
+model.layers.10.self_attn.k_proj.weight tensor(4.5896e-06)
+model.layers.10.self_attn.v_proj.weight tensor(4.9472e-06)
+model.layers.10.self_attn.o_proj.weight tensor(1.1206e-05)
+model.layers.10.mlp.gate_proj.weight tensor(3.3711e-06)
+model.layers.10.mlp.up_proj.weight tensor(3.2824e-06)
+model.layers.10.mlp.down_proj.weight tensor(2.7945e-06)
+model.layers.10.input_layernorm.weight tensor(0.)
+model.layers.10.post_attention_layernorm.weight tensor(0.)
+model.layers.11.self_attn.q_proj.weight tensor(6.1989e-06)
+model.layers.11.self_attn.k_proj.weight tensor(4.1127e-06)
+model.layers.11.self_attn.v_proj.weight tensor(4.9472e-06)
+model.layers.11.self_attn.o_proj.weight tensor(1.1563e-05)
+model.layers.11.mlp.gate_proj.weight tensor(3.4155e-06)
+model.layers.11.mlp.up_proj.weight tensor(3.2824e-06)
+model.layers.11.mlp.down_proj.weight tensor(3.2159e-06)
+model.layers.11.input_layernorm.weight tensor(0.)
+model.layers.11.post_attention_layernorm.weight tensor(0.)
+model.layers.12.self_attn.q_proj.weight tensor(5.8413e-06)
+model.layers.12.self_attn.k_proj.weight tensor(5.1856e-06)
+model.layers.12.self_attn.v_proj.weight tensor(4.0531e-06)
+model.layers.12.self_attn.o_proj.weight tensor(1.0133e-05)
+model.layers.12.mlp.gate_proj.weight tensor(2.9941e-06)
+model.layers.12.mlp.up_proj.weight tensor(3.3489e-06)
+model.layers.12.mlp.down_proj.weight tensor(2.3953e-06)
+model.layers.12.input_layernorm.weight tensor(0.)
+model.layers.12.post_attention_layernorm.weight tensor(0.)
+model.layers.13.self_attn.q_proj.weight tensor(4.1723e-06)
+model.layers.13.self_attn.k_proj.weight tensor(4.4703e-06)
+model.layers.13.self_attn.v_proj.weight tensor(5.0068e-06)
+model.layers.13.self_attn.o_proj.weight tensor(1.5974e-05)
+model.layers.13.mlp.gate_proj.weight tensor(3.1272e-06)
+model.layers.13.mlp.up_proj.weight tensor(3.1493e-06)
+model.layers.13.mlp.down_proj.weight tensor(2.6836e-06)
+model.layers.13.input_layernorm.weight tensor(0.)
+model.layers.13.post_attention_layernorm.weight tensor(0.)
+model.layers.14.self_attn.q_proj.weight tensor(4.0531e-06)
+model.layers.14.self_attn.k_proj.weight tensor(3.6955e-06)
+model.layers.14.self_attn.v_proj.weight tensor(4.0531e-06)
+model.layers.14.self_attn.o_proj.weight tensor(1.0192e-05)
+model.layers.14.mlp.gate_proj.weight tensor(3.1715e-06)
+model.layers.14.mlp.up_proj.weight tensor(2.9497e-06)
+model.layers.14.mlp.down_proj.weight tensor(2.0848e-06)
+model.layers.14.input_layernorm.weight tensor(0.)
+model.layers.14.post_attention_layernorm.weight tensor(0.)
+model.layers.15.self_attn.q_proj.weight tensor(4.3511e-06)
+model.layers.15.self_attn.k_proj.weight tensor(4.0531e-06)
+model.layers.15.self_attn.v_proj.weight tensor(4.8280e-06)
+model.layers.15.self_attn.o_proj.weight tensor(1.2040e-05)
+model.layers.15.mlp.gate_proj.weight tensor(3.2824e-06)
+model.layers.15.mlp.up_proj.weight tensor(2.8167e-06)
+model.layers.15.mlp.down_proj.weight tensor(2.1291e-06)
+model.layers.15.input_layernorm.weight tensor(0.)
+model.layers.15.post_attention_layernorm.weight tensor(0.)
+model.layers.16.self_attn.q_proj.weight tensor(4.1127e-06)
+model.layers.16.self_attn.k_proj.weight tensor(4.7684e-06)
+model.layers.16.self_attn.v_proj.weight tensor(3.9339e-06)
+model.layers.16.self_attn.o_proj.weight tensor(1.5378e-05)
+model.layers.16.mlp.gate_proj.weight tensor(3.0385e-06)
+model.layers.16.mlp.up_proj.weight tensor(3.0606e-06)
+model.layers.16.mlp.down_proj.weight tensor(3.1715e-06)
+model.layers.16.input_layernorm.weight tensor(0.)
+model.layers.16.post_attention_layernorm.weight tensor(0.)
+model.layers.17.self_attn.q_proj.weight tensor(4.2319e-06)
+model.layers.17.self_attn.k_proj.weight tensor(4.3511e-06)
+model.layers.17.self_attn.v_proj.weight tensor(3.5763e-06)
+model.layers.17.self_attn.o_proj.weight tensor(1.8597e-05)
+model.layers.17.mlp.gate_proj.weight tensor(3.2159e-06)
+model.layers.17.mlp.up_proj.weight tensor(2.9276e-06)
+model.layers.17.mlp.down_proj.weight tensor(3.3489e-06)
+model.layers.17.input_layernorm.weight tensor(0.)
+model.layers.17.post_attention_layernorm.weight tensor(0.)
+model.layers.18.self_attn.q_proj.weight tensor(5.2452e-06)
+model.layers.18.self_attn.k_proj.weight tensor(3.9339e-06)
+model.layers.18.self_attn.v_proj.weight tensor(4.2915e-06)
+model.layers.18.self_attn.o_proj.weight tensor(1.0371e-05)
+model.layers.18.mlp.gate_proj.weight tensor(2.9719e-06)
+model.layers.18.mlp.up_proj.weight tensor(3.1715e-06)
+model.layers.18.mlp.down_proj.weight tensor(2.8610e-06)
+model.layers.18.input_layernorm.weight tensor(0.)
+model.layers.18.post_attention_layernorm.weight tensor(0.)
+model.layers.19.self_attn.q_proj.weight tensor(4.6492e-06)
+model.layers.19.self_attn.k_proj.weight tensor(4.3511e-06)
+model.layers.19.self_attn.v_proj.weight tensor(4.3511e-06)
+model.layers.19.self_attn.o_proj.weight tensor(2.8253e-05)
+model.layers.19.mlp.gate_proj.weight tensor(3.2602e-06)
+model.layers.19.mlp.up_proj.weight tensor(2.6171e-06)
+model.layers.19.mlp.down_proj.weight tensor(2.1735e-06)
+model.layers.19.input_layernorm.weight tensor(0.)
+model.layers.19.post_attention_layernorm.weight tensor(0.)
+model.layers.20.self_attn.q_proj.weight tensor(4.2319e-06)
+model.layers.20.self_attn.k_proj.weight tensor(4.7684e-06)
+model.layers.20.self_attn.v_proj.weight tensor(5.1260e-06)
+model.layers.20.self_attn.o_proj.weight tensor(1.8775e-05)
+model.layers.20.mlp.gate_proj.weight tensor(3.1272e-06)
+model.layers.20.mlp.up_proj.weight tensor(3.1937e-06)
+model.layers.20.mlp.down_proj.weight tensor(2.4618e-06)
+model.layers.20.input_layernorm.weight tensor(0.)
+model.layers.20.post_attention_layernorm.weight tensor(0.)
+model.layers.21.self_attn.q_proj.weight tensor(4.8280e-06)
+model.layers.21.self_attn.k_proj.weight tensor(3.8147e-06)
+model.layers.21.self_attn.v_proj.weight tensor(3.5167e-06)
+model.layers.21.self_attn.o_proj.weight tensor(1.9848e-05)
+model.layers.21.mlp.gate_proj.weight tensor(3.1050e-06)
+model.layers.21.mlp.up_proj.weight tensor(3.0606e-06)
+model.layers.21.mlp.down_proj.weight tensor(1.8852e-06)
+model.layers.21.input_layernorm.weight tensor(0.)
+model.layers.21.post_attention_layernorm.weight tensor(0.)
+model.layers.22.self_attn.q_proj.weight tensor(3.9339e-06)
+model.layers.22.self_attn.k_proj.weight tensor(4.1723e-06)
+model.layers.22.self_attn.v_proj.weight tensor(2.6226e-06)
+model.layers.22.self_attn.o_proj.weight tensor(2.7120e-05)
+model.layers.22.mlp.gate_proj.weight tensor(3.5707e-06)
+model.layers.22.mlp.up_proj.weight tensor(3.1937e-06)
+model.layers.22.mlp.down_proj.weight tensor(2.2844e-06)
+model.layers.22.input_layernorm.weight tensor(0.)
+model.layers.22.post_attention_layernorm.weight tensor(0.)
+model.layers.23.self_attn.q_proj.weight tensor(4.7088e-06)
+model.layers.23.self_attn.k_proj.weight tensor(4.2319e-06)
+model.layers.23.self_attn.v_proj.weight tensor(3.1590e-06)
+model.layers.23.self_attn.o_proj.weight tensor(2.2292e-05)
+model.layers.23.mlp.gate_proj.weight tensor(3.6373e-06)
+model.layers.23.mlp.up_proj.weight tensor(2.6836e-06)
+model.layers.23.mlp.down_proj.weight tensor(1.6634e-06)
+model.layers.23.input_layernorm.weight tensor(0.)
+model.layers.23.post_attention_layernorm.weight tensor(0.)
+model.layers.24.self_attn.q_proj.weight tensor(4.8280e-06)
+model.layers.24.self_attn.k_proj.weight tensor(4.0531e-06)
+model.layers.24.self_attn.v_proj.weight tensor(4.0531e-06)
+model.layers.24.self_attn.o_proj.weight tensor(3.3259e-05)
+model.layers.24.mlp.gate_proj.weight tensor(3.2381e-06)
+model.layers.24.mlp.up_proj.weight tensor(3.7038e-06)
+model.layers.24.mlp.down_proj.weight tensor(2.2400e-06)
+model.layers.24.input_layernorm.weight tensor(0.)
+model.layers.24.post_attention_layernorm.weight tensor(0.)
+model.layers.25.self_attn.q_proj.weight tensor(4.2319e-06)
+model.layers.25.self_attn.k_proj.weight tensor(3.3379e-06)
+model.layers.25.self_attn.v_proj.weight tensor(4.5896e-06)
+model.layers.25.self_attn.o_proj.weight tensor(2.6822e-05)
+model.layers.25.mlp.gate_proj.weight tensor(3.7482e-06)
+model.layers.25.mlp.up_proj.weight tensor(3.3046e-06)
+model.layers.25.mlp.down_proj.weight tensor(2.5062e-06)
+model.layers.25.input_layernorm.weight tensor(0.)
+model.layers.25.post_attention_layernorm.weight tensor(0.)
+model.layers.26.self_attn.q_proj.weight tensor(3.5167e-06)
+model.layers.26.self_attn.k_proj.weight tensor(4.2915e-06)
+model.layers.26.self_attn.v_proj.weight tensor(3.4571e-06)
+model.layers.26.self_attn.o_proj.weight tensor(2.4915e-05)
+model.layers.26.mlp.gate_proj.weight tensor(4.0365e-06)
+model.layers.26.mlp.up_proj.weight tensor(3.3489e-06)
+model.layers.26.mlp.down_proj.weight tensor(2.9941e-06)
+model.layers.26.input_layernorm.weight tensor(0.)
+model.layers.26.post_attention_layernorm.weight tensor(0.)
+model.layers.27.self_attn.q_proj.weight tensor(4.1127e-06)
+model.layers.27.self_attn.k_proj.weight tensor(4.1723e-06)
+model.layers.27.self_attn.v_proj.weight tensor(3.7551e-06)
+model.layers.27.self_attn.o_proj.weight tensor(4.4167e-05)
+model.layers.27.mlp.gate_proj.weight tensor(3.2159e-06)
+model.layers.27.mlp.up_proj.weight tensor(3.7925e-06)
+model.layers.27.mlp.down_proj.weight tensor(2.9054e-06)
+model.layers.27.input_layernorm.weight tensor(0.)
+model.layers.27.post_attention_layernorm.weight tensor(0.)
+model.layers.28.self_attn.q_proj.weight tensor(4.5896e-06)
+model.layers.28.self_attn.k_proj.weight tensor(4.4703e-06)
+model.layers.28.self_attn.v_proj.weight tensor(3.3975e-06)
+model.layers.28.self_attn.o_proj.weight tensor(2.9266e-05)
+model.layers.28.mlp.gate_proj.weight tensor(4.0808e-06)
+model.layers.28.mlp.up_proj.weight tensor(3.7925e-06)
+model.layers.28.mlp.down_proj.weight tensor(3.9699e-06)
+model.layers.28.input_layernorm.weight tensor(0.)
+model.layers.28.post_attention_layernorm.weight tensor(0.)
+model.layers.29.self_attn.q_proj.weight tensor(4.6492e-06)
+model.layers.29.self_attn.k_proj.weight tensor(4.8280e-06)
+model.layers.29.self_attn.v_proj.weight tensor(3.8743e-06)
+model.layers.29.self_attn.o_proj.weight tensor(4.5538e-05)
+model.layers.29.mlp.gate_proj.weight tensor(4.0365e-06)
+model.layers.29.mlp.up_proj.weight tensor(3.8147e-06)
+model.layers.29.mlp.down_proj.weight tensor(6.2765e-06)
+model.layers.29.input_layernorm.weight tensor(0.)
+model.layers.29.post_attention_layernorm.weight tensor(0.)
+model.layers.30.self_attn.q_proj.weight tensor(5.3644e-06)
+model.layers.30.self_attn.k_proj.weight tensor(5.2452e-06)
+model.layers.30.self_attn.v_proj.weight tensor(3.6359e-06)
+model.layers.30.self_attn.o_proj.weight tensor(2.6941e-05)
+model.layers.30.mlp.gate_proj.weight tensor(4.4135e-06)
+model.layers.30.mlp.up_proj.weight tensor(4.3692e-06)
+model.layers.30.mlp.down_proj.weight tensor(2.1801e-05)
+model.layers.30.input_layernorm.weight tensor(0.)
+model.layers.30.post_attention_layernorm.weight tensor(0.)
+model.layers.31.self_attn.q_proj.weight tensor(7.4506e-06)
+model.layers.31.self_attn.k_proj.weight tensor(5.7220e-06)
+model.layers.31.self_attn.v_proj.weight tensor(5.8413e-06)
+model.layers.31.self_attn.o_proj.weight tensor(1.9670e-05)
+model.layers.31.mlp.gate_proj.weight tensor(6.8753e-06)
+model.layers.31.mlp.up_proj.weight tensor(7.1193e-06)
+model.layers.31.mlp.down_proj.weight tensor(8.4034e-05)
+model.layers.31.input_layernorm.weight tensor(0.)
+model.layers.31.post_attention_layernorm.weight tensor(0.)
+model.norm.weight tensor(0.)
+lm_head.weight tensor(1.2817e-06)
+349.12094140052795
+xjh_edit,load from local file:/data/xjh/dataset/wikitext-2-raw-v1,get wikitext2
+wikitext2
+Evaluating ...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+Perplexity: 115.709473
+xjh_edit,load from local file:/data/xjh/dataset/ptb_text_only,get ptb
+ptb
+Evaluating ...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+Perplexity: 218.026245
+xjh_edit,load from local file:/data/xjh/dataset/c4_part,get c4
+c4
+Evaluating ...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+Perplexity: 110.414223

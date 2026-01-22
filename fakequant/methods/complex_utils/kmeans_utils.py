@@ -68,7 +68,7 @@ class KMeansQuantizerTorch:
         :param quantized_weight: 量化后的权重张量
         :return: 反量化后的权重张量
         """
-        # 直接返回量化权重，因为 K-Means 的量化是无损的
+        # 直接返回量化权重，因为量化值已经是聚类中心
         return quantized_weight
     
 test_quantizer=KMeansQuantizerTorch(n_clusters=8, max_iter=3)
@@ -84,6 +84,7 @@ class RowWiseKMeansQuantizerTorch:
         self.row_cluster_centers = []
         self.group_size = group_size
         self.max_iter = max_iter
+        
 
 
     def fit(self, weight):
@@ -92,15 +93,16 @@ class RowWiseKMeansQuantizerTorch:
         :param weight: 输入权重张量 (torch.Tensor)
         :return: None
         """
-        if self.group_size == -1:
-            group_size = weight.size(-1)
-        elif self.group_size == -2:
-            group_size = weight.size(-1)//2
-        elif self.group_size == -4:
-            group_size = weight.size(-1)//4
+        w_size = weight.size(-1)
+
+        if self.group_size < 0:
+            denominator = abs(self.group_size)
+            assert w_size % denominator == 0, f"Weight size {w_size} must be divisible by {denominator}"
+            group_size = w_size // denominator
         else:
             group_size = self.group_size
-        #weight = weight.view(-1, group_size)
+            #assert w_size % group_size == 0, f"Weight size {w_size} must be divisible by group_size {group_size}"
+
         weight=weight.reshape(-1,group_size)
         self.row_cluster_centers = []
         for row in weight:
@@ -119,15 +121,7 @@ class RowWiseKMeansQuantizerTorch:
                         cluster_centers[k] = row[labels == k].mean()
             self.row_cluster_centers.append(cluster_centers)
         return self.row_cluster_centers
-    #     if DEBUG_TEST:
-    #         #仅测试
-    #         #rows*n_clusters
-    #         self.row_cluster_centers_tensor = torch.vstack(self.row_cluster_centers)
-    #         test_quantizer.fit(self.row_cluster_centers_tensor)
-    #         self.row_cluster_centers_tensor=test_quantizer.quantize(self.row_cluster_centers_tensor)
-    #         self.row_cluster_centers_tensor=self.row_cluster_centers_tensor.reshape(-1,self.n_clusters)
-    #         self.row_cluster_centers=[self.row_cluster_centers_tensor[i][:,None] for i in range(self.row_cluster_centers_tensor.shape[0])]
-    #         return self.row_cluster_centers
+
     
     def quantize(self, weight):
         """
@@ -135,17 +129,25 @@ class RowWiseKMeansQuantizerTorch:
         :param weight: 输入权重张量 (torch.Tensor)
         :return: 量化后的权重张量
         """
-        if self.group_size == -1:
-            group_size = weight.size(-1)
-        elif self.group_size == -2:
-            group_size = weight.size(-1)//2
-        elif self.group_size == -4:
-            group_size = weight.size(-1)//4
+        print("cluster:", self.n_clusters)
+        w_size = weight.size(-1)
+
+
+        if self.group_size < 0:
+            denominator = abs(self.group_size)
+            assert w_size % denominator == 0, f"Weight size {w_size} must be divisible by {denominator}"
+            group_size = w_size // denominator
         else:
             group_size = self.group_size
+            #assert w_size % group_size == 0, f"Weight size {w_size} must be divisible by group_size {group_size}"
+
         org_shape = weight.shape
-        #weight = weight.view(-1, group_size)
+        
         weight=weight.reshape(-1,group_size)
+        print("group_size:",group_size)
+        print("cluster Quantizing weight with shape:", weight.shape)
+        #raise NotImplementedError
+
         quantized_weight = torch.zeros_like(weight)
         for i, row in enumerate(weight):
             # 获取当前行的聚类中心

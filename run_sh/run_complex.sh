@@ -1,5 +1,5 @@
 #METHOD=complex1
-METHOD=complex1
+METHOD=complex3
 
 #METHOD=complex2_adakmeans
 #配置参数
@@ -25,20 +25,40 @@ METHOD=complex1
 
 
 MODELS=(
-    # "/data/xjh/model_weight/llama/llama3.2-1b"
-    # "/data/xjh/model_weight/llama/llama3.2-3b"
-    # "/data/xjh/model_weight/llama/llama3-8b"
-    #  "/data/xjh/model_weight/llama/llama2-7b"
-    # "/data/xjh/model_weight/llama/llama2-13b"
-     "/data/xjh/model_weight/llama/llama-7b"
+
+     
+    "/data/xjh/model_weight/opt/opt-125m"
+    "/data/xjh/model_weight/opt/opt-350m"
+    "/data/xjh/model_weight/opt/opt-1.3b"
+    "/data/xjh/model_weight/opt/opt-2.7b"
+    "/data/xjh/model_weight/opt/opt-6.7b"
+    "/data/xjh/model_weight/opt/opt-13b"
+
+    "/data/xjh/model_weight/llama/llama3.2-1b"
+
+    "/data/xjh/model_weight/llama/llama3.2-3b"
+    "/data/xjh/model_weight/llama/llama3-8b"
+
+    "/data/xjh/model_weight/llama/llama2-7b"
+
+    "/data/xjh/model_weight/llama/llama2-13b"
+    "/data/xjh/model_weight/llama/llama-7b"
      "/data/xjh/model_weight/llama/llama-13b"
-    # "/data/xjh/model_weight/opt/opt-125m"
-    # "/data/xjh/model_weight/opt/opt-350m"
-    # "/data/xjh/model_weight/opt/opt-1.3b"
-    # "/data/xjh/model_weight/opt/opt-2.7b"
-    #  "/data/xjh/model_weight/opt/opt-6.7b"
-    #  "/data/xjh/model_weight/opt/opt-13b"
-)
+
+
+
+    # "/data/xjh/model_weight/qwen/Qwen3-4B"
+    # "/data/xjh/model_weight/qwen/Qwen3-8B"
+    # "/data/xjh/model_weight/qwen/Qwen3-14B"
+    # "/data/xjh/model_weight/qwen/Qwen3-0.6B-Base"
+    # "/data/xjh/model_weight/qwen/Qwen3-1.7B-Base"
+    # "/data/xjh/model_weight/qwen/Qwen3-4B-Base"
+    # "/data/xjh/model_weight/qwen/Qwen3-8B-Base"
+    # "/data/xjh/model_weight/qwen/Qwen3-14B-Base"
+
+
+
+ )
 
 #BLOCKSIZES=(128 )
 BLOCKSIZE=128
@@ -47,13 +67,15 @@ DEVICE="cuda:1"
 DATASET="c4"
 LOG_DIR="./xjh_logs/${METHOD}_${DATASET}"
 #LOG_DIR="./xjh_logs/${METHOD}_test_no_svd_${DATASET}"
-CLUSTER_M=4
+CLUSTER_M=2
 CLUSTER_P=8
-GROUPSIZE=-4
-GROUPSIZE=-1
-GROUPSIZES=(-1 -2 -4)
+# GROUPSIZE=-4
+GROUPSIZES=( -1 )
+# GROUPSIZES=(-1 -2 -4)
+# GROUPSIZES=( -4 )
 # 创建日志目录（如果不存在）
 mkdir -p "$LOG_DIR"
+
 
 # 遍历配置
 # for BLOCKSIZE in "${BLOCKSIZES[@]}"; do
@@ -70,8 +92,12 @@ for GROUPSIZE in "${GROUPSIZES[@]}"; do
         fi
         LOG_FILE+="_groupsize_${GROUPSIZE}"
   
+        # echo "Running ${METHOD} quant for model $model_name and blocksize $BLOCKSIZE..."
+        # python3 run_complex.py "$MODEL" "$DATASET" --blocksize "$BLOCKSIZE"  --cluster_m $CLUSTER_M --cluster_p $CLUSTER_P --groupsize $GROUPSIZE --device "$DEVICE" >> "${LOG_FILE}.log" 2>&1
+        # # ...existing code...
         echo "Running ${METHOD} quant for model $model_name and blocksize $BLOCKSIZE..."
-        python3 run_complex.py "$MODEL" "$DATASET" --blocksize "$BLOCKSIZE"  --cluster_m $CLUSTER_M --cluster_p $CLUSTER_P --groupsize $GROUPSIZE --device "$DEVICE" >> "${LOG_FILE}.log" 2>&1
+        python3 run_complex.py "$MODEL" "$DATASET" --method "$METHOD" --blocksize "$BLOCKSIZE"  --cluster_m $CLUSTER_M --cluster_p $CLUSTER_P --groupsize $GROUPSIZE --device "$DEVICE" >> "${LOG_FILE}.log" 2>&1
+# ...existing code...
     done
 done
 

@@ -1,0 +1,70 @@
+{
+  "builder_name": "arrow",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "wikitext-2-raw-v1",
+  "dataset_size": 27052186,
+  "description": "",
+  "download_checksums": {
+    "/mnt/disk3/hg/datasets/wikitext/wikitext-2-raw-v1/0.0.0/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-train.arrow": {
+      "num_bytes": 11068328,
+      "checksum": null
+    },
+    "/mnt/disk3/hg/datasets/wikitext/wikitext-2-raw-v1/0.0.0/eeccd6e914e980ab/wikitext-train.arrow": {
+      "num_bytes": 11069184,
+      "checksum": null
+    },
+    "/mnt/disk3/hg/datasets/wikitext/wikitext-2-raw-v1/0.0.0/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-validation.arrow": {
+      "num_bytes": 1160224,
+      "checksum": null
+    },
+    "/mnt/disk3/hg/datasets/wikitext/wikitext-2-raw-v1/0.0.0/eeccd6e914e980ab/wikitext-validation.arrow": {
+      "num_bytes": 1160288,
+      "checksum": null
+    },
+    "/mnt/disk3/hg/datasets/wikitext/wikitext-2-raw-v1/0.0.0/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-test.arrow": {
+      "num_bytes": 1306200,
+      "checksum": null
+    },
+    "/mnt/disk3/hg/datasets/wikitext/wikitext-2-raw-v1/0.0.0/eeccd6e914e980ab/wikitext-test.arrow": {
+      "num_bytes": 1306264,
+      "checksum": null
+    }
+  },
+  "download_size": 27070488,
+  "features": {
+    "text": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 54122674,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 22123434,
+      "num_examples": 73436,
+      "dataset_name": "wikitext-2-raw-v1"
+    },
+    "validation": {
+      "name": "validation",
+      "num_bytes": 2318576,
+      "num_examples": 7520,
+      "dataset_name": "wikitext-2-raw-v1"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 2610176,
+      "num_examples": 8716,
+      "dataset_name": "wikitext-2-raw-v1"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

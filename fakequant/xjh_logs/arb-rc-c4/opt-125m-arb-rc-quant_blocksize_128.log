@@ -1,0 +1,1066 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+2026-01-22 17:08:36,702 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2026-01-22 17:08:37,469 - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/json/json.py HTTP/11" 200 0
+2026-01-22 17:08:37,474 - filelock - DEBUG - Attempting to acquire lock 140022224387248 on /home/xjh/.cache/huggingface/datasets/_home_xjh_.cache_huggingface_datasets_json_default-07a3d7608cc7c204_0.0.0_ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18.lock
+2026-01-22 17:08:37,474 - filelock - DEBUG - Lock 140022224387248 acquired on /home/xjh/.cache/huggingface/datasets/_home_xjh_.cache_huggingface_datasets_json_default-07a3d7608cc7c204_0.0.0_ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18.lock
+2026-01-22 17:08:37,474 - filelock - DEBUG - Attempting to release lock 140022224387248 on /home/xjh/.cache/huggingface/datasets/_home_xjh_.cache_huggingface_datasets_json_default-07a3d7608cc7c204_0.0.0_ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18.lock
+2026-01-22 17:08:37,474 - filelock - DEBUG - Lock 140022224387248 released on /home/xjh/.cache/huggingface/datasets/_home_xjh_.cache_huggingface_datasets_json_default-07a3d7608cc7c204_0.0.0_ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18.lock
+2026-01-22 17:08:37,482 - filelock - DEBUG - Attempting to acquire lock 140022218775808 on /home/xjh/.cache/huggingface/datasets/json/default-07a3d7608cc7c204/0.0.0/8bb11242116d547c741b2e8a1f18598ffdd40a1d4f2a2872c7a28b697434bc96_builder.lock
+2026-01-22 17:08:37,482 - filelock - DEBUG - Lock 140022218775808 acquired on /home/xjh/.cache/huggingface/datasets/json/default-07a3d7608cc7c204/0.0.0/8bb11242116d547c741b2e8a1f18598ffdd40a1d4f2a2872c7a28b697434bc96_builder.lock
+2026-01-22 17:08:37,482 - fsspec.local - DEBUG - open file: /home/xjh/.cache/huggingface/datasets/json/default-07a3d7608cc7c204/0.0.0/8bb11242116d547c741b2e8a1f18598ffdd40a1d4f2a2872c7a28b697434bc96/dataset_info.json
+2026-01-22 17:08:37,483 - filelock - DEBUG - Attempting to release lock 140022218775808 on /home/xjh/.cache/huggingface/datasets/json/default-07a3d7608cc7c204/0.0.0/8bb11242116d547c741b2e8a1f18598ffdd40a1d4f2a2872c7a28b697434bc96_builder.lock
+2026-01-22 17:08:37,483 - filelock - DEBUG - Lock 140022218775808 released on /home/xjh/.cache/huggingface/datasets/json/default-07a3d7608cc7c204/0.0.0/8bb11242116d547c741b2e8a1f18598ffdd40a1d4f2a2872c7a28b697434bc96_builder.lock
+2026-01-22 17:08:37,746 - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/json/json.py HTTP/11" 200 0
+2026-01-22 17:08:37,749 - filelock - DEBUG - Attempting to acquire lock 140022251946592 on /home/xjh/.cache/huggingface/datasets/_home_xjh_.cache_huggingface_datasets_json_default-6a9cca7ecda2bde3_0.0.0_ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18.lock
+2026-01-22 17:08:37,749 - filelock - DEBUG - Lock 140022251946592 acquired on /home/xjh/.cache/huggingface/datasets/_home_xjh_.cache_huggingface_datasets_json_default-6a9cca7ecda2bde3_0.0.0_ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18.lock
+2026-01-22 17:08:37,749 - filelock - DEBUG - Attempting to release lock 140022251946592 on /home/xjh/.cache/huggingface/datasets/_home_xjh_.cache_huggingface_datasets_json_default-6a9cca7ecda2bde3_0.0.0_ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18.lock
+2026-01-22 17:08:37,749 - filelock - DEBUG - Lock 140022251946592 released on /home/xjh/.cache/huggingface/datasets/_home_xjh_.cache_huggingface_datasets_json_default-6a9cca7ecda2bde3_0.0.0_ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18.lock
+2026-01-22 17:08:37,749 - filelock - DEBUG - Attempting to acquire lock 140021944258960 on /home/xjh/.cache/huggingface/datasets/json/default-6a9cca7ecda2bde3/0.0.0/8bb11242116d547c741b2e8a1f18598ffdd40a1d4f2a2872c7a28b697434bc96_builder.lock
+2026-01-22 17:08:37,749 - filelock - DEBUG - Lock 140021944258960 acquired on /home/xjh/.cache/huggingface/datasets/json/default-6a9cca7ecda2bde3/0.0.0/8bb11242116d547c741b2e8a1f18598ffdd40a1d4f2a2872c7a28b697434bc96_builder.lock
+2026-01-22 17:08:37,750 - fsspec.local - DEBUG - open file: /home/xjh/.cache/huggingface/datasets/json/default-6a9cca7ecda2bde3/0.0.0/8bb11242116d547c741b2e8a1f18598ffdd40a1d4f2a2872c7a28b697434bc96/dataset_info.json
+2026-01-22 17:08:37,750 - filelock - DEBUG - Attempting to release lock 140021944258960 on /home/xjh/.cache/huggingface/datasets/json/default-6a9cca7ecda2bde3/0.0.0/8bb11242116d547c741b2e8a1f18598ffdd40a1d4f2a2872c7a28b697434bc96_builder.lock
+2026-01-22 17:08:37,750 - filelock - DEBUG - Lock 140021944258960 released on /home/xjh/.cache/huggingface/datasets/json/default-6a9cca7ecda2bde3/0.0.0/8bb11242116d547c741b2e8a1f18598ffdd40a1d4f2a2872c7a28b697434bc96_builder.lock
+2026-01-22 17:08:48,629 - root - INFO - 0 self_attn.k_proj
+2026-01-22 17:08:48,629 - root - INFO - Quantizing ...
+2026-01-22 17:08:48,997 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:08:49,192 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:49,387 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:08:49,582 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:49,776 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:49,984 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:08:50,073 - root - INFO - time 1.44
+2026-01-22 17:08:50,093 - root - INFO - 0 self_attn.v_proj
+2026-01-22 17:08:50,093 - root - INFO - Quantizing ...
+2026-01-22 17:08:50,267 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:50,464 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:50,665 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:50,861 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:51,059 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:51,255 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:51,281 - root - INFO - time 1.19
+2026-01-22 17:08:51,283 - root - INFO - 0 self_attn.q_proj
+2026-01-22 17:08:51,283 - root - INFO - Quantizing ...
+2026-01-22 17:08:51,456 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:08:51,653 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:51,849 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:08:52,136 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:52,375 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:08:52,573 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:08:52,599 - root - INFO - time 1.32
+2026-01-22 17:08:52,600 - root - INFO - 0 self_attn.out_proj
+2026-01-22 17:08:52,600 - root - INFO - Quantizing ...
+2026-01-22 17:08:52,774 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:08:52,974 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:53,173 - root - INFO - mask1 ratio: 0.04, mask2 ratio: 0.07, mask3 ratio: 0.10, mask4 ratio: 0.80
+2026-01-22 17:08:53,373 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:08:53,570 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.15, mask3 ratio: 0.10, mask4 ratio: 0.74
+2026-01-22 17:08:53,766 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:08:53,792 - root - INFO - time 1.19
+2026-01-22 17:08:53,794 - root - INFO - 0 fc1
+2026-01-22 17:08:53,794 - root - INFO - Quantizing ...
+2026-01-22 17:08:53,986 - root - INFO - mask1 ratio: 0.03, mask2 ratio: 0.24, mask3 ratio: 0.10, mask4 ratio: 0.63
+2026-01-22 17:08:54,202 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.15, mask3 ratio: 0.10, mask4 ratio: 0.73
+2026-01-22 17:08:54,419 - root - INFO - mask1 ratio: 0.03, mask2 ratio: 0.30, mask3 ratio: 0.10, mask4 ratio: 0.56
+2026-01-22 17:08:54,635 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.16, mask3 ratio: 0.10, mask4 ratio: 0.71
+2026-01-22 17:08:54,849 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:08:55,064 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:08:55,091 - root - INFO - time 1.30
+2026-01-22 17:08:55,093 - root - INFO - 0 fc2
+2026-01-22 17:08:55,093 - root - INFO - Quantizing ...
+2026-01-22 17:08:55,298 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:08:55,497 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:55,696 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:55,893 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:56,090 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:56,288 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:56,485 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:56,682 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:08:56,879 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:57,076 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:57,275 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:57,473 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:57,755 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:57,952 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:58,150 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:58,349 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:08:58,547 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:58,744 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:58,945 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.01, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:59,142 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:59,340 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:59,539 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:08:59,737 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:59,934 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:08:59,960 - root - INFO - time 4.87
+2026-01-22 17:09:00,229 - root - INFO - 1 self_attn.k_proj
+2026-01-22 17:09:00,229 - root - INFO - Quantizing ...
+2026-01-22 17:09:00,443 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:00,641 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:00,838 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:01,035 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:01,232 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:01,438 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:01,464 - root - INFO - time 1.23
+2026-01-22 17:09:01,467 - root - INFO - 1 self_attn.v_proj
+2026-01-22 17:09:01,467 - root - INFO - Quantizing ...
+2026-01-22 17:09:01,641 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:01,840 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:02,041 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.20, mask3 ratio: 0.10, mask4 ratio: 0.68
+2026-01-22 17:09:02,237 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:02,443 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:09:02,640 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:02,667 - root - INFO - time 1.20
+2026-01-22 17:09:02,669 - root - INFO - 1 self_attn.q_proj
+2026-01-22 17:09:02,669 - root - INFO - Quantizing ...
+2026-01-22 17:09:02,842 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:03,039 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:03,235 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:03,459 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:03,763 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:03,964 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:03,990 - root - INFO - time 1.32
+2026-01-22 17:09:03,991 - root - INFO - 1 self_attn.out_proj
+2026-01-22 17:09:03,991 - root - INFO - Quantizing ...
+2026-01-22 17:09:04,165 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.11, mask3 ratio: 0.10, mask4 ratio: 0.78
+2026-01-22 17:09:04,363 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.03, mask3 ratio: 0.11, mask4 ratio: 0.85
+2026-01-22 17:09:04,561 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:04,758 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.07, mask3 ratio: 0.10, mask4 ratio: 0.82
+2026-01-22 17:09:04,955 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:05,152 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:05,178 - root - INFO - time 1.19
+2026-01-22 17:09:05,180 - root - INFO - 1 fc1
+2026-01-22 17:09:05,180 - root - INFO - Quantizing ...
+2026-01-22 17:09:05,382 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:05,596 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:05,810 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.05, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:06,023 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:06,237 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:06,452 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:06,480 - root - INFO - time 1.30
+2026-01-22 17:09:06,482 - root - INFO - 1 fc2
+2026-01-22 17:09:06,483 - root - INFO - Quantizing ...
+2026-01-22 17:09:06,682 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.07, mask3 ratio: 0.10, mask4 ratio: 0.81
+2026-01-22 17:09:06,880 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:07,080 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.09, mask3 ratio: 0.10, mask4 ratio: 0.79
+2026-01-22 17:09:07,278 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.12, mask3 ratio: 0.10, mask4 ratio: 0.76
+2026-01-22 17:09:07,476 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:07,675 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:07,872 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:08,073 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:08,273 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:08,472 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:08,670 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:08,867 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:09,093 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:09,346 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:09,543 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:09,740 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:09,941 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:10,139 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:10,336 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:10,533 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:09:10,731 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:10,928 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:11,124 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:09:11,324 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:11,350 - root - INFO - time 4.87
+2026-01-22 17:09:11,618 - root - INFO - 2 self_attn.k_proj
+2026-01-22 17:09:11,618 - root - INFO - Quantizing ...
+2026-01-22 17:09:11,831 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:12,028 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:12,224 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:12,424 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:12,624 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:12,821 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:12,847 - root - INFO - time 1.23
+2026-01-22 17:09:12,850 - root - INFO - 2 self_attn.v_proj
+2026-01-22 17:09:12,850 - root - INFO - Quantizing ...
+2026-01-22 17:09:13,025 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.08, mask3 ratio: 0.10, mask4 ratio: 0.81
+2026-01-22 17:09:13,222 - root - INFO - mask1 ratio: 0.03, mask2 ratio: 0.27, mask3 ratio: 0.10, mask4 ratio: 0.60
+2026-01-22 17:09:13,420 - root - INFO - mask1 ratio: 0.04, mask2 ratio: 0.33, mask3 ratio: 0.10, mask4 ratio: 0.53
+2026-01-22 17:09:13,616 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:13,816 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:14,013 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:14,039 - root - INFO - time 1.19
+2026-01-22 17:09:14,040 - root - INFO - 2 self_attn.q_proj
+2026-01-22 17:09:14,040 - root - INFO - Quantizing ...
+2026-01-22 17:09:14,213 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:14,409 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:14,606 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:14,823 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:15,100 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:15,349 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:15,375 - root - INFO - time 1.33
+2026-01-22 17:09:15,376 - root - INFO - 2 self_attn.out_proj
+2026-01-22 17:09:15,376 - root - INFO - Quantizing ...
+2026-01-22 17:09:15,550 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:15,751 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:09:15,952 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:16,151 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.13, mask3 ratio: 0.10, mask4 ratio: 0.75
+2026-01-22 17:09:16,359 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:16,559 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:09:16,586 - root - INFO - time 1.21
+2026-01-22 17:09:16,588 - root - INFO - 2 fc1
+2026-01-22 17:09:16,588 - root - INFO - Quantizing ...
+2026-01-22 17:09:16,781 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.09, mask3 ratio: 0.10, mask4 ratio: 0.80
+2026-01-22 17:09:16,998 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:09:17,214 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:17,438 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.08, mask3 ratio: 0.10, mask4 ratio: 0.81
+2026-01-22 17:09:17,660 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.15, mask3 ratio: 0.10, mask4 ratio: 0.73
+2026-01-22 17:09:17,883 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:17,909 - root - INFO - time 1.32
+2026-01-22 17:09:17,912 - root - INFO - 2 fc2
+2026-01-22 17:09:17,912 - root - INFO - Quantizing ...
+2026-01-22 17:09:18,111 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.13, mask3 ratio: 0.10, mask4 ratio: 0.75
+2026-01-22 17:09:18,327 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:18,544 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.09, mask3 ratio: 0.10, mask4 ratio: 0.80
+2026-01-22 17:09:18,756 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.12, mask3 ratio: 0.10, mask4 ratio: 0.76
+2026-01-22 17:09:18,918 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:19,117 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.06, mask3 ratio: 0.10, mask4 ratio: 0.83
+2026-01-22 17:09:19,317 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:19,518 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.05, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:19,716 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:19,915 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.06, mask3 ratio: 0.10, mask4 ratio: 0.82
+2026-01-22 17:09:20,114 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:09:20,312 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:20,509 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:20,781 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:09:20,995 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.09, mask3 ratio: 0.10, mask4 ratio: 0.80
+2026-01-22 17:09:21,196 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:21,394 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:21,597 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:21,795 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:21,998 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:22,198 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:22,397 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.13, mask3 ratio: 0.10, mask4 ratio: 0.75
+2026-01-22 17:09:22,597 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:22,797 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:22,823 - root - INFO - time 4.91
+2026-01-22 17:09:23,092 - root - INFO - 3 self_attn.k_proj
+2026-01-22 17:09:23,092 - root - INFO - Quantizing ...
+2026-01-22 17:09:23,305 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:23,504 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:23,703 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:23,901 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:24,101 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:24,301 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:24,327 - root - INFO - time 1.24
+2026-01-22 17:09:24,330 - root - INFO - 3 self_attn.v_proj
+2026-01-22 17:09:24,330 - root - INFO - Quantizing ...
+2026-01-22 17:09:24,505 - root - INFO - mask1 ratio: 0.04, mask2 ratio: 0.34, mask3 ratio: 0.10, mask4 ratio: 0.52
+2026-01-22 17:09:24,702 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:24,898 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.18, mask3 ratio: 0.10, mask4 ratio: 0.70
+2026-01-22 17:09:25,096 - root - INFO - mask1 ratio: 0.04, mask2 ratio: 0.32, mask3 ratio: 0.10, mask4 ratio: 0.55
+2026-01-22 17:09:25,316 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:25,514 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:25,539 - root - INFO - time 1.21
+2026-01-22 17:09:25,540 - root - INFO - 3 self_attn.q_proj
+2026-01-22 17:09:25,541 - root - INFO - Quantizing ...
+2026-01-22 17:09:25,713 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:25,910 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:26,107 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:26,304 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:09:26,523 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:26,830 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:26,855 - root - INFO - time 1.31
+2026-01-22 17:09:26,857 - root - INFO - 3 self_attn.out_proj
+2026-01-22 17:09:26,857 - root - INFO - Quantizing ...
+2026-01-22 17:09:27,031 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.15, mask3 ratio: 0.10, mask4 ratio: 0.74
+2026-01-22 17:09:27,230 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:27,428 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.06, mask3 ratio: 0.10, mask4 ratio: 0.83
+2026-01-22 17:09:27,626 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:27,825 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:09:28,024 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.05, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:28,050 - root - INFO - time 1.19
+2026-01-22 17:09:28,052 - root - INFO - 3 fc1
+2026-01-22 17:09:28,052 - root - INFO - Quantizing ...
+2026-01-22 17:09:28,244 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:28,460 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:28,676 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:28,890 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.07, mask3 ratio: 0.10, mask4 ratio: 0.82
+2026-01-22 17:09:29,104 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.13, mask3 ratio: 0.10, mask4 ratio: 0.75
+2026-01-22 17:09:29,320 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:29,348 - root - INFO - time 1.30
+2026-01-22 17:09:29,350 - root - INFO - 3 fc2
+2026-01-22 17:09:29,350 - root - INFO - Quantizing ...
+2026-01-22 17:09:29,542 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:29,770 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.06, mask3 ratio: 0.10, mask4 ratio: 0.82
+2026-01-22 17:09:29,982 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.08, mask3 ratio: 0.10, mask4 ratio: 0.81
+2026-01-22 17:09:30,200 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:30,409 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:30,617 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.11, mask3 ratio: 0.10, mask4 ratio: 0.77
+2026-01-22 17:09:30,830 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:31,039 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:09:31,245 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.05, mask3 ratio: 0.10, mask4 ratio: 0.84
+2026-01-22 17:09:31,447 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:31,666 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:31,875 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:32,111 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:09:32,388 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:09:32,599 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:09:32,815 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:33,039 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:33,240 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:33,445 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:33,648 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.07, mask3 ratio: 0.10, mask4 ratio: 0.81
+2026-01-22 17:09:33,855 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:34,072 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.01, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:34,274 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.05, mask3 ratio: 0.10, mask4 ratio: 0.84
+2026-01-22 17:09:34,477 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:34,504 - root - INFO - time 5.15
+2026-01-22 17:09:34,772 - root - INFO - 4 self_attn.k_proj
+2026-01-22 17:09:34,773 - root - INFO - Quantizing ...
+2026-01-22 17:09:35,010 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:35,215 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:35,432 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:35,633 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:35,836 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:36,036 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:36,068 - root - INFO - time 1.30
+2026-01-22 17:09:36,071 - root - INFO - 4 self_attn.v_proj
+2026-01-22 17:09:36,071 - root - INFO - Quantizing ...
+2026-01-22 17:09:36,253 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.20, mask3 ratio: 0.10, mask4 ratio: 0.67
+2026-01-22 17:09:36,461 - root - INFO - mask1 ratio: 0.03, mask2 ratio: 0.26, mask3 ratio: 0.10, mask4 ratio: 0.61
+2026-01-22 17:09:36,683 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.06, mask3 ratio: 0.10, mask4 ratio: 0.83
+2026-01-22 17:09:36,885 - root - INFO - mask1 ratio: 0.04, mask2 ratio: 0.33, mask3 ratio: 0.10, mask4 ratio: 0.53
+2026-01-22 17:09:37,083 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:37,282 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:37,309 - root - INFO - time 1.24
+2026-01-22 17:09:37,310 - root - INFO - 4 self_attn.q_proj
+2026-01-22 17:09:37,311 - root - INFO - Quantizing ...
+2026-01-22 17:09:37,486 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:37,687 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:37,886 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:38,148 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:38,418 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:38,618 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:38,645 - root - INFO - time 1.33
+2026-01-22 17:09:38,646 - root - INFO - 4 self_attn.out_proj
+2026-01-22 17:09:38,646 - root - INFO - Quantizing ...
+2026-01-22 17:09:38,821 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:39,023 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.14, mask3 ratio: 0.10, mask4 ratio: 0.74
+2026-01-22 17:09:39,240 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.05, mask3 ratio: 0.10, mask4 ratio: 0.84
+2026-01-22 17:09:39,443 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:39,643 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:39,841 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.05, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:39,869 - root - INFO - time 1.22
+2026-01-22 17:09:39,871 - root - INFO - 4 fc1
+2026-01-22 17:09:39,871 - root - INFO - Quantizing ...
+2026-01-22 17:09:40,063 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:40,281 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.21, mask3 ratio: 0.10, mask4 ratio: 0.67
+2026-01-22 17:09:40,499 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:40,715 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:40,934 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.15, mask3 ratio: 0.10, mask4 ratio: 0.74
+2026-01-22 17:09:41,157 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:41,185 - root - INFO - time 1.31
+2026-01-22 17:09:41,187 - root - INFO - 4 fc2
+2026-01-22 17:09:41,187 - root - INFO - Quantizing ...
+2026-01-22 17:09:41,387 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.05, mask3 ratio: 0.10, mask4 ratio: 0.84
+2026-01-22 17:09:41,606 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:09:41,828 - root - INFO - mask1 ratio: 0.03, mask2 ratio: 0.23, mask3 ratio: 0.10, mask4 ratio: 0.64
+2026-01-22 17:09:42,025 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.13, mask3 ratio: 0.10, mask4 ratio: 0.75
+2026-01-22 17:09:42,225 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:09:42,425 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.08, mask3 ratio: 0.10, mask4 ratio: 0.81
+2026-01-22 17:09:42,627 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:42,825 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.18, mask3 ratio: 0.10, mask4 ratio: 0.70
+2026-01-22 17:09:43,024 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:09:43,221 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.07, mask3 ratio: 0.10, mask4 ratio: 0.81
+2026-01-22 17:09:43,421 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.06, mask3 ratio: 0.10, mask4 ratio: 0.83
+2026-01-22 17:09:43,649 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:09:43,902 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.11, mask3 ratio: 0.10, mask4 ratio: 0.77
+2026-01-22 17:09:44,098 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.08, mask3 ratio: 0.10, mask4 ratio: 0.81
+2026-01-22 17:09:44,295 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.07, mask3 ratio: 0.10, mask4 ratio: 0.82
+2026-01-22 17:09:44,498 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.08, mask3 ratio: 0.10, mask4 ratio: 0.80
+2026-01-22 17:09:44,696 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.14, mask3 ratio: 0.10, mask4 ratio: 0.74
+2026-01-22 17:09:44,893 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:45,093 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:45,289 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.11, mask3 ratio: 0.10, mask4 ratio: 0.77
+2026-01-22 17:09:45,486 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:45,702 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:09:45,899 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:46,096 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:46,122 - root - INFO - time 4.93
+2026-01-22 17:09:46,394 - root - INFO - 5 self_attn.k_proj
+2026-01-22 17:09:46,394 - root - INFO - Quantizing ...
+2026-01-22 17:09:46,607 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:46,806 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:47,002 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:47,198 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.05, mask3 ratio: 0.10, mask4 ratio: 0.84
+2026-01-22 17:09:47,394 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:47,591 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:47,617 - root - INFO - time 1.22
+2026-01-22 17:09:47,620 - root - INFO - 5 self_attn.v_proj
+2026-01-22 17:09:47,620 - root - INFO - Quantizing ...
+2026-01-22 17:09:47,807 - root - INFO - mask1 ratio: 0.04, mask2 ratio: 0.34, mask3 ratio: 0.10, mask4 ratio: 0.52
+2026-01-22 17:09:48,007 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.13, mask3 ratio: 0.10, mask4 ratio: 0.75
+2026-01-22 17:09:48,204 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:48,401 - root - INFO - mask1 ratio: 0.03, mask2 ratio: 0.31, mask3 ratio: 0.10, mask4 ratio: 0.56
+2026-01-22 17:09:48,598 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:48,797 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:48,823 - root - INFO - time 1.20
+2026-01-22 17:09:48,825 - root - INFO - 5 self_attn.q_proj
+2026-01-22 17:09:48,825 - root - INFO - Quantizing ...
+2026-01-22 17:09:48,998 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:49,195 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:49,392 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:49,679 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:09:49,916 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:50,115 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:50,141 - root - INFO - time 1.32
+2026-01-22 17:09:50,142 - root - INFO - 5 self_attn.out_proj
+2026-01-22 17:09:50,142 - root - INFO - Quantizing ...
+2026-01-22 17:09:50,316 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:50,514 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.08, mask3 ratio: 0.10, mask4 ratio: 0.81
+2026-01-22 17:09:50,712 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.07, mask3 ratio: 0.10, mask4 ratio: 0.82
+2026-01-22 17:09:50,912 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:51,109 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:51,309 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:09:51,335 - root - INFO - time 1.19
+2026-01-22 17:09:51,337 - root - INFO - 5 fc1
+2026-01-22 17:09:51,337 - root - INFO - Quantizing ...
+2026-01-22 17:09:51,529 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:51,746 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.12, mask3 ratio: 0.10, mask4 ratio: 0.76
+2026-01-22 17:09:51,962 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:09:52,176 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:09:52,391 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:52,608 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:52,634 - root - INFO - time 1.30
+2026-01-22 17:09:52,636 - root - INFO - 5 fc2
+2026-01-22 17:09:52,636 - root - INFO - Quantizing ...
+2026-01-22 17:09:52,835 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:53,034 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.05, mask3 ratio: 0.10, mask4 ratio: 0.84
+2026-01-22 17:09:53,233 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:09:53,430 - root - INFO - mask1 ratio: 0.03, mask2 ratio: 0.21, mask3 ratio: 0.10, mask4 ratio: 0.66
+2026-01-22 17:09:53,627 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.18, mask3 ratio: 0.10, mask4 ratio: 0.70
+2026-01-22 17:09:53,824 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.06, mask3 ratio: 0.10, mask4 ratio: 0.82
+2026-01-22 17:09:54,022 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.10, mask3 ratio: 0.10, mask4 ratio: 0.77
+2026-01-22 17:09:54,220 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:54,422 - root - INFO - mask1 ratio: 0.03, mask2 ratio: 0.16, mask3 ratio: 0.10, mask4 ratio: 0.71
+2026-01-22 17:09:54,620 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.11, mask3 ratio: 0.10, mask4 ratio: 0.77
+2026-01-22 17:09:54,817 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:55,018 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:55,291 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:55,496 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.06, mask3 ratio: 0.10, mask4 ratio: 0.82
+2026-01-22 17:09:55,696 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:09:55,893 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.06, mask3 ratio: 0.10, mask4 ratio: 0.83
+2026-01-22 17:09:56,092 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:56,289 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:56,485 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:09:56,682 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:09:56,878 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:57,076 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.10, mask3 ratio: 0.10, mask4 ratio: 0.78
+2026-01-22 17:09:57,273 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.11, mask3 ratio: 0.10, mask4 ratio: 0.77
+2026-01-22 17:09:57,470 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.14, mask3 ratio: 0.10, mask4 ratio: 0.74
+2026-01-22 17:09:57,496 - root - INFO - time 4.86
+2026-01-22 17:09:57,771 - root - INFO - 6 self_attn.k_proj
+2026-01-22 17:09:57,771 - root - INFO - Quantizing ...
+2026-01-22 17:09:57,984 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:58,184 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:58,382 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:58,579 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.06, mask3 ratio: 0.10, mask4 ratio: 0.83
+2026-01-22 17:09:58,779 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:58,975 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:09:59,002 - root - INFO - time 1.23
+2026-01-22 17:09:59,004 - root - INFO - 6 self_attn.v_proj
+2026-01-22 17:09:59,004 - root - INFO - Quantizing ...
+2026-01-22 17:09:59,177 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.11, mask3 ratio: 0.10, mask4 ratio: 0.77
+2026-01-22 17:09:59,374 - root - INFO - mask1 ratio: 0.04, mask2 ratio: 0.32, mask3 ratio: 0.10, mask4 ratio: 0.55
+2026-01-22 17:09:59,573 - root - INFO - mask1 ratio: 0.04, mask2 ratio: 0.33, mask3 ratio: 0.10, mask4 ratio: 0.53
+2026-01-22 17:09:59,769 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.09, mask3 ratio: 0.10, mask4 ratio: 0.80
+2026-01-22 17:09:59,968 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:00,168 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:00,194 - root - INFO - time 1.19
+2026-01-22 17:10:00,195 - root - INFO - 6 self_attn.q_proj
+2026-01-22 17:10:00,195 - root - INFO - Quantizing ...
+2026-01-22 17:10:00,368 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:00,571 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:00,769 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:00,980 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:01,299 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:01,498 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:01,523 - root - INFO - time 1.33
+2026-01-22 17:10:01,524 - root - INFO - 6 self_attn.out_proj
+2026-01-22 17:10:01,524 - root - INFO - Quantizing ...
+2026-01-22 17:10:01,701 - root - INFO - mask1 ratio: 0.03, mask2 ratio: 0.22, mask3 ratio: 0.10, mask4 ratio: 0.65
+2026-01-22 17:10:01,899 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.06, mask3 ratio: 0.10, mask4 ratio: 0.82
+2026-01-22 17:10:02,099 - root - INFO - mask1 ratio: 0.04, mask2 ratio: 0.34, mask3 ratio: 0.10, mask4 ratio: 0.52
+2026-01-22 17:10:02,315 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:02,514 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:02,743 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:02,768 - root - INFO - time 1.24
+2026-01-22 17:10:02,770 - root - INFO - 6 fc1
+2026-01-22 17:10:02,770 - root - INFO - Quantizing ...
+2026-01-22 17:10:02,964 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:03,181 - root - INFO - mask1 ratio: 0.04, mask2 ratio: 0.34, mask3 ratio: 0.10, mask4 ratio: 0.52
+2026-01-22 17:10:03,398 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:03,614 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:10:03,830 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:10:04,049 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:04,075 - root - INFO - time 1.30
+2026-01-22 17:10:04,077 - root - INFO - 6 fc2
+2026-01-22 17:10:04,077 - root - INFO - Quantizing ...
+2026-01-22 17:10:04,262 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:04,461 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:10:04,660 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.06, mask3 ratio: 0.10, mask4 ratio: 0.83
+2026-01-22 17:10:04,860 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:05,059 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:05,259 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.07, mask3 ratio: 0.10, mask4 ratio: 0.81
+2026-01-22 17:10:05,458 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.06, mask3 ratio: 0.10, mask4 ratio: 0.82
+2026-01-22 17:10:05,656 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:05,854 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:06,053 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:06,251 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.09, mask3 ratio: 0.10, mask4 ratio: 0.80
+2026-01-22 17:10:06,451 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:06,704 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:06,934 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:07,134 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.06, mask3 ratio: 0.10, mask4 ratio: 0.83
+2026-01-22 17:10:07,333 - root - INFO - mask1 ratio: 0.03, mask2 ratio: 0.19, mask3 ratio: 0.10, mask4 ratio: 0.69
+2026-01-22 17:10:07,531 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:07,730 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:10:07,927 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:08,124 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:08,321 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.05, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:08,518 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:08,715 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.05, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:08,912 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.14, mask3 ratio: 0.10, mask4 ratio: 0.74
+2026-01-22 17:10:08,938 - root - INFO - time 4.86
+2026-01-22 17:10:09,212 - root - INFO - 7 self_attn.k_proj
+2026-01-22 17:10:09,212 - root - INFO - Quantizing ...
+2026-01-22 17:10:09,426 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:09,624 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:09,820 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:10,017 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.05, mask3 ratio: 0.10, mask4 ratio: 0.84
+2026-01-22 17:10:10,216 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:10,416 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:10,443 - root - INFO - time 1.23
+2026-01-22 17:10:10,446 - root - INFO - 7 self_attn.v_proj
+2026-01-22 17:10:10,446 - root - INFO - Quantizing ...
+2026-01-22 17:10:10,619 - root - INFO - mask1 ratio: 0.04, mask2 ratio: 0.33, mask3 ratio: 0.10, mask4 ratio: 0.53
+2026-01-22 17:10:10,818 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:11,015 - root - INFO - mask1 ratio: 0.04, mask2 ratio: 0.33, mask3 ratio: 0.10, mask4 ratio: 0.53
+2026-01-22 17:10:11,215 - root - INFO - mask1 ratio: 0.04, mask2 ratio: 0.30, mask3 ratio: 0.10, mask4 ratio: 0.56
+2026-01-22 17:10:11,416 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:11,616 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:11,643 - root - INFO - time 1.20
+2026-01-22 17:10:11,644 - root - INFO - 7 self_attn.q_proj
+2026-01-22 17:10:11,644 - root - INFO - Quantizing ...
+2026-01-22 17:10:11,818 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:12,017 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:12,217 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:12,416 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:12,759 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:12,958 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:12,984 - root - INFO - time 1.34
+2026-01-22 17:10:12,985 - root - INFO - 7 self_attn.out_proj
+2026-01-22 17:10:12,986 - root - INFO - Quantizing ...
+2026-01-22 17:10:13,161 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.11, mask3 ratio: 0.10, mask4 ratio: 0.78
+2026-01-22 17:10:13,361 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.12, mask3 ratio: 0.10, mask4 ratio: 0.76
+2026-01-22 17:10:13,563 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.06, mask3 ratio: 0.10, mask4 ratio: 0.83
+2026-01-22 17:10:13,780 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:13,996 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.08, mask3 ratio: 0.10, mask4 ratio: 0.81
+2026-01-22 17:10:14,213 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.06, mask3 ratio: 0.10, mask4 ratio: 0.83
+2026-01-22 17:10:14,238 - root - INFO - time 1.25
+2026-01-22 17:10:14,240 - root - INFO - 7 fc1
+2026-01-22 17:10:14,240 - root - INFO - Quantizing ...
+2026-01-22 17:10:14,441 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:14,666 - root - INFO - mask1 ratio: 0.04, mask2 ratio: 0.34, mask3 ratio: 0.10, mask4 ratio: 0.52
+2026-01-22 17:10:14,887 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:15,101 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:10:15,315 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:10:15,530 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:15,557 - root - INFO - time 1.32
+2026-01-22 17:10:15,559 - root - INFO - 7 fc2
+2026-01-22 17:10:15,559 - root - INFO - Quantizing ...
+2026-01-22 17:10:15,741 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:15,941 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.07, mask3 ratio: 0.10, mask4 ratio: 0.81
+2026-01-22 17:10:16,139 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:16,337 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:16,535 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.08, mask3 ratio: 0.10, mask4 ratio: 0.81
+2026-01-22 17:10:16,735 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.16, mask3 ratio: 0.10, mask4 ratio: 0.72
+2026-01-22 17:10:16,932 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.09, mask3 ratio: 0.10, mask4 ratio: 0.79
+2026-01-22 17:10:17,130 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:17,328 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:17,525 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:17,724 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.19, mask3 ratio: 0.10, mask4 ratio: 0.69
+2026-01-22 17:10:17,920 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:18,153 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:10:18,411 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:18,607 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:10:18,805 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.05, mask3 ratio: 0.10, mask4 ratio: 0.84
+2026-01-22 17:10:19,001 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:10:19,198 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:19,395 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:19,591 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:19,789 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:19,986 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.06, mask3 ratio: 0.10, mask4 ratio: 0.83
+2026-01-22 17:10:20,183 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.06, mask3 ratio: 0.10, mask4 ratio: 0.83
+2026-01-22 17:10:20,381 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.09, mask3 ratio: 0.10, mask4 ratio: 0.80
+2026-01-22 17:10:20,406 - root - INFO - time 4.85
+2026-01-22 17:10:20,679 - root - INFO - 8 self_attn.k_proj
+2026-01-22 17:10:20,680 - root - INFO - Quantizing ...
+2026-01-22 17:10:20,894 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:21,091 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:21,288 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:21,489 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:21,702 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:21,901 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:21,928 - root - INFO - time 1.25
+2026-01-22 17:10:21,930 - root - INFO - 8 self_attn.v_proj
+2026-01-22 17:10:21,930 - root - INFO - Quantizing ...
+2026-01-22 17:10:22,107 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:22,305 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:22,503 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:22,699 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.08, mask3 ratio: 0.10, mask4 ratio: 0.81
+2026-01-22 17:10:22,897 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:23,095 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:23,120 - root - INFO - time 1.19
+2026-01-22 17:10:23,122 - root - INFO - 8 self_attn.q_proj
+2026-01-22 17:10:23,122 - root - INFO - Quantizing ...
+2026-01-22 17:10:23,295 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:23,492 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:23,689 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:23,890 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:10:24,151 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:24,417 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:24,443 - root - INFO - time 1.32
+2026-01-22 17:10:24,444 - root - INFO - 8 self_attn.out_proj
+2026-01-22 17:10:24,444 - root - INFO - Quantizing ...
+2026-01-22 17:10:24,617 - root - INFO - mask1 ratio: 0.04, mask2 ratio: 0.33, mask3 ratio: 0.10, mask4 ratio: 0.53
+2026-01-22 17:10:24,815 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.07, mask3 ratio: 0.10, mask4 ratio: 0.81
+2026-01-22 17:10:25,014 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.08, mask3 ratio: 0.10, mask4 ratio: 0.81
+2026-01-22 17:10:25,211 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.08, mask3 ratio: 0.10, mask4 ratio: 0.81
+2026-01-22 17:10:25,409 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:25,606 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.08, mask3 ratio: 0.10, mask4 ratio: 0.81
+2026-01-22 17:10:25,631 - root - INFO - time 1.19
+2026-01-22 17:10:25,633 - root - INFO - 8 fc1
+2026-01-22 17:10:25,633 - root - INFO - Quantizing ...
+2026-01-22 17:10:25,823 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:26,040 - root - INFO - mask1 ratio: 0.03, mask2 ratio: 0.27, mask3 ratio: 0.10, mask4 ratio: 0.60
+2026-01-22 17:10:26,254 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:26,467 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:26,683 - root - INFO - mask1 ratio: 0.04, mask2 ratio: 0.34, mask3 ratio: 0.10, mask4 ratio: 0.52
+2026-01-22 17:10:26,897 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:26,924 - root - INFO - time 1.29
+2026-01-22 17:10:26,926 - root - INFO - 8 fc2
+2026-01-22 17:10:26,926 - root - INFO - Quantizing ...
+2026-01-22 17:10:27,107 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.06, mask3 ratio: 0.10, mask4 ratio: 0.82
+2026-01-22 17:10:27,304 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:10:27,502 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:27,699 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:27,897 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:28,096 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.08, mask3 ratio: 0.10, mask4 ratio: 0.81
+2026-01-22 17:10:28,293 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:28,495 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:28,693 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:28,890 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.10, mask3 ratio: 0.10, mask4 ratio: 0.78
+2026-01-22 17:10:29,088 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.05, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:29,285 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:29,485 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:29,721 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:29,970 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:30,187 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:30,403 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.08, mask3 ratio: 0.10, mask4 ratio: 0.81
+2026-01-22 17:10:30,619 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:10:30,834 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.06, mask3 ratio: 0.10, mask4 ratio: 0.83
+2026-01-22 17:10:31,051 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:31,267 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:31,483 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:31,700 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.05, mask3 ratio: 0.10, mask4 ratio: 0.84
+2026-01-22 17:10:31,915 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:31,941 - root - INFO - time 5.01
+2026-01-22 17:10:32,215 - root - INFO - 9 self_attn.k_proj
+2026-01-22 17:10:32,215 - root - INFO - Quantizing ...
+2026-01-22 17:10:32,447 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:32,663 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:32,878 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:33,094 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.06, mask3 ratio: 0.10, mask4 ratio: 0.83
+2026-01-22 17:10:33,310 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:33,516 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:33,541 - root - INFO - time 1.33
+2026-01-22 17:10:33,544 - root - INFO - 9 self_attn.v_proj
+2026-01-22 17:10:33,544 - root - INFO - Quantizing ...
+2026-01-22 17:10:33,718 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:33,914 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.06, mask3 ratio: 0.10, mask4 ratio: 0.83
+2026-01-22 17:10:34,111 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.07, mask3 ratio: 0.10, mask4 ratio: 0.82
+2026-01-22 17:10:34,295 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.12, mask3 ratio: 0.10, mask4 ratio: 0.77
+2026-01-22 17:10:34,466 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.14, mask3 ratio: 0.10, mask4 ratio: 0.74
+2026-01-22 17:10:34,662 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:34,688 - root - INFO - time 1.14
+2026-01-22 17:10:34,690 - root - INFO - 9 self_attn.q_proj
+2026-01-22 17:10:34,690 - root - INFO - Quantizing ...
+2026-01-22 17:10:34,864 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:35,062 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:35,262 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:35,460 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:35,721 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:35,991 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:36,017 - root - INFO - time 1.33
+2026-01-22 17:10:36,018 - root - INFO - 9 self_attn.out_proj
+2026-01-22 17:10:36,018 - root - INFO - Quantizing ...
+2026-01-22 17:10:36,193 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:36,393 - root - INFO - mask1 ratio: 0.04, mask2 ratio: 0.34, mask3 ratio: 0.10, mask4 ratio: 0.52
+2026-01-22 17:10:36,591 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.10, mask3 ratio: 0.10, mask4 ratio: 0.79
+2026-01-22 17:10:36,791 - root - INFO - mask1 ratio: 0.04, mask2 ratio: 0.34, mask3 ratio: 0.10, mask4 ratio: 0.52
+2026-01-22 17:10:36,992 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.16, mask3 ratio: 0.10, mask4 ratio: 0.72
+2026-01-22 17:10:37,191 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.06, mask3 ratio: 0.10, mask4 ratio: 0.83
+2026-01-22 17:10:37,219 - root - INFO - time 1.20
+2026-01-22 17:10:37,221 - root - INFO - 9 fc1
+2026-01-22 17:10:37,221 - root - INFO - Quantizing ...
+2026-01-22 17:10:37,415 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:37,630 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:37,846 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:38,059 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:38,276 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.06, mask3 ratio: 0.10, mask4 ratio: 0.82
+2026-01-22 17:10:38,492 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:38,519 - root - INFO - time 1.30
+2026-01-22 17:10:38,521 - root - INFO - 9 fc2
+2026-01-22 17:10:38,521 - root - INFO - Quantizing ...
+2026-01-22 17:10:38,702 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.05, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:38,901 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.13, mask3 ratio: 0.10, mask4 ratio: 0.76
+2026-01-22 17:10:39,105 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:39,321 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:39,529 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:10:39,742 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:39,961 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:40,167 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:40,384 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:10:40,595 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.12, mask3 ratio: 0.10, mask4 ratio: 0.76
+2026-01-22 17:10:40,819 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:41,023 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:41,274 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:41,535 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:41,740 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:41,941 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:10:42,147 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:42,356 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:42,562 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:42,778 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:10:42,983 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:43,197 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.08, mask3 ratio: 0.10, mask4 ratio: 0.81
+2026-01-22 17:10:43,400 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:43,635 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:10:43,663 - root - INFO - time 5.14
+2026-01-22 17:10:43,937 - root - INFO - 10 self_attn.k_proj
+2026-01-22 17:10:43,937 - root - INFO - Quantizing ...
+2026-01-22 17:10:44,154 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:44,361 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:44,582 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:44,790 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.05, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:44,996 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:45,203 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:45,231 - root - INFO - time 1.29
+2026-01-22 17:10:45,234 - root - INFO - 10 self_attn.v_proj
+2026-01-22 17:10:45,234 - root - INFO - Quantizing ...
+2026-01-22 17:10:45,423 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:45,631 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.07, mask3 ratio: 0.10, mask4 ratio: 0.82
+2026-01-22 17:10:45,834 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.11, mask3 ratio: 0.10, mask4 ratio: 0.77
+2026-01-22 17:10:46,036 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.06, mask3 ratio: 0.10, mask4 ratio: 0.83
+2026-01-22 17:10:46,240 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.06, mask3 ratio: 0.10, mask4 ratio: 0.83
+2026-01-22 17:10:46,442 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:10:46,469 - root - INFO - time 1.24
+2026-01-22 17:10:46,471 - root - INFO - 10 self_attn.q_proj
+2026-01-22 17:10:46,471 - root - INFO - Quantizing ...
+2026-01-22 17:10:46,645 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:46,844 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:47,041 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:47,329 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:47,565 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:47,763 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:47,789 - root - INFO - time 1.32
+2026-01-22 17:10:47,790 - root - INFO - 10 self_attn.out_proj
+2026-01-22 17:10:47,790 - root - INFO - Quantizing ...
+2026-01-22 17:10:47,964 - root - INFO - mask1 ratio: 0.04, mask2 ratio: 0.34, mask3 ratio: 0.10, mask4 ratio: 0.52
+2026-01-22 17:10:48,161 - root - INFO - mask1 ratio: 0.04, mask2 ratio: 0.34, mask3 ratio: 0.10, mask4 ratio: 0.52
+2026-01-22 17:10:48,359 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.05, mask3 ratio: 0.10, mask4 ratio: 0.84
+2026-01-22 17:10:48,557 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.07, mask3 ratio: 0.10, mask4 ratio: 0.81
+2026-01-22 17:10:48,758 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:48,956 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:48,984 - root - INFO - time 1.19
+2026-01-22 17:10:48,986 - root - INFO - 10 fc1
+2026-01-22 17:10:48,986 - root - INFO - Quantizing ...
+2026-01-22 17:10:49,177 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:49,392 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.17, mask3 ratio: 0.10, mask4 ratio: 0.71
+2026-01-22 17:10:49,626 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:10:49,842 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:10:50,055 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:50,269 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:50,294 - root - INFO - time 1.31
+2026-01-22 17:10:50,296 - root - INFO - 10 fc2
+2026-01-22 17:10:50,296 - root - INFO - Quantizing ...
+2026-01-22 17:10:50,477 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:50,684 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:50,883 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.06, mask3 ratio: 0.10, mask4 ratio: 0.84
+2026-01-22 17:10:51,080 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.05, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:51,277 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:51,476 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:51,674 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.07, mask3 ratio: 0.10, mask4 ratio: 0.81
+2026-01-22 17:10:51,878 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:52,077 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:52,277 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:52,478 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:52,678 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.12, mask3 ratio: 0.10, mask4 ratio: 0.77
+2026-01-22 17:10:52,970 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:53,168 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:10:53,366 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:53,564 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:53,770 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.07, mask3 ratio: 0.10, mask4 ratio: 0.81
+2026-01-22 17:10:53,967 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.05, mask3 ratio: 0.10, mask4 ratio: 0.84
+2026-01-22 17:10:54,166 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.06, mask3 ratio: 0.10, mask4 ratio: 0.83
+2026-01-22 17:10:54,362 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.05, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:54,559 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:54,755 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:54,953 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:55,150 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:55,176 - root - INFO - time 4.88
+2026-01-22 17:10:55,450 - root - INFO - 11 self_attn.k_proj
+2026-01-22 17:10:55,450 - root - INFO - Quantizing ...
+2026-01-22 17:10:55,663 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.01, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:55,861 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:56,057 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:56,254 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.05, mask3 ratio: 0.10, mask4 ratio: 0.84
+2026-01-22 17:10:56,452 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:56,648 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:56,675 - root - INFO - time 1.22
+2026-01-22 17:10:56,677 - root - INFO - 11 self_attn.v_proj
+2026-01-22 17:10:56,677 - root - INFO - Quantizing ...
+2026-01-22 17:10:56,853 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:57,053 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.12, mask3 ratio: 0.10, mask4 ratio: 0.77
+2026-01-22 17:10:57,251 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.10, mask3 ratio: 0.10, mask4 ratio: 0.78
+2026-01-22 17:10:57,447 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.09, mask3 ratio: 0.10, mask4 ratio: 0.80
+2026-01-22 17:10:57,645 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:10:57,842 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.05, mask3 ratio: 0.10, mask4 ratio: 0.84
+2026-01-22 17:10:57,869 - root - INFO - time 1.19
+2026-01-22 17:10:57,871 - root - INFO - 11 self_attn.q_proj
+2026-01-22 17:10:57,871 - root - INFO - Quantizing ...
+2026-01-22 17:10:58,044 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:58,242 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:58,439 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:58,649 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:10:58,965 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:59,165 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:10:59,191 - root - INFO - time 1.32
+2026-01-22 17:10:59,192 - root - INFO - 11 self_attn.out_proj
+2026-01-22 17:10:59,192 - root - INFO - Quantizing ...
+2026-01-22 17:10:59,370 - root - INFO - mask1 ratio: 0.04, mask2 ratio: 0.34, mask3 ratio: 0.10, mask4 ratio: 0.52
+2026-01-22 17:10:59,568 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:10:59,765 - root - INFO - mask1 ratio: 0.04, mask2 ratio: 0.34, mask3 ratio: 0.10, mask4 ratio: 0.52
+2026-01-22 17:10:59,963 - root - INFO - mask1 ratio: 0.03, mask2 ratio: 0.24, mask3 ratio: 0.10, mask4 ratio: 0.63
+2026-01-22 17:11:00,162 - root - INFO - mask1 ratio: 0.04, mask2 ratio: 0.34, mask3 ratio: 0.10, mask4 ratio: 0.52
+2026-01-22 17:11:00,359 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:11:00,385 - root - INFO - time 1.19
+2026-01-22 17:11:00,387 - root - INFO - 11 fc1
+2026-01-22 17:11:00,387 - root - INFO - Quantizing ...
+2026-01-22 17:11:00,579 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.05, mask3 ratio: 0.10, mask4 ratio: 0.84
+2026-01-22 17:11:00,795 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:11:01,025 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:11:01,242 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:11:01,457 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.05, mask3 ratio: 0.10, mask4 ratio: 0.84
+2026-01-22 17:11:01,673 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:11:01,699 - root - INFO - time 1.31
+2026-01-22 17:11:01,701 - root - INFO - 11 fc2
+2026-01-22 17:11:01,701 - root - INFO - Quantizing ...
+2026-01-22 17:11:01,882 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.05, mask3 ratio: 0.10, mask4 ratio: 0.84
+2026-01-22 17:11:02,081 - root - INFO - mask1 ratio: 0.03, mask2 ratio: 0.25, mask3 ratio: 0.10, mask4 ratio: 0.63
+2026-01-22 17:11:02,281 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.07, mask3 ratio: 0.10, mask4 ratio: 0.82
+2026-01-22 17:11:02,480 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:11:02,680 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.08, mask3 ratio: 0.10, mask4 ratio: 0.81
+2026-01-22 17:11:02,880 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.18, mask3 ratio: 0.10, mask4 ratio: 0.70
+2026-01-22 17:11:03,079 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:11:03,278 - root - INFO - mask1 ratio: 0.02, mask2 ratio: 0.13, mask3 ratio: 0.10, mask4 ratio: 0.75
+2026-01-22 17:11:03,484 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:11:03,685 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:11:03,884 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.04, mask3 ratio: 0.10, mask4 ratio: 0.85
+2026-01-22 17:11:04,086 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:11:04,336 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:11:04,572 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.01, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:11:04,775 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:11:04,973 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.10, mask3 ratio: 0.10, mask4 ratio: 0.79
+2026-01-22 17:11:05,175 - root - INFO - mask1 ratio: 0.03, mask2 ratio: 0.26, mask3 ratio: 0.10, mask4 ratio: 0.61
+2026-01-22 17:11:05,373 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:11:05,573 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:11:05,777 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.12, mask3 ratio: 0.10, mask4 ratio: 0.77
+2026-01-22 17:11:05,974 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.00, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:11:06,171 - root - INFO - mask1 ratio: 0.00, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.87
+2026-01-22 17:11:06,370 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.02, mask3 ratio: 0.10, mask4 ratio: 0.88
+2026-01-22 17:11:06,568 - root - INFO - mask1 ratio: 0.01, mask2 ratio: 0.03, mask3 ratio: 0.10, mask4 ratio: 0.86
+2026-01-22 17:11:06,594 - root - INFO - time 4.89
+2026-01-22 17:11:06,652 - root - INFO - Experiment: 
+2026-01-22 17:11:06,999 - fsspec.local - DEBUG - open file: /data/xjh/dataset/wikitext-2-raw-v1/dataset_dict.json
+2026-01-22 17:11:17,389 - fsspec.local - DEBUG - open file: /data/xjh/dataset/ptb_text_only/dataset_dict.json
+2026-01-22 17:11:21,656 - urllib3.connectionpool - DEBUG - Resetting dropped connection: s3.amazonaws.com
+2026-01-22 17:11:22,434 - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/json/json.py HTTP/11" 200 0
+2026-01-22 17:11:22,437 - filelock - DEBUG - Attempting to acquire lock 140022205018432 on /home/xjh/.cache/huggingface/datasets/_home_xjh_.cache_huggingface_datasets_json_default-07a3d7608cc7c204_0.0.0_ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18.lock
+2026-01-22 17:11:22,437 - filelock - DEBUG - Lock 140022205018432 acquired on /home/xjh/.cache/huggingface/datasets/_home_xjh_.cache_huggingface_datasets_json_default-07a3d7608cc7c204_0.0.0_ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18.lock
+2026-01-22 17:11:22,437 - filelock - DEBUG - Attempting to release lock 140022205018432 on /home/xjh/.cache/huggingface/datasets/_home_xjh_.cache_huggingface_datasets_json_default-07a3d7608cc7c204_0.0.0_ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18.lock
+2026-01-22 17:11:22,437 - filelock - DEBUG - Lock 140022205018432 released on /home/xjh/.cache/huggingface/datasets/_home_xjh_.cache_huggingface_datasets_json_default-07a3d7608cc7c204_0.0.0_ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18.lock
+2026-01-22 17:11:22,437 - filelock - DEBUG - Attempting to acquire lock 140020798237744 on /home/xjh/.cache/huggingface/datasets/json/default-07a3d7608cc7c204/0.0.0/8bb11242116d547c741b2e8a1f18598ffdd40a1d4f2a2872c7a28b697434bc96_builder.lock
+2026-01-22 17:11:22,437 - filelock - DEBUG - Lock 140020798237744 acquired on /home/xjh/.cache/huggingface/datasets/json/default-07a3d7608cc7c204/0.0.0/8bb11242116d547c741b2e8a1f18598ffdd40a1d4f2a2872c7a28b697434bc96_builder.lock
+2026-01-22 17:11:22,437 - fsspec.local - DEBUG - open file: /home/xjh/.cache/huggingface/datasets/json/default-07a3d7608cc7c204/0.0.0/8bb11242116d547c741b2e8a1f18598ffdd40a1d4f2a2872c7a28b697434bc96/dataset_info.json
+2026-01-22 17:11:22,438 - filelock - DEBUG - Attempting to release lock 140020798237744 on /home/xjh/.cache/huggingface/datasets/json/default-07a3d7608cc7c204/0.0.0/8bb11242116d547c741b2e8a1f18598ffdd40a1d4f2a2872c7a28b697434bc96_builder.lock
+2026-01-22 17:11:22,438 - filelock - DEBUG - Lock 140020798237744 released on /home/xjh/.cache/huggingface/datasets/json/default-07a3d7608cc7c204/0.0.0/8bb11242116d547c741b2e8a1f18598ffdd40a1d4f2a2872c7a28b697434bc96_builder.lock
+2026-01-22 17:11:22,709 - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/json/json.py HTTP/11" 200 0
+2026-01-22 17:11:22,712 - filelock - DEBUG - Attempting to acquire lock 140020798235056 on /home/xjh/.cache/huggingface/datasets/_home_xjh_.cache_huggingface_datasets_json_default-6a9cca7ecda2bde3_0.0.0_ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18.lock
+2026-01-22 17:11:22,712 - filelock - DEBUG - Lock 140020798235056 acquired on /home/xjh/.cache/huggingface/datasets/_home_xjh_.cache_huggingface_datasets_json_default-6a9cca7ecda2bde3_0.0.0_ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18.lock
+2026-01-22 17:11:22,712 - filelock - DEBUG - Attempting to release lock 140020798235056 on /home/xjh/.cache/huggingface/datasets/_home_xjh_.cache_huggingface_datasets_json_default-6a9cca7ecda2bde3_0.0.0_ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18.lock
+2026-01-22 17:11:22,712 - filelock - DEBUG - Lock 140020798235056 released on /home/xjh/.cache/huggingface/datasets/_home_xjh_.cache_huggingface_datasets_json_default-6a9cca7ecda2bde3_0.0.0_ff8895240c1c6d49c1ae5a8af7cd4b065d168a612f3f6bd42470270b78a42c18.lock
+2026-01-22 17:11:22,713 - filelock - DEBUG - Attempting to acquire lock 140022204761440 on /home/xjh/.cache/huggingface/datasets/json/default-6a9cca7ecda2bde3/0.0.0/8bb11242116d547c741b2e8a1f18598ffdd40a1d4f2a2872c7a28b697434bc96_builder.lock
+2026-01-22 17:11:22,713 - filelock - DEBUG - Lock 140022204761440 acquired on /home/xjh/.cache/huggingface/datasets/json/default-6a9cca7ecda2bde3/0.0.0/8bb11242116d547c741b2e8a1f18598ffdd40a1d4f2a2872c7a28b697434bc96_builder.lock
+2026-01-22 17:11:22,713 - fsspec.local - DEBUG - open file: /home/xjh/.cache/huggingface/datasets/json/default-6a9cca7ecda2bde3/0.0.0/8bb11242116d547c741b2e8a1f18598ffdd40a1d4f2a2872c7a28b697434bc96/dataset_info.json
+2026-01-22 17:11:22,713 - filelock - DEBUG - Attempting to release lock 140022204761440 on /home/xjh/.cache/huggingface/datasets/json/default-6a9cca7ecda2bde3/0.0.0/8bb11242116d547c741b2e8a1f18598ffdd40a1d4f2a2872c7a28b697434bc96_builder.lock
+2026-01-22 17:11:22,713 - filelock - DEBUG - Lock 140022204761440 released on /home/xjh/.cache/huggingface/datasets/json/default-6a9cca7ecda2bde3/0.0.0/8bb11242116d547c741b2e8a1f18598ffdd40a1d4f2a2872c7a28b697434bc96_builder.lock
+Loading model ...
+/data/xjh/model_weight/opt/opt-125m
+Model loaded.
+model OPTForCausalLM(
+  (model): OPTModel(
+    (decoder): OPTDecoder(
+      (embed_tokens): Embedding(50272, 768, padding_idx=1)
+      (embed_positions): OPTLearnedPositionalEmbedding(2050, 768)
+      (final_layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      (layers): ModuleList(
+        (0-11): 12 x OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): Linear(in_features=768, out_features=768, bias=True)
+            (v_proj): Linear(in_features=768, out_features=768, bias=True)
+            (q_proj): Linear(in_features=768, out_features=768, bias=True)
+            (out_proj): Linear(in_features=768, out_features=768, bias=True)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=768, out_features=3072, bias=True)
+          (fc2): Linear(in_features=3072, out_features=768, bias=True)
+          (final_layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        )
+      )
+    )
+  )
+  (lm_head): Linear(in_features=768, out_features=50272, bias=False)
+)
+xjh_edit,load from local file:/data/xjh/dataset/c4_part,get c4
+Starting ...
+Ready.
+tensor(57888., device='cuda:1', dtype=torch.float16)
+tensor(1674., device='cuda:1', dtype=torch.float16)
+tensor(63936., device='cuda:1', dtype=torch.float16)
+tensor(38., device='cuda:1', dtype=torch.float16)
+tensor(9768., device='cuda:1', dtype=torch.float16)
+tensor(97.6250, device='cuda:1', dtype=torch.float16)
+tensor(49920., device='cuda:1', dtype=torch.float16)
+tensor(2174., device='cuda:1', dtype=torch.float16)
+tensor(31248., device='cuda:1', dtype=torch.float16)
+tensor(49.6562, device='cuda:1', dtype=torch.float16)
+tensor(23856., device='cuda:1', dtype=torch.float16)
+tensor(73.1250, device='cuda:1', dtype=torch.float16)
+tensor(inf, device='cuda:1', dtype=torch.float16)
+tensor(4788., device='cuda:1', dtype=torch.float16)
+tensor(63168., device='cuda:1', dtype=torch.float16)
+tensor(44.8438, device='cuda:1', dtype=torch.float16)
+tensor(21312., device='cuda:1', dtype=torch.float16)
+tensor(80.2500, device='cuda:1', dtype=torch.float16)
+tensor(61472., device='cuda:1', dtype=torch.float16)
+tensor(5768., device='cuda:1', dtype=torch.float16)
+tensor(59168., device='cuda:1', dtype=torch.float16)
+tensor(53.8750, device='cuda:1', dtype=torch.float16)
+tensor(15816., device='cuda:1', dtype=torch.float16)
+tensor(52.7500, device='cuda:1', dtype=torch.float16)
+tensor(inf, device='cuda:1', dtype=torch.float16)
+tensor(7352., device='cuda:1', dtype=torch.float16)
+tensor(inf, device='cuda:1', dtype=torch.float16)
+tensor(85.6875, device='cuda:1', dtype=torch.float16)
+tensor(26240., device='cuda:1', dtype=torch.float16)
+tensor(141.8750, device='cuda:1', dtype=torch.float16)
+tensor(inf, device='cuda:1', dtype=torch.float16)
+tensor(6792., device='cuda:1', dtype=torch.float16)
+tensor(inf, device='cuda:1', dtype=torch.float16)
+tensor(147., device='cuda:1', dtype=torch.float16)
+tensor(24160., device='cuda:1', dtype=torch.float16)
+tensor(220.8750, device='cuda:1', dtype=torch.float16)
+tensor(inf, device='cuda:1', dtype=torch.float16)
+tensor(9088., device='cuda:1', dtype=torch.float16)
+tensor(inf, device='cuda:1', dtype=torch.float16)
+tensor(214.5000, device='cuda:1', dtype=torch.float16)
+tensor(22704., device='cuda:1', dtype=torch.float16)
+tensor(324.7500, device='cuda:1', dtype=torch.float16)
+tensor(inf, device='cuda:1', dtype=torch.float16)
+tensor(10456., device='cuda:1', dtype=torch.float16)
+tensor(inf, device='cuda:1', dtype=torch.float16)
+tensor(365., device='cuda:1', dtype=torch.float16)
+tensor(29232., device='cuda:1', dtype=torch.float16)
+tensor(361.5000, device='cuda:1', dtype=torch.float16)
+tensor(inf, device='cuda:1', dtype=torch.float16)
+tensor(17344., device='cuda:1', dtype=torch.float16)
+tensor(inf, device='cuda:1', dtype=torch.float16)
+tensor(680.5000, device='cuda:1', dtype=torch.float16)
+tensor(37280., device='cuda:1', dtype=torch.float16)
+tensor(560., device='cuda:1', dtype=torch.float16)
+tensor(inf, device='cuda:1', dtype=torch.float16)
+tensor(19568., device='cuda:1', dtype=torch.float16)
+tensor(inf, device='cuda:1', dtype=torch.float16)
+tensor(1128., device='cuda:1', dtype=torch.float16)
+tensor(53024., device='cuda:1', dtype=torch.float16)
+tensor(1014., device='cuda:1', dtype=torch.float16)
+tensor(inf, device='cuda:1', dtype=torch.float16)
+tensor(24208., device='cuda:1', dtype=torch.float16)
+tensor(inf, device='cuda:1', dtype=torch.float16)
+tensor(797.5000, device='cuda:1', dtype=torch.float16)
+tensor(inf, device='cuda:1', dtype=torch.float16)
+tensor(1583., device='cuda:1', dtype=torch.float16)
+tensor(inf, device='cuda:1', dtype=torch.float16)
+tensor(28992., device='cuda:1', dtype=torch.float16)
+tensor(inf, device='cuda:1', dtype=torch.float16)
+tensor(1953., device='cuda:1', dtype=torch.float16)
+tensor(inf, device='cuda:1', dtype=torch.float16)
+tensor(1972., device='cuda:1', dtype=torch.float16)
+quantization time: 150.0021448135376 s
+Experiment: 
+xjh_edit,load from local file:/data/xjh/dataset/wikitext-2-raw-v1,get wikitext2
+wikitext2
+Evaluating ...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+Perplexity: 109.137222
+{'wikitext2/perplexity': 109.13722229003906}
+xjh_edit,load from local file:/data/xjh/dataset/ptb_text_only,get ptb
+ptb
+Evaluating ...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+Perplexity: 144.638138
+{'ptb/perplexity': 144.6381378173828}
+xjh_edit,load from local file:/data/xjh/dataset/c4_part,get c4
+c4
+Evaluating ...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+Perplexity: 78.002953
+{'c4/perplexity': 78.0029525756836}

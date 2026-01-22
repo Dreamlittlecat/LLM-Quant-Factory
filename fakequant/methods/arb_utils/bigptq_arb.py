@@ -5,7 +5,7 @@ import torch
 import torch.nn as nn
 import transformers
 import sys
-sys.path.append("./arb_utils")
+sys.path.append("/home/xjh/research/AI_xjh_research/llm_quant_factory/fakequant/methods/arb_utils")
 from utils.structure_arb import structural_guassian_distribution_multip_alternating_group_x
 import logging
 logger = logging.getLogger()
