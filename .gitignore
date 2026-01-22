@@ -1,0 +1,23 @@
+# 忽略 Python 自动生成的缓存
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 忽略隐藏的缓存文件夹
+.cache/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# 忽略本地虚拟环境
+venv/
+.venv/
+env/
+
+# 忽略大型权重文件或数据（如果有特定格式）
+*.pth
+*.bin
+*.pt
+*.onnx
+
+# 忽略系统文件
+.DS_Store

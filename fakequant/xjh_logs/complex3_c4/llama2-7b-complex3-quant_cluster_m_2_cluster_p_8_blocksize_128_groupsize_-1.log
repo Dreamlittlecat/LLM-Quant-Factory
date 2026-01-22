@@ -12846,4 +12846,3433 @@ angle bits: 3
 SVD 量化时间: 0.0151 秒
 cluster: 2
 group_size: 128
-cluster Quantizing weight with shape:
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9170 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9284 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9369 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9155 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9207 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9197 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9229 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9207 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9283 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9318 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9250 秒
+5 self_attn.k_proj
+Quantizing ...
+使用blocksize: 128进行量化
+angle bits: 3
+SVD 量化时间: 0.0133 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9186 秒
+angle bits: 3
+SVD 量化时间: 0.0154 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9347 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9156 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9133 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9178 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9279 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9248 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9237 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9278 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9347 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9357 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9572 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9339 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9413 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9263 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9291 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9215 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9228 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9237 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9281 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9356 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9691 秒
+angle bits: 3
+SVD 量化时间: 0.0154 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 1.0516 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 1.0480 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 1.0430 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9997 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 1.0111 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9874 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9762 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9205 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9345 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9427 秒
+5 self_attn.v_proj
+Quantizing ...
+使用blocksize: 128进行量化
+angle bits: 3
+SVD 量化时间: 0.0132 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9735 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9291 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9225 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9215 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9298 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9400 秒
+angle bits: 3
+SVD 量化时间: 0.0155 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 1.4279 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9314 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9290 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9325 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9306 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9285 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9349 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9366 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9443 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9429 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9469 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9481 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9458 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9519 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9332 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9413 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9415 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9397 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9323 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9425 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9296 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9207 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9221 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9237 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9415 秒
+angle bits: 3
+SVD 量化时间: 0.0149 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9321 秒
+5 self_attn.o_proj
+Quantizing ...
+使用blocksize: 128进行量化
+angle bits: 3
+SVD 量化时间: 0.0132 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9408 秒
+angle bits: 3
+SVD 量化时间: 0.0154 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9486 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9372 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9328 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9384 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9410 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9493 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9300 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9389 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9413 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9335 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9316 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9311 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9347 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9274 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9297 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9350 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9329 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9469 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9364 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9379 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9507 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9436 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9425 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9418 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 1.0750 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9402 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9449 秒
+angle bits: 3
+SVD 量化时间: 0.0149 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9600 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9954 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 1.0749 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 1.0087 秒
+5 mlp.gate_proj
+Quantizing ...
+使用blocksize: 128进行量化
+angle bits: 3
+SVD 量化时间: 0.0343 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.7788 秒
+angle bits: 3
+SVD 量化时间: 0.0400 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.6373 秒
+angle bits: 3
+SVD 量化时间: 0.0401 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5784 秒
+angle bits: 3
+SVD 量化时间: 0.0401 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5695 秒
+angle bits: 3
+SVD 量化时间: 0.0400 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5198 秒
+angle bits: 3
+SVD 量化时间: 0.0400 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5017 秒
+angle bits: 3
+SVD 量化时间: 0.0399 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5123 秒
+angle bits: 3
+SVD 量化时间: 0.0400 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.4757 秒
+angle bits: 3
+SVD 量化时间: 0.0400 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.4996 秒
+angle bits: 3
+SVD 量化时间: 0.0400 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.4834 秒
+angle bits: 3
+SVD 量化时间: 0.0399 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.6176 秒
+angle bits: 3
+SVD 量化时间: 0.0398 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5026 秒
+angle bits: 3
+SVD 量化时间: 0.0399 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.4828 秒
+angle bits: 3
+SVD 量化时间: 0.0398 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.4895 秒
+angle bits: 3
+SVD 量化时间: 0.0398 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5131 秒
+angle bits: 3
+SVD 量化时间: 0.0397 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5146 秒
+angle bits: 3
+SVD 量化时间: 0.0398 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5196 秒
+angle bits: 3
+SVD 量化时间: 0.0396 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5038 秒
+angle bits: 3
+SVD 量化时间: 0.0397 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5056 秒
+angle bits: 3
+SVD 量化时间: 0.0397 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5119 秒
+angle bits: 3
+SVD 量化时间: 0.0396 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5093 秒
+angle bits: 3
+SVD 量化时间: 0.0396 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5126 秒
+angle bits: 3
+SVD 量化时间: 0.0396 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.4930 秒
+angle bits: 3
+SVD 量化时间: 0.0396 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.4996 秒
+angle bits: 3
+SVD 量化时间: 0.0395 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.4920 秒
+angle bits: 3
+SVD 量化时间: 0.0394 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5956 秒
+angle bits: 3
+SVD 量化时间: 0.0395 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.7631 秒
+angle bits: 3
+SVD 量化时间: 0.0394 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.6125 秒
+angle bits: 3
+SVD 量化时间: 0.0395 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5806 秒
+angle bits: 3
+SVD 量化时间: 0.0393 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5173 秒
+angle bits: 3
+SVD 量化时间: 0.0396 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5229 秒
+angle bits: 3
+SVD 量化时间: 0.0392 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5054 秒
+5 mlp.up_proj
+Quantizing ...
+使用blocksize: 128进行量化
+angle bits: 3
+SVD 量化时间: 0.0342 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5221 秒
+angle bits: 3
+SVD 量化时间: 0.0398 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5987 秒
+angle bits: 3
+SVD 量化时间: 0.0402 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5902 秒
+angle bits: 3
+SVD 量化时间: 0.0402 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.6219 秒
+angle bits: 3
+SVD 量化时间: 0.0401 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5800 秒
+angle bits: 3
+SVD 量化时间: 0.0400 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.6567 秒
+angle bits: 3
+SVD 量化时间: 0.0400 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5058 秒
+angle bits: 3
+SVD 量化时间: 0.0400 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5249 秒
+angle bits: 3
+SVD 量化时间: 0.0399 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.4840 秒
+angle bits: 3
+SVD 量化时间: 0.0399 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5032 秒
+angle bits: 3
+SVD 量化时间: 0.0398 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.4943 秒
+angle bits: 3
+SVD 量化时间: 0.0399 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.4992 秒
+angle bits: 3
+SVD 量化时间: 0.0398 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5023 秒
+angle bits: 3
+SVD 量化时间: 0.0398 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5090 秒
+angle bits: 3
+SVD 量化时间: 0.0398 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5110 秒
+angle bits: 3
+SVD 量化时间: 0.0397 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5154 秒
+angle bits: 3
+SVD 量化时间: 0.0398 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.4965 秒
+angle bits: 3
+SVD 量化时间: 0.0397 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.4813 秒
+angle bits: 3
+SVD 量化时间: 0.0397 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.6311 秒
+angle bits: 3
+SVD 量化时间: 0.0397 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5013 秒
+angle bits: 3
+SVD 量化时间: 0.0395 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5452 秒
+angle bits: 3
+SVD 量化时间: 0.0394 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.7915 秒
+angle bits: 3
+SVD 量化时间: 0.0398 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.7743 秒
+angle bits: 3
+SVD 量化时间: 0.0395 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.6648 秒
+angle bits: 3
+SVD 量化时间: 0.0394 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5638 秒
+angle bits: 3
+SVD 量化时间: 0.0397 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5159 秒
+angle bits: 3
+SVD 量化时间: 0.0392 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5202 秒
+angle bits: 3
+SVD 量化时间: 0.0392 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.4849 秒
+angle bits: 3
+SVD 量化时间: 0.0392 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.4965 秒
+angle bits: 3
+SVD 量化时间: 0.0393 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.4979 秒
+angle bits: 3
+SVD 量化时间: 0.0394 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.5403 秒
+angle bits: 3
+SVD 量化时间: 0.0392 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([2752, 128])
+SVD 奇异值量化时间: 2.4999 秒
+5 mlp.down_proj
+Quantizing ...
+使用blocksize: 128进行量化
+angle bits: 3
+SVD 量化时间: 0.0145 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9422 秒
+angle bits: 3
+SVD 量化时间: 0.0157 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 1.0759 秒
+angle bits: 3
+SVD 量化时间: 0.0158 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9486 秒
+angle bits: 3
+SVD 量化时间: 0.0157 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9493 秒
+angle bits: 3
+SVD 量化时间: 0.0157 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9462 秒
+angle bits: 3
+SVD 量化时间: 0.0157 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9360 秒
+angle bits: 3
+SVD 量化时间: 0.0157 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9380 秒
+angle bits: 3
+SVD 量化时间: 0.0157 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9393 秒
+angle bits: 3
+SVD 量化时间: 0.0157 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9408 秒
+angle bits: 3
+SVD 量化时间: 0.0156 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9370 秒
+angle bits: 3
+SVD 量化时间: 0.0156 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9332 秒
+angle bits: 3
+SVD 量化时间: 0.0157 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9399 秒
+angle bits: 3
+SVD 量化时间: 0.0157 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9358 秒
+angle bits: 3
+SVD 量化时间: 0.0156 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9275 秒
+angle bits: 3
+SVD 量化时间: 0.0156 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9277 秒
+angle bits: 3
+SVD 量化时间: 0.0156 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9298 秒
+angle bits: 3
+SVD 量化时间: 0.0156 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9279 秒
+angle bits: 3
+SVD 量化时间: 0.0156 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9295 秒
+angle bits: 3
+SVD 量化时间: 0.0156 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9318 秒
+angle bits: 3
+SVD 量化时间: 0.0156 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9495 秒
+angle bits: 3
+SVD 量化时间: 0.0156 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9459 秒
+angle bits: 3
+SVD 量化时间: 0.0156 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9454 秒
+angle bits: 3
+SVD 量化时间: 0.0156 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9447 秒
+angle bits: 3
+SVD 量化时间: 0.0155 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9423 秒
+angle bits: 3
+SVD 量化时间: 0.0156 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9425 秒
+angle bits: 3
+SVD 量化时间: 0.0156 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9312 秒
+angle bits: 3
+SVD 量化时间: 0.0156 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9575 秒
+angle bits: 3
+SVD 量化时间: 0.0155 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9436 秒
+angle bits: 3
+SVD 量化时间: 0.0155 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9283 秒
+angle bits: 3
+SVD 量化时间: 0.0155 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9298 秒
+angle bits: 3
+SVD 量化时间: 0.0154 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9284 秒
+angle bits: 3
+SVD 量化时间: 0.0154 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9267 秒
+angle bits: 3
+SVD 量化时间: 0.0154 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9302 秒
+angle bits: 3
+SVD 量化时间: 0.0154 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9254 秒
+angle bits: 3
+SVD 量化时间: 0.0155 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9311 秒
+angle bits: 3
+SVD 量化时间: 0.0154 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9374 秒
+angle bits: 3
+SVD 量化时间: 0.0154 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9388 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9435 秒
+angle bits: 3
+SVD 量化时间: 0.0154 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9442 秒
+angle bits: 3
+SVD 量化时间: 0.0154 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9472 秒
+angle bits: 3
+SVD 量化时间: 0.0154 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9422 秒
+angle bits: 3
+SVD 量化时间: 0.0155 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9391 秒
+angle bits: 3
+SVD 量化时间: 0.0154 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9726 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 1.0298 秒
+angle bits: 3
+SVD 量化时间: 0.0154 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 1.0179 秒
+angle bits: 3
+SVD 量化时间: 0.0155 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 1.0526 秒
+angle bits: 3
+SVD 量化时间: 0.0155 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9965 秒
+angle bits: 3
+SVD 量化时间: 0.0154 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 1.0199 秒
+angle bits: 3
+SVD 量化时间: 0.0154 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 1.0255 秒
+angle bits: 3
+SVD 量化时间: 0.0154 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 1.0221 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9419 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9603 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9455 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9374 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9403 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9399 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9414 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9424 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9487 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9436 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9483 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9438 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9470 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9427 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9514 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9477 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9638 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9529 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9331 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9303 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9523 秒
+angle bits: 3
+SVD 量化时间: 0.0149 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9334 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9329 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9465 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9427 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9533 秒
+angle bits: 3
+SVD 量化时间: 0.0149 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9420 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9447 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9474 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9519 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9701 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9396 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9368 秒
+angle bits: 3
+SVD 量化时间: 0.0149 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9366 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9372 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9428 秒
+6 self_attn.q_proj
+Quantizing ...
+使用blocksize: 128进行量化
+angle bits: 3
+SVD 量化时间: 0.0144 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9215 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9359 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9268 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9313 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9189 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9225 秒
+angle bits: 3
+SVD 量化时间: 0.0154 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9218 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9330 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 1.0824 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9205 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9233 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9210 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9192 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9148 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9136 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9194 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9387 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9136 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9140 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9216 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9249 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9215 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9212 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9435 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 1.0281 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 1.0538 秒
+angle bits: 3
+SVD 量化时间: 0.0156 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 1.0557 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 1.0407 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 1.0974 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 1.0403 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 1.0293 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9548 秒
+6 self_attn.k_proj
+Quantizing ...
+使用blocksize: 128进行量化
+angle bits: 3
+SVD 量化时间: 0.0133 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9877 秒
+angle bits: 3
+SVD 量化时间: 0.0156 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9717 秒
+angle bits: 3
+SVD 量化时间: 0.0155 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9264 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9179 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9170 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9116 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9227 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9266 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9326 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9274 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9217 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9477 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9404 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9276 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9329 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9278 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9246 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9257 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9191 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9262 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9260 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9278 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9353 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9304 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9363 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9418 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9470 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9399 秒
+angle bits: 3
+SVD 量化时间: 0.0154 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9515 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9314 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9267 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9325 秒
+6 self_attn.v_proj
+Quantizing ...
+使用blocksize: 128进行量化
+angle bits: 3
+SVD 量化时间: 0.0133 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9274 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9338 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9195 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9200 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9161 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9197 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 1.0401 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9249 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9213 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9308 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9211 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9233 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9327 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9316 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9303 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9427 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9311 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9248 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9360 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9338 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9250 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9504 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9352 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9297 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9288 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9260 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9189 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9196 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9304 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9201 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9177 秒
+angle bits: 3
+SVD 量化时间: 0.0149 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9249 秒
+6 self_attn.o_proj
+Quantizing ...
+使用blocksize: 128进行量化
+angle bits: 3
+SVD 量化时间: 0.0131 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 1.0125 秒
+angle bits: 3
+SVD 量化时间: 0.0154 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 1.0454 秒
+angle bits: 3
+SVD 量化时间: 0.0156 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 1.0446 秒
+angle bits: 3
+SVD 量化时间: 0.0158 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 1.0451 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9965 秒
+angle bits: 3
+SVD 量化时间: 0.0154 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 1.0496 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9800 秒
+angle bits: 3
+SVD 量化时间: 0.0153 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9743 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9401 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9509 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9470 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9419 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9431 秒
+angle bits: 3
+SVD 量化时间: 0.0152 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9443 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9380 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9418 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9524 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9266 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9338 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9340 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9404 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9296 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9338 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9315 秒
+angle bits: 3
+SVD 量化时间: 0.0151 秒
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+cluster: 2
+group_size: 128
+cluster Quantizing weight with shape: torch.Size([1024, 128])
+SVD 奇异值量化时间: 0.9202 秒
+angle bits: 3
+SVD 量化时间: 0.0150 秒
